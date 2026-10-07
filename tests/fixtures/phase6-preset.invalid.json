@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0",
+  "id": "user-preset-5427329a-7580-4d97-9fed-1e829bb886cc",
+  "name": "Generic committed choreography",
+  "provenance": "community",
+  "category": "panelChoreography",
+  "value": {
+    "category": "color",
+    "variation": {
+      "mode": "random",
+      "candidates": [
+        {
+          "assignments": [
+            {
+              "roleId": "role-a",
+              "color": "#0057B8"
+            },
+            {
+              "roleId": "role-b",
+              "color": "#FF8C00"
+            },
+            {
+              "roleId": "background-a",
+              "color": "#FFFFFF"
+            }
+          ],
+          "mood": "cool-blues"
+        }
+      ]
+    }
+  },
+  "subject": {
+    "packId": "forbidden-context"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0",
+  "id": "community.palette-1",
+  "name": "Distinct masses",
+  "provenance": "community",
+  "category": "subject",
+  "value": {
+    "assignments": [
+      {
+        "roleId": "role-a",
+        "color": "#0057B8"
+      },
+      {
+        "roleId": "role-b",
+        "color": "#FF8C00"
+      },
+      {
+        "roleId": "background-a",
+        "color": "#FFFFFF"
+      },
+      {
+        "roleId": "accent-a",
+        "color": "#0057B8"
+      }
+    ]
+  }
+}

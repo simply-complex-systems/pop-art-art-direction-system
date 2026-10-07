@@ -1,0 +1,58 @@
+name: Publish Pages (manual only)
+on:
+  workflow_dispatch:
+    inputs:
+      authorize_publication:
+        description: 'Publish this build publicly'
+        required: true
+        type: boolean
+        default: false
+      redistribution_review_complete:
+        description: 'Public redistribution review is complete for all bundled assets'
+        required: true
+        type: boolean
+        default: false
+      base_path:
+        description: 'Optional base override; leave empty for /repository-name/, use / for a root/custom-domain site'
+        required: false
+        type: string
+        default: ''
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: ${{ inputs.authorize_publication && inputs.redistribution_review_complete }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run validate-packs
+      - run: npm run build:public
+        env:
+          VITE_BASE_PATH: ${{ inputs.base_path || format('/{0}/', github.event.repository.name) }}
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        with:
+          path: .release/public-site
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
+      - name: Publish verified build
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5

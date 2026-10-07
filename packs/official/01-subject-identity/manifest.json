@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-01.subject-identity.v1",
+  "displayName": "Subject Identity Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "subject_identity",
+  "description": "Approved exemplar pack for Subject Identity Exemplars.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "subject identity continuity",
+    "facial feature relationships",
+    "hair/silhouette consistency",
+    "body-proportion continuity"
+  ],
+  "doesNotGovern": [
+    "theme",
+    "costume topology",
+    "composition",
+    "palette",
+    "background treatment"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "category-01-sheet",
+      "title": "Subject Identity Exemplars",
+      "asset": {
+        "id": "category-01-sheet.original",
+        "path": "official/01-subject-identity/exemplars/category-01-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "bbaf4c806a80a197d833be2eb46b00fa87530a50ab30f7542586db41e8b0de75"
+      },
+      "governs": [
+        "subject identity continuity",
+        "facial feature relationships",
+        "hair/silhouette consistency",
+        "body-proportion continuity"
+      ],
+      "doesNotGovern": [
+        "theme",
+        "costume topology",
+        "composition",
+        "palette",
+        "background treatment"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "subject-identity",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "front-view",
+      "label": "front view",
+      "category": "subject_identity",
+      "axis": "subject_identity",
+      "value": {
+        "sourceLabel": "front view",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "three-quarter-view",
+      "label": "three-quarter view",
+      "category": "subject_identity",
+      "axis": "subject_identity",
+      "value": {
+        "sourceLabel": "three-quarter view",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "profile",
+      "label": "profile",
+      "category": "subject_identity",
+      "axis": "subject_identity",
+      "value": {
+        "sourceLabel": "profile",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "over-shoulder",
+      "label": "over-shoulder",
+      "category": "subject_identity",
+      "axis": "subject_identity",
+      "value": {
+        "sourceLabel": "over-shoulder",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "confident-expression",
+      "label": "confident expression",
+      "category": "subject_identity",
+      "axis": "subject_identity",
+      "value": {
+        "sourceLabel": "confident expression",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "playful-expression",
+      "label": "playful expression",
+      "category": "subject_identity",
+      "axis": "subject_identity",
+      "value": {
+        "sourceLabel": "playful expression",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "serious-expression",
+      "label": "serious expression",
+      "category": "subject_identity",
+      "axis": "subject_identity",
+      "value": {
+        "sourceLabel": "serious expression",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "laughing-expression",
+      "label": "laughing expression",
+      "category": "subject_identity",
+      "axis": "subject_identity",
+      "value": {
+        "sourceLabel": "laughing expression",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "subject_identity"
+    ],
+    "notes": [
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "subject-identity",
+    "approved",
+    "reference-sheet"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "version": "1.0.0",
+  "references": [
+    {
+      "packId": "official.category-02.conventional-composition.v1",
+      "id": "official.category-02.conventional-composition.v1.document-1.original",
+      "path": "official/02-conventional-composition/documents/CONVENTIONAL_COMPOSITION_REFERENCE_LIBRARY_v1.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "e0197916dadc60eaaf04ff9c107b78d9c5eb331f45aea8c2979f24db88010c3d",
+      "classification": "EXTERNAL REFERENCE ONLY",
+      "included": false
+    },
+    {
+      "packId": "official.category-03.unconventional-composition.v1",
+      "id": "official.category-03.unconventional-composition.v1.document-1.original",
+      "path": "official/03-unconventional-composition/documents/Unconventional_Composition_Reference_Library.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "2db753907e09be52b927113b8170258281a78acf3063c9e372fb4a1c4e12bead",
+      "classification": "EXTERNAL REFERENCE ONLY",
+      "included": false
+    },
+    {
+      "packId": "official.category-05.background-treatment.v1",
+      "id": "official.category-05.background-treatment.v1.document-1.original",
+      "path": "official/05-background-treatment/documents/POP_ART_BACKGROUND_TEXTURE_REFERENCE_LIBRARY_v1.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "065331a3e1391a026a940de5d7bb97d55c8969cc8d4c48e3a01e76ff1d9f6c7a",
+      "classification": "EXTERNAL REFERENCE ONLY",
+      "included": false
+    },
+    {
+      "packId": "official.category-05.background-treatment.v1",
+      "id": "official.category-05.background-treatment.v1.document-2.original",
+      "path": "official/05-background-treatment/documents/CATEGORY_05_BACKGROUND_TREATMENT_LIBRARY_v1.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "af1d274a635ba786594190fb97be458bdccaae2d3668d316333430a4edea57ed",
+      "classification": "EXTERNAL REFERENCE ONLY",
+      "included": false
+    },
+    {
+      "packId": "official.category-05.background-treatment.v1",
+      "id": "official.category-05.background-treatment.v1.document-3.original",
+      "path": "official/05-background-treatment/documents/CATEGORY_05A_BACKGROUND_FIELD_CONSTRUCTION_v1.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "246184009bcdffdb7d015b3bc09d01d5fcde523f02b4ba0991ad0131f444bd99",
+      "classification": "EXTERNAL REFERENCE ONLY",
+      "included": false
+    },
+    {
+      "packId": "official.category-05.background-treatment.v1",
+      "id": "official.category-05.background-treatment.v1.document-4.original",
+      "path": "official/05-background-treatment/documents/CATEGORY_05B_SURFACE_TEXTURE_v1.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "7dad2413d6f53f740f0c16b15650652aae37950f823eefe5e83b1a3f67645d68",
+      "classification": "EXTERNAL REFERENCE ONLY",
+      "included": false
+    },
+    {
+      "packId": "official.category-05.background-treatment.v1",
+      "id": "official.category-05.background-treatment.v1.document-5.original",
+      "path": "official/05-background-treatment/documents/CATEGORY_05C_PRINT_FINISH_REPRO_EFFECTS_v1.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "cf1616e7e87ea1a60c81daa0a86de3f83fc5af2f4504832ca44a955a0d5214b8",
+      "classification": "EXTERNAL REFERENCE ONLY",
+      "included": false
+    },
+    {
+      "packId": "official.category-10.theme-costume-transformation.v1",
+      "id": "official.category-10.theme-costume-transformation.v1.document-1.original",
+      "path": "example-projects/halloween-woman-witch/WITCH-01-HANDOFF.pdf",
+      "mediaType": "application/pdf",
+      "sha256": "2476cac93510e37a2443620c1d8f6480e4d17e388a386a324f90bc4d58160ed4",
+      "classification": "EXTERNAL REFERENCE ONLY",
+      "included": false
+    }
+  ]
+}

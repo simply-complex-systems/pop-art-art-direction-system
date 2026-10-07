@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-13.expression-micro-mood.v1",
+  "displayName": "Expression / Micro-Mood Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "expression",
+  "description": "Approved exemplar pack for Expression / Micro-Mood Exemplars.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "facial expression",
+    "micro-mood",
+    "visible emotional performance"
+  ],
+  "doesNotGovern": [
+    "subject identity",
+    "theme/costume",
+    "camera",
+    "palette"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "category-13-sheet",
+      "title": "Expression / Micro-Mood Exemplars",
+      "asset": {
+        "id": "category-13-sheet.original",
+        "path": "official/13-expression-micro-mood/exemplars/category-13-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "19188fdeeae3c94d510e2f0936041c870d22aef929befa5063b85d51beab5dfb"
+      },
+      "governs": [
+        "facial expression",
+        "micro-mood",
+        "visible emotional performance"
+      ],
+      "doesNotGovern": [
+        "subject identity",
+        "theme/costume",
+        "camera",
+        "palette"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "expression-micro-mood",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "confident",
+      "label": "confident",
+      "category": "expression",
+      "axis": "expression",
+      "value": {
+        "sourceLabel": "confident",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "playful",
+      "label": "playful",
+      "category": "expression",
+      "axis": "expression",
+      "value": {
+        "sourceLabel": "playful",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "joyful",
+      "label": "joyful",
+      "category": "expression",
+      "axis": "expression",
+      "value": {
+        "sourceLabel": "joyful",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "seductive",
+      "label": "seductive",
+      "category": "expression",
+      "axis": "expression",
+      "value": {
+        "sourceLabel": "seductive",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "serious",
+      "label": "serious",
+      "category": "expression",
+      "axis": "expression",
+      "value": {
+        "sourceLabel": "serious",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "angry",
+      "label": "angry",
+      "category": "expression",
+      "axis": "expression",
+      "value": {
+        "sourceLabel": "angry",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "surprised",
+      "label": "surprised",
+      "category": "expression",
+      "axis": "expression",
+      "value": {
+        "sourceLabel": "surprised",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "thoughtful",
+      "label": "thoughtful",
+      "category": "expression",
+      "axis": "expression",
+      "value": {
+        "sourceLabel": "thoughtful",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "melancholy",
+      "label": "melancholy",
+      "category": "expression",
+      "axis": "expression",
+      "value": {
+        "sourceLabel": "melancholy",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "wink-flirt",
+      "label": "wink/flirt",
+      "category": "expression",
+      "axis": "expression",
+      "value": {
+        "sourceLabel": "wink/flirt",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "expression"
+    ],
+    "notes": [
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "expression-micro-mood",
+    "approved",
+    "reference-sheet"
+  ]
+}

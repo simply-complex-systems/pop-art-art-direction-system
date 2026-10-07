@@ -1,0 +1,1617 @@
+{
+  "schemaVersion": "1.0",
+  "sourceInventoryPath": "sources/ASSET_INVENTORY.csv",
+  "sourceInventorySha256": "c576bed56647e01e23de890aa45225d92adea057f5b4498ffbdc9bd383daf011",
+  "records": [
+    {
+      "sourcePath": "packs/official/01-subject-identity/manifest.json",
+      "sourceSha256": "17ed4bf487b7ab3337a855ecc4b432046a4112293c8e811a0134c82c733ddbde",
+      "historicalPath": "sources/packs/official/01-subject-identity/manifest.json",
+      "normalizedPath": "official/01-subject-identity/manifest.json",
+      "packId": "official.category-01.subject-identity.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "front-view",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "three-quarter-view",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "profile",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "over-shoulder",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "confident-expression",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "playful-expression",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "serious-expression",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "laughing-expression",
+          "sourcePointer": "/options/7"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-01-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/01-subject-identity/exemplars/category-01-approved-sheet.png"
+        }
+      ],
+      "documents": [],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/02-conventional-composition/manifest.json",
+      "sourceSha256": "07810f0364d98072626968229d27b3d87c7f5e8b3432990d725e59cc16e6d875",
+      "historicalPath": "sources/packs/official/02-conventional-composition/manifest.json",
+      "normalizedPath": "official/02-conventional-composition/manifest.json",
+      "packId": "official.category-02.conventional-composition.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "head-and-shoulders",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "bust-chest-up",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "half-length",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "three-quarter-length",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "full-length",
+          "sourcePointer": "/options/4"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-02-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/02-conventional-composition/exemplars/category-02-approved-sheet.png"
+        }
+      ],
+      "documents": [
+        {
+          "normalizedId": "official.category-02.conventional-composition.v1.document-1",
+          "sourcePointer": "/documents/0",
+          "sourceAsset": "packs/official/02-conventional-composition/documents/CONVENTIONAL_COMPOSITION_REFERENCE_LIBRARY_v1.pdf"
+        }
+      ],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/03-unconventional-composition/manifest.json",
+      "sourceSha256": "cec31876f3e815c8b8103d32bdc9acdf47b7773406175aec8e76197529d81a75",
+      "historicalPath": "sources/packs/official/03-unconventional-composition/manifest.json",
+      "normalizedPath": "official/03-unconventional-composition/manifest.json",
+      "packId": "official.category-03.unconventional-composition.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "extreme-negative-space",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "aggressive-crop",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "extreme-high-viewpoint",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "extreme-low-viewpoint",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "dutch-canted-frame",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "partial-faceless-portrait",
+          "sourcePointer": "/options/5"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-03-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/03-unconventional-composition/exemplars/category-03-approved-sheet.png"
+        }
+      ],
+      "documents": [
+        {
+          "normalizedId": "official.category-03.unconventional-composition.v1.document-1",
+          "sourcePointer": "/documents/0",
+          "sourceAsset": "packs/official/03-unconventional-composition/documents/Unconventional_Composition_Reference_Library.pdf"
+        }
+      ],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/04-color-triad-contrast/manifest.json",
+      "sourceSha256": "977aaf5c27bd6f12cd686ff9583df320178f6303aac757b48ac6fdd6066aa9e5",
+      "historicalPath": "sources/packs/official/04-color-triad-contrast/manifest.json",
+      "normalizedPath": "official/04-color-triad-contrast/manifest.json",
+      "packId": "official.category-04.color-triad-contrast.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governing scope adjusted only by approved amendments",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "Contrast-First Structured Color amendment",
+        "seven system strategies without claimed exemplar evidence",
+        "four optional color presets with provisional hexadecimal targets",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records",
+        "generic all-panel subject roles a/b/c and background-a, major importance; empty hue offsets mean no numeric strategy rule established"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification",
+        "Exact hex targets and generic role assignment in triad presets are provisional; named colors are not source-measured swatches."
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "magenta-yellow-cyan",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "red-blue-yellow",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "vermilion-chartreuse-blue-violet",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "orange-emerald-ultraviolet",
+          "sourcePointer": "/options/3"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-04-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/04-color-triad-contrast/exemplars/category-04-approved-sheet.png"
+        }
+      ],
+      "documents": [],
+      "presets": [
+        {
+          "normalizedId": "official.color.magenta-yellow-cyan.v1",
+          "sourcePointer": "/options/0",
+          "status": "provisional-hex-targets"
+        },
+        {
+          "normalizedId": "official.color.red-blue-yellow.v1",
+          "sourcePointer": "/options/1",
+          "status": "provisional-hex-targets"
+        },
+        {
+          "normalizedId": "official.color.vermilion-chartreuse-blue-violet.v1",
+          "sourcePointer": "/options/2",
+          "status": "provisional-hex-targets"
+        },
+        {
+          "normalizedId": "official.color.orange-emerald-ultraviolet.v1",
+          "sourcePointer": "/options/3",
+          "status": "provisional-hex-targets"
+        }
+      ]
+    },
+    {
+      "sourcePath": "packs/official/05-background-treatment/manifest.json",
+      "sourceSha256": "f0dac077ef85ae3036a2c90ec0c5090725c52cac315a69bdd7375cb55274253f",
+      "historicalPath": "sources/packs/official/05-background-treatment/manifest.json",
+      "normalizedPath": "official/05-background-treatment/manifest.json",
+      "packId": "official.category-05.background-treatment.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "Flat Field neutral texture and None neutral finish from explicit Phase 3 requirements",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "flat-single-color-field",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "hard-two-tone-split",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "two-tone-geometric-blocked-field",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "linear-pop-gradient",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "radial-spotlight-gradient",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "color-bands-stripes",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "radial-burst-sunburst",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "concentric-target-field",
+          "sourcePointer": "/options/7"
+        },
+        {
+          "normalizedId": "repeating-graphic-motif",
+          "sourcePointer": "/options/8"
+        },
+        {
+          "normalizedId": "checker-grid-geometric-pattern",
+          "sourcePointer": "/options/9"
+        },
+        {
+          "normalizedId": "ben-day-dots",
+          "sourcePointer": "/options/10"
+        },
+        {
+          "normalizedId": "halftone-gradient",
+          "sourcePointer": "/options/11"
+        },
+        {
+          "normalizedId": "coarse-halftone-raster",
+          "sourcePointer": "/options/12"
+        },
+        {
+          "normalizedId": "stipple",
+          "sourcePointer": "/options/13"
+        },
+        {
+          "normalizedId": "diagonal-hatch",
+          "sourcePointer": "/options/14"
+        },
+        {
+          "normalizedId": "crosshatch",
+          "sourcePointer": "/options/15"
+        },
+        {
+          "normalizedId": "screenprint-grain",
+          "sourcePointer": "/options/16"
+        },
+        {
+          "normalizedId": "distressed-newsprint",
+          "sourcePointer": "/options/17"
+        },
+        {
+          "normalizedId": "misregistration",
+          "sourcePointer": "/options/18"
+        },
+        {
+          "normalizedId": "flat-field",
+          "sourcePointer": null
+        },
+        {
+          "normalizedId": "none",
+          "sourcePointer": null
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-05-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/05-background-treatment/exemplars/category-05-approved-sheet.png"
+        }
+      ],
+      "documents": [
+        {
+          "normalizedId": "official.category-05.background-treatment.v1.document-1",
+          "sourcePointer": "/documents/0",
+          "sourceAsset": "packs/official/05-background-treatment/documents/POP_ART_BACKGROUND_TEXTURE_REFERENCE_LIBRARY_v1.pdf"
+        },
+        {
+          "normalizedId": "official.category-05.background-treatment.v1.document-2",
+          "sourcePointer": "/documents/1",
+          "sourceAsset": "packs/official/05-background-treatment/documents/CATEGORY_05_BACKGROUND_TREATMENT_LIBRARY_v1.pdf"
+        },
+        {
+          "normalizedId": "official.category-05.background-treatment.v1.document-3",
+          "sourcePointer": "/documents/2",
+          "sourceAsset": "packs/official/05-background-treatment/documents/CATEGORY_05A_BACKGROUND_FIELD_CONSTRUCTION_v1.pdf"
+        },
+        {
+          "normalizedId": "official.category-05.background-treatment.v1.document-4",
+          "sourcePointer": "/documents/3",
+          "sourceAsset": "packs/official/05-background-treatment/documents/CATEGORY_05B_SURFACE_TEXTURE_v1.pdf"
+        },
+        {
+          "normalizedId": "official.category-05.background-treatment.v1.document-5",
+          "sourcePointer": "/documents/4",
+          "sourceAsset": "packs/official/05-background-treatment/documents/CATEGORY_05C_PRINT_FINISH_REPRO_EFFECTS_v1.pdf"
+        }
+      ],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/06-lighting/manifest.json",
+      "sourceSha256": "24927fbc1c3fceb3a9eee0d2e51b7c94b0c7b68abf53b1d1543403a076e6f7fd",
+      "historicalPath": "sources/packs/official/06-lighting/manifest.json",
+      "normalizedPath": "official/06-lighting/manifest.json",
+      "packId": "official.category-06.lighting.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "front-even",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "side-light-left",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "side-light-right",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "high-key",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "low-key",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "back-rim",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "top-light",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "underlight",
+          "sourcePointer": "/options/7"
+        },
+        {
+          "normalizedId": "colored-light",
+          "sourcePointer": "/options/8"
+        },
+        {
+          "normalizedId": "spotlight",
+          "sourcePointer": "/options/9"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-06-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/06-lighting/exemplars/category-06-approved-sheet.png"
+        }
+      ],
+      "documents": [],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/07-ink-contour-black-structure/manifest.json",
+      "sourceSha256": "5cc4e22d54d54a734c5048ab88f067b4f85fbd12751f234f2046b48873d44c7e",
+      "historicalPath": "sources/packs/official/07-ink-contour-black-structure/manifest.json",
+      "normalizedPath": "official/07-ink-contour-black-structure/manifest.json",
+      "packId": "official.category-07.ink-contour-black-structure.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "clean-bold-lines",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "thin-line-work",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "expressive-dynamic",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "heavy-blacks",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "halftone-shading",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "hatched-shading",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "stipple-dot-work",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "sketch-rough-ink",
+          "sourcePointer": "/options/7"
+        },
+        {
+          "normalizedId": "minimal-lines",
+          "sourcePointer": "/options/8"
+        },
+        {
+          "normalizedId": "ink-white-highlights",
+          "sourcePointer": "/options/9"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-07-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/07-ink-contour-black-structure/exemplars/category-07-approved-sheet.png"
+        }
+      ],
+      "documents": [],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/08-pose-gesture-body-mechanics/manifest.json",
+      "sourceSha256": "d03052269ffe05c82a14b3d3eaad07605828e7cfdbf2b1d343cde14909a32695",
+      "historicalPath": "sources/packs/official/08-pose-gesture-body-mechanics/manifest.json",
+      "normalizedPath": "official/08-pose-gesture-body-mechanics/manifest.json",
+      "packId": "official.category-08.pose-gesture-body-mechanics.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governing scope adjusted only by approved amendments",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "eye-level-front-staging",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "low-angle-heroic-staging",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "high-angle-staging",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "three-quarter-pose",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "profile-pose",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "full-body-pose",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "seated-pose",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "action-dynamic-pose",
+          "sourcePointer": "/options/7"
+        },
+        {
+          "normalizedId": "close-up-staging",
+          "sourcePointer": "/options/8"
+        },
+        {
+          "normalizedId": "partial-crop-staging",
+          "sourcePointer": "/options/9"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-08-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/08-pose-gesture-body-mechanics/exemplars/category-08-approved-sheet.png"
+        }
+      ],
+      "documents": [],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/09-color-palette-mood/manifest.json",
+      "sourceSha256": "233b4ef40f526f92aa33860b04a9fab402894e250a60ad86782245a6e4e7ae2a",
+      "historicalPath": "sources/packs/official/09-color-palette-mood/manifest.json",
+      "normalizedPath": "official/09-color-palette-mood/manifest.json",
+      "packId": "official.category-09.color-palette-mood.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "classic-pop",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "cool-blues",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "warm-retro",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "high-contrast-b-w-accent",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "pastel-pop",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "neon-electric",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "earth-tones",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "analogous",
+          "sourcePointer": "/options/7"
+        },
+        {
+          "normalizedId": "complementary",
+          "sourcePointer": "/options/8"
+        },
+        {
+          "normalizedId": "monochrome",
+          "sourcePointer": "/options/9"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-09-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/09-color-palette-mood/exemplars/category-09-approved-sheet.png"
+        }
+      ],
+      "documents": [],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/10-theme-costume-transformation/manifest.json",
+      "sourceSha256": "f8b6d3b116216a40c6b8a6df09001227f40e809de7e44918e30fae4eb50ca5db",
+      "historicalPath": "sources/packs/official/10-theme-costume-transformation/manifest.json",
+      "normalizedPath": "official/10-theme-costume-transformation/manifest.json",
+      "packId": "official.category-10.theme-costume-transformation.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "classic-witch",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "gothic-elegance",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "casual-modern",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "fantasy-armor",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "masquerade",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "vampire",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "cat-woman",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "cowgirl",
+          "sourcePointer": "/options/7"
+        },
+        {
+          "normalizedId": "santa-holiday",
+          "sourcePointer": "/options/8"
+        },
+        {
+          "normalizedId": "steampunk",
+          "sourcePointer": "/options/9"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-10-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/10-theme-costume-transformation/exemplars/category-10-approved-sheet.png"
+        }
+      ],
+      "documents": [
+        {
+          "normalizedId": "official.category-10.theme-costume-transformation.v1.document-1",
+          "sourcePointer": "/documents/0",
+          "sourceAsset": "packs/official/10-theme-costume-transformation/documents/WITCH-01-HANDOFF.pdf"
+        }
+      ],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/11-rendering-style-illustration-technique/manifest.json",
+      "sourceSha256": "3bbeced2b07611bda3b91001804b5f06d54f810c211312f4159aea5b685313ae",
+      "historicalPath": "sources/packs/official/11-rendering-style-illustration-technique/manifest.json",
+      "normalizedPath": "official/11-rendering-style-illustration-technique/manifest.json",
+      "packId": "official.category-11.rendering-style-illustration-technique.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "classic-pop-art",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "retro-comic-book",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "modern-vector",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "screenprint",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "risograph",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "graphic-novel",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "painted-brush",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "halftone-realism",
+          "sourcePointer": "/options/7"
+        },
+        {
+          "normalizedId": "line-art",
+          "sourcePointer": "/options/8"
+        },
+        {
+          "normalizedId": "stylized-anime",
+          "sourcePointer": "/options/9"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-11-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/11-rendering-style-illustration-technique/exemplars/category-11-approved-sheet.png"
+        }
+      ],
+      "documents": [],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/12-environment-background-abstraction/manifest.json",
+      "sourceSha256": "f7d8b71afafe3205802904595597509f672b1fc5c341ca776f95d0bddb952e82",
+      "historicalPath": "sources/packs/official/12-environment-background-abstraction/manifest.json",
+      "normalizedPath": "official/12-environment-background-abstraction/manifest.json",
+      "packId": "official.category-12.environment-background-abstraction.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "solid-color-field",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "halftone-field",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "geometric-abstraction",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "simple-symbolic-element",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "minimal-architecture",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "natural-landscape",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "interior-suggestion",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "atmospheric-sky",
+          "sourcePointer": "/options/7"
+        },
+        {
+          "normalizedId": "reflective-surface",
+          "sourcePointer": "/options/8"
+        },
+        {
+          "normalizedId": "descriptive-environment",
+          "sourcePointer": "/options/9"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-12-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/12-environment-background-abstraction/exemplars/category-12-approved-sheet.png"
+        }
+      ],
+      "documents": [],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/13-expression-micro-mood/manifest.json",
+      "sourceSha256": "b02c4afb5b25a9d0423db814029e5c7180ad87a3e64ec4971968ef70f1361d26",
+      "historicalPath": "sources/packs/official/13-expression-micro-mood/manifest.json",
+      "normalizedPath": "official/13-expression-micro-mood/manifest.json",
+      "packId": "official.category-13.expression-micro-mood.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "confident",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "playful",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "joyful",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "seductive",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "serious",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "angry",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "surprised",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "thoughtful",
+          "sourcePointer": "/options/7"
+        },
+        {
+          "normalizedId": "melancholy",
+          "sourcePointer": "/options/8"
+        },
+        {
+          "normalizedId": "wink-flirt",
+          "sourcePointer": "/options/9"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-13-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/13-expression-micro-mood/exemplars/category-13-approved-sheet.png"
+        }
+      ],
+      "documents": [],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/14-camera-angle-perspective/manifest.json",
+      "sourceSha256": "cbe495fab10f6db51f5f07887502b7e42b8efc84e7c9ce7ffb4666df7aacc1ff",
+      "historicalPath": "sources/packs/official/14-camera-angle-perspective/manifest.json",
+      "normalizedPath": "official/14-camera-angle-perspective/manifest.json",
+      "packId": "official.category-14.camera-angle-perspective.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governing scope adjusted only by approved amendments",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "eye-level",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "high-angle",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "low-angle",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "three-quarter-view",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "profile",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "over-the-shoulder",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "dutch-angle",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "bird-s-eye-view",
+          "sourcePointer": "/options/7"
+        },
+        {
+          "normalizedId": "worm-s-eye-view",
+          "sourcePointer": "/options/8"
+        },
+        {
+          "normalizedId": "close-up",
+          "sourcePointer": "/options/9"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-14-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/14-camera-angle-perspective/exemplars/category-14-approved-sheet.png"
+        }
+      ],
+      "documents": [],
+      "presets": []
+    },
+    {
+      "sourcePath": "packs/official/15-props-accessories/manifest.json",
+      "sourceSha256": "6fe69b6d76a7461e10ebf8a308ecf34dcc1dc4bbc5a87a9fc076bd81577fb265",
+      "historicalPath": "sources/packs/official/15-props-accessories/manifest.json",
+      "normalizedPath": "official/15-props-accessories/manifest.json",
+      "packId": "official.category-15.props-accessories.v1",
+      "unchanged": [
+        "pack_id value",
+        "version",
+        "display_name",
+        "exemplar IDs/titles/approved_features/known_defects/tags",
+        "option IDs/labels"
+      ],
+      "transformed": [
+        "snake_case to camelCase; schema_version to 1.0",
+        "asset paths to static library-relative references with hash/media type",
+        "documents to typed asset records",
+        "licenses to explicit intended/unknown status",
+        "notes to compatibility.notes",
+        "examples preserved as supporting evidence in asset ledger",
+        "governs and does_not_govern carried forward",
+        "status user-endorsed retained as development approval through source backup and approvedFeatures; no rights promotion",
+        "description carried forward except Category 4 rewritten under approved color amendment",
+        "source license strings mapped to intended or unknown; exact statements retained in historical manifest"
+      ],
+      "added": [
+        "typed documents with source-derived filename titles; document IDs; exact asset hashes/media types; generic tags from approved sheet",
+        "compatibility",
+        "typed option category/axis/value",
+        "empty arrays for unspecified presets/strategies/roles/relationships",
+        "explicit unresolved public redistribution caveats",
+        "pack tags copied from approved-sheet tags; source-relative mapping for all option/exemplar/document/preset records"
+      ],
+      "unresolved": [
+        "precise artistic parameters beyond supplied option labels",
+        "independent rights verification",
+        "knownDefects empty means none supplied, not a defect-free certification"
+      ],
+      "caveats": [
+        "Official is curated development provenance, not a rights certification.",
+        "Metadata CC-BY-4.0 intended; visual redistribution unresolved."
+      ],
+      "options": [
+        {
+          "normalizedId": "broom",
+          "sourcePointer": "/options/0"
+        },
+        {
+          "normalizedId": "black-cat",
+          "sourcePointer": "/options/1"
+        },
+        {
+          "normalizedId": "jack-o-lantern",
+          "sourcePointer": "/options/2"
+        },
+        {
+          "normalizedId": "spellbook",
+          "sourcePointer": "/options/3"
+        },
+        {
+          "normalizedId": "potion",
+          "sourcePointer": "/options/4"
+        },
+        {
+          "normalizedId": "candle",
+          "sourcePointer": "/options/5"
+        },
+        {
+          "normalizedId": "skull",
+          "sourcePointer": "/options/6"
+        },
+        {
+          "normalizedId": "tarot-cards",
+          "sourcePointer": "/options/7"
+        },
+        {
+          "normalizedId": "hat-variation",
+          "sourcePointer": "/options/8"
+        },
+        {
+          "normalizedId": "mask",
+          "sourcePointer": "/options/9"
+        }
+      ],
+      "exemplars": [
+        {
+          "normalizedId": "category-15-sheet",
+          "sourcePointer": "/exemplars/0",
+          "sourceAsset": "packs/official/15-props-accessories/exemplars/category-15-approved-sheet.png"
+        }
+      ],
+      "documents": [],
+      "presets": []
+    }
+  ],
+  "assets": [
+    {
+      "sourcePath": "packs/official/01-subject-identity/exemplars/category-01-approved-sheet.png",
+      "path": "official/01-subject-identity/exemplars/category-01-approved-sheet.png",
+      "sha256": "bbaf4c806a80a197d833be2eb46b00fa87530a50ab30f7542586db41e8b0de75",
+      "bytes": 2447286,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/02-conventional-composition/exemplars/category-02-approved-sheet.png",
+      "path": "official/02-conventional-composition/exemplars/category-02-approved-sheet.png",
+      "sha256": "9aaf8eefd52d1b5fe848198e3a93c47920f940f484cf53d141a0ac6a3cf31d0b",
+      "bytes": 2308980,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/03-unconventional-composition/exemplars/category-03-approved-sheet.png",
+      "path": "official/03-unconventional-composition/exemplars/category-03-approved-sheet.png",
+      "sha256": "64ba87c8d1506a75c0059be307fbc51f643c1111042cf5ed114a6b56929247cf",
+      "bytes": 2608255,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/04-color-triad-contrast/exemplars/category-04-approved-sheet.png",
+      "path": "official/04-color-triad-contrast/exemplars/category-04-approved-sheet.png",
+      "sha256": "ab939e3db1d5881ef0a05ec2da6c0cae71768cd2a11cb6e03cdd8df58fb91aab",
+      "bytes": 2589424,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/05-background-treatment/exemplars/category-05-approved-sheet.png",
+      "path": "official/05-background-treatment/exemplars/category-05-approved-sheet.png",
+      "sha256": "f36594906d84bdd1c96980563f58eb976a5578b57ff579002c08e74109e2c0a8",
+      "bytes": 3074114,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/06-lighting/exemplars/category-06-approved-sheet.png",
+      "path": "official/06-lighting/exemplars/category-06-approved-sheet.png",
+      "sha256": "37e71a5453ee776de48ac6ec4c1ee960ca795f060e12ddee889b3e2b459d4c75",
+      "bytes": 2405780,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/07-ink-contour-black-structure/exemplars/category-07-approved-sheet.png",
+      "path": "official/07-ink-contour-black-structure/exemplars/category-07-approved-sheet.png",
+      "sha256": "9b9d0e2a8fe335f2308a0b5d9976db246444e1c4d56a0affbf31465fcfbc0dc1",
+      "bytes": 2519844,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/08-pose-gesture-body-mechanics/exemplars/category-08-approved-sheet.png",
+      "path": "official/08-pose-gesture-body-mechanics/exemplars/category-08-approved-sheet.png",
+      "sha256": "2fa25f06a7aa5d820dfd7da7394d04090a60b9b801b3feea1f71ed66c5e8588c",
+      "bytes": 2381416,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/09-color-palette-mood/exemplars/category-09-approved-sheet.png",
+      "path": "official/09-color-palette-mood/exemplars/category-09-approved-sheet.png",
+      "sha256": "6d6d7a954a80c7f82c8c6a185af2b5bf41b0f59c11514c07adecdb366952e1b8",
+      "bytes": 2383476,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/10-theme-costume-transformation/exemplars/category-10-approved-sheet.png",
+      "path": "official/10-theme-costume-transformation/exemplars/category-10-approved-sheet.png",
+      "sha256": "009a4a0c2f61121d0c4cf56c7aadc9b066d90a9361dd10bcc4624f8e9dc9e375",
+      "bytes": 2579573,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/11-rendering-style-illustration-technique/exemplars/category-11-approved-sheet.png",
+      "path": "official/11-rendering-style-illustration-technique/exemplars/category-11-approved-sheet.png",
+      "sha256": "8fecf8f303de17ccdf52b41e7a90ed6b6cffad89c3788ed6a183aada0ab90087",
+      "bytes": 2645492,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/12-environment-background-abstraction/exemplars/category-12-approved-sheet.png",
+      "path": "official/12-environment-background-abstraction/exemplars/category-12-approved-sheet.png",
+      "sha256": "85e1670b794949116e5fab1f98af7a68b23ca7692f8940ae10225fd7dfe891d3",
+      "bytes": 2413061,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/13-expression-micro-mood/exemplars/category-13-approved-sheet.png",
+      "path": "official/13-expression-micro-mood/exemplars/category-13-approved-sheet.png",
+      "sha256": "19188fdeeae3c94d510e2f0936041c870d22aef929befa5063b85d51beab5dfb",
+      "bytes": 2386498,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/14-camera-angle-perspective/exemplars/category-14-approved-sheet.png",
+      "path": "official/14-camera-angle-perspective/exemplars/category-14-approved-sheet.png",
+      "sha256": "965d15a6945ead6893c7d0d502ceaee67286177592da22bd1d098c7f34fedd93",
+      "bytes": 2428364,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    },
+    {
+      "sourcePath": "packs/official/15-props-accessories/exemplars/category-15-approved-sheet.png",
+      "path": "official/15-props-accessories/exemplars/category-15-approved-sheet.png",
+      "sha256": "5c3449d2919298e34a20876e77e363027de67a5b3e22d7a31f7442db8aefe7ea",
+      "bytes": 2399678,
+      "kind": "source-original",
+      "derivedFrom": null,
+      "redistribution": "unresolved",
+      "inventoryVerified": true
+    }
+  ],
+  "derivatives": []
+}

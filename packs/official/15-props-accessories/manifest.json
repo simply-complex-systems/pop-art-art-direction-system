@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-15.props-accessories.v1",
+  "displayName": "Props / Accessories Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "props",
+  "description": "Approved exemplar pack for Props / Accessories Exemplars.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "prop/accessory categories",
+    "prop storytelling role",
+    "subject-prop interaction concepts"
+  ],
+  "doesNotGovern": [
+    "subject identity",
+    "theme topology unless explicitly assigned",
+    "composition",
+    "palette"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "category-15-sheet",
+      "title": "Props / Accessories Exemplars",
+      "asset": {
+        "id": "category-15-sheet.original",
+        "path": "official/15-props-accessories/exemplars/category-15-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "5c3449d2919298e34a20876e77e363027de67a5b3e22d7a31f7442db8aefe7ea"
+      },
+      "governs": [
+        "prop/accessory categories",
+        "prop storytelling role",
+        "subject-prop interaction concepts"
+      ],
+      "doesNotGovern": [
+        "subject identity",
+        "theme topology unless explicitly assigned",
+        "composition",
+        "palette"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "props-accessories",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "broom",
+      "label": "broom",
+      "category": "props",
+      "axis": "props",
+      "value": {
+        "sourceLabel": "broom",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "black-cat",
+      "label": "black cat",
+      "category": "props",
+      "axis": "props",
+      "value": {
+        "sourceLabel": "black cat",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "jack-o-lantern",
+      "label": "jack-o'-lantern",
+      "category": "props",
+      "axis": "props",
+      "value": {
+        "sourceLabel": "jack-o'-lantern",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "spellbook",
+      "label": "spellbook",
+      "category": "props",
+      "axis": "props",
+      "value": {
+        "sourceLabel": "spellbook",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "potion",
+      "label": "potion",
+      "category": "props",
+      "axis": "props",
+      "value": {
+        "sourceLabel": "potion",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "candle",
+      "label": "candle",
+      "category": "props",
+      "axis": "props",
+      "value": {
+        "sourceLabel": "candle",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "skull",
+      "label": "skull",
+      "category": "props",
+      "axis": "props",
+      "value": {
+        "sourceLabel": "skull",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "tarot-cards",
+      "label": "tarot cards",
+      "category": "props",
+      "axis": "props",
+      "value": {
+        "sourceLabel": "tarot cards",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "hat-variation",
+      "label": "hat variation",
+      "category": "props",
+      "axis": "props",
+      "value": {
+        "sourceLabel": "hat variation",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "mask",
+      "label": "mask",
+      "category": "props",
+      "axis": "props",
+      "value": {
+        "sourceLabel": "mask",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "props"
+    ],
+    "notes": [
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "props-accessories",
+    "approved",
+    "reference-sheet"
+  ]
+}

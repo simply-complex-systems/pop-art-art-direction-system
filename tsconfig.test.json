@@ -1,0 +1,40 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [
+      "node"
+    ],
+    "rootDir": ".",
+    "outDir": ".test-build",
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src/state/**/*.ts",
+    "src/color/**/*.ts",
+    "src/app/appearance.ts",
+    "scripts/**/*.ts",
+    "tests/**/*.ts",
+    "src/pack-loader/types.ts",
+    "src/pack-loader/registry.ts",
+    "src/app/tabs.ts",
+    "src/app/layouts.ts",
+    "src/app/workspace-state.ts",
+    "src/app/schematic.ts",
+    "src/validation/advisories.ts",
+    "src/components/SchematicPreview.tsx",
+    "src/components/SummaryStrip.tsx",
+    "src/components/WorkspaceNavigation.tsx",
+    "src/tabs/*.tsx",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "tests/browser"
+  ]
+}

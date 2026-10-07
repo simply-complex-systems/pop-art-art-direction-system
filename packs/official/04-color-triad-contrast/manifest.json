@@ -1,0 +1,304 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-04.color-triad-contrast.v1",
+  "displayName": "Color Triad + Background Contrast Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "color",
+  "description": "Approved structured-color and figure-ground separation evidence; named triads are optional presets.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "successful structured color relationships",
+    "strong major-role separation",
+    "whole-figure/background contrast",
+    "high-impact figure-ground separation"
+  ],
+  "doesNotGovern": [
+    "subject identity",
+    "composition",
+    "theme topology",
+    "texture family",
+    "mandatory harmony or fixed triad",
+    "mandatory light background"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "category-04-sheet",
+      "title": "Color Triad + Background Contrast Exemplars",
+      "asset": {
+        "id": "category-04-sheet.original",
+        "path": "official/04-color-triad-contrast/exemplars/category-04-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "ab939e3db1d5881ef0a05ec2da6c0cae71768cd2a11cb6e03cdd8df58fb91aab"
+      },
+      "governs": [
+        "successful structured color relationships",
+        "strong major-role separation",
+        "whole-figure/background contrast",
+        "high-impact figure-ground separation"
+      ],
+      "doesNotGovern": [
+        "subject identity",
+        "composition",
+        "theme topology",
+        "texture family",
+        "mandatory harmony or fixed triad",
+        "mandatory light background"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "color-triad-contrast",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "magenta-yellow-cyan",
+      "label": "magenta/yellow/cyan",
+      "category": "color",
+      "axis": "palette-preset",
+      "value": {
+        "presetId": "official.color.magenta-yellow-cyan.v1",
+        "colorTargetStatus": "provisional, not sampled from approved sheet"
+      }
+    },
+    {
+      "id": "red-blue-yellow",
+      "label": "red/blue/yellow",
+      "category": "color",
+      "axis": "palette-preset",
+      "value": {
+        "presetId": "official.color.red-blue-yellow.v1",
+        "colorTargetStatus": "provisional, not sampled from approved sheet"
+      }
+    },
+    {
+      "id": "vermilion-chartreuse-blue-violet",
+      "label": "vermilion/chartreuse/blue-violet",
+      "category": "color",
+      "axis": "palette-preset",
+      "value": {
+        "presetId": "official.color.vermilion-chartreuse-blue-violet.v1",
+        "colorTargetStatus": "provisional, not sampled from approved sheet"
+      }
+    },
+    {
+      "id": "orange-emerald-ultraviolet",
+      "label": "orange/emerald/ultraviolet",
+      "category": "color",
+      "axis": "palette-preset",
+      "value": {
+        "presetId": "official.color.orange-emerald-ultraviolet.v1",
+        "colorTargetStatus": "provisional, not sampled from approved sheet"
+      }
+    }
+  ],
+  "presets": [
+    {
+      "schemaVersion": "1.0",
+      "id": "official.color.magenta-yellow-cyan.v1",
+      "name": "magenta/yellow/cyan",
+      "provenance": "official",
+      "category": "color",
+      "value": {
+        "assignments": [
+          {
+            "roleId": "role-a",
+            "color": "#FF00FF"
+          },
+          {
+            "roleId": "role-b",
+            "color": "#FFFF00"
+          },
+          {
+            "roleId": "role-c",
+            "color": "#00FFFF"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "id": "official.color.red-blue-yellow.v1",
+      "name": "red/blue/yellow",
+      "provenance": "official",
+      "category": "color",
+      "value": {
+        "assignments": [
+          {
+            "roleId": "role-a",
+            "color": "#FF0000"
+          },
+          {
+            "roleId": "role-b",
+            "color": "#0000FF"
+          },
+          {
+            "roleId": "role-c",
+            "color": "#FFFF00"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "id": "official.color.vermilion-chartreuse-blue-violet.v1",
+      "name": "vermilion/chartreuse/blue-violet",
+      "provenance": "official",
+      "category": "color",
+      "value": {
+        "assignments": [
+          {
+            "roleId": "role-a",
+            "color": "#E34234"
+          },
+          {
+            "roleId": "role-b",
+            "color": "#7FFF00"
+          },
+          {
+            "roleId": "role-c",
+            "color": "#8A2BE2"
+          }
+        ]
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "id": "official.color.orange-emerald-ultraviolet.v1",
+      "name": "orange/emerald/ultraviolet",
+      "provenance": "official",
+      "category": "color",
+      "value": {
+        "assignments": [
+          {
+            "roleId": "role-a",
+            "color": "#FFA500"
+          },
+          {
+            "roleId": "role-b",
+            "color": "#50C878"
+          },
+          {
+            "roleId": "role-c",
+            "color": "#6600CC"
+          }
+        ]
+      }
+    }
+  ],
+  "colorStrategies": [
+    {
+      "id": "high_contrast_structured",
+      "label": "High-Contrast Structured",
+      "basis": "high_contrast_structured",
+      "hueOffsets": []
+    },
+    {
+      "id": "complementary",
+      "label": "Complementary",
+      "basis": "complementary",
+      "hueOffsets": []
+    },
+    {
+      "id": "split_complementary",
+      "label": "Split Complementary",
+      "basis": "split_complementary",
+      "hueOffsets": []
+    },
+    {
+      "id": "triadic",
+      "label": "Triadic",
+      "basis": "triadic",
+      "hueOffsets": []
+    },
+    {
+      "id": "analogous",
+      "label": "Analogous",
+      "basis": "analogous",
+      "hueOffsets": []
+    },
+    {
+      "id": "monochromatic",
+      "label": "Monochromatic",
+      "basis": "monochromatic",
+      "hueOffsets": []
+    },
+    {
+      "id": "custom",
+      "label": "Custom",
+      "basis": "custom",
+      "hueOffsets": []
+    }
+  ],
+  "colorRoles": [
+    {
+      "id": "role-a",
+      "importance": "major",
+      "domain": "subject",
+      "panelScope": {
+        "kind": "all"
+      }
+    },
+    {
+      "id": "role-b",
+      "importance": "major",
+      "domain": "subject",
+      "panelScope": {
+        "kind": "all"
+      }
+    },
+    {
+      "id": "role-c",
+      "importance": "major",
+      "domain": "subject",
+      "panelScope": {
+        "kind": "all"
+      }
+    },
+    {
+      "id": "background-a",
+      "importance": "major",
+      "domain": "background",
+      "panelScope": {
+        "kind": "all"
+      }
+    }
+  ],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "color"
+    ],
+    "notes": [
+      "All distinct major roles receive baseline separation priority; declared relationships increase it.",
+      "Background is evaluated against every major subject role.",
+      "Minor accents may repeat; explicit artist choices remain unrestricted.",
+      "The four named triads are optional presets, never governing constraints.",
+      "Strategies are system options; no new exemplar approval is asserted.",
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "color-triad-contrast",
+    "approved",
+    "reference-sheet"
+  ]
+}

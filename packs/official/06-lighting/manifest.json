@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-06.lighting.v1",
+  "displayName": "Lighting Style Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "lighting",
+  "description": "Approved exemplar pack for Lighting Style Exemplars.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "lighting direction",
+    "lighting contrast",
+    "highlight/shadow placement",
+    "lighting mood"
+  ],
+  "doesNotGovern": [
+    "subject identity",
+    "theme/costume",
+    "composition",
+    "core palette"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "category-06-sheet",
+      "title": "Lighting Style Exemplars",
+      "asset": {
+        "id": "category-06-sheet.original",
+        "path": "official/06-lighting/exemplars/category-06-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "37e71a5453ee776de48ac6ec4c1ee960ca795f060e12ddee889b3e2b459d4c75"
+      },
+      "governs": [
+        "lighting direction",
+        "lighting contrast",
+        "highlight/shadow placement",
+        "lighting mood"
+      ],
+      "doesNotGovern": [
+        "subject identity",
+        "theme/costume",
+        "composition",
+        "core palette"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "lighting",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "front-even",
+      "label": "front/even",
+      "category": "lighting",
+      "axis": "lighting",
+      "value": {
+        "sourceLabel": "front/even",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "side-light-left",
+      "label": "side light left",
+      "category": "lighting",
+      "axis": "lighting",
+      "value": {
+        "sourceLabel": "side light left",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "side-light-right",
+      "label": "side light right",
+      "category": "lighting",
+      "axis": "lighting",
+      "value": {
+        "sourceLabel": "side light right",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "high-key",
+      "label": "high key",
+      "category": "lighting",
+      "axis": "lighting",
+      "value": {
+        "sourceLabel": "high key",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "low-key",
+      "label": "low key",
+      "category": "lighting",
+      "axis": "lighting",
+      "value": {
+        "sourceLabel": "low key",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "back-rim",
+      "label": "back/rim",
+      "category": "lighting",
+      "axis": "lighting",
+      "value": {
+        "sourceLabel": "back/rim",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "top-light",
+      "label": "top light",
+      "category": "lighting",
+      "axis": "lighting",
+      "value": {
+        "sourceLabel": "top light",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "underlight",
+      "label": "underlight",
+      "category": "lighting",
+      "axis": "lighting",
+      "value": {
+        "sourceLabel": "underlight",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "colored-light",
+      "label": "colored light",
+      "category": "lighting",
+      "axis": "lighting",
+      "value": {
+        "sourceLabel": "colored light",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "spotlight",
+      "label": "spotlight",
+      "category": "lighting",
+      "axis": "lighting",
+      "value": {
+        "sourceLabel": "spotlight",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "lighting"
+    ],
+    "notes": [
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "lighting",
+    "approved",
+    "reference-sheet"
+  ]
+}

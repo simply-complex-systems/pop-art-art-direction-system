@@ -1,0 +1,319 @@
+{
+  "schemaVersion": "1.0",
+  "project": {
+    "id": "project-1",
+    "name": "Generic production fixture"
+  },
+  "subject": {
+    "packId": "subject-object",
+    "displayName": "subject-object",
+    "provenance": "community",
+    "contextAssets": []
+  },
+  "theme": {
+    "packId": "theme-geometric",
+    "displayName": "theme-geometric",
+    "provenance": "community",
+    "contextAssets": []
+  },
+  "canvas": {
+    "aspectRatio": {
+      "width": 4,
+      "height": 5
+    },
+    "panels": [
+      {
+        "id": "panel-1",
+        "row": 0,
+        "column": 0,
+        "rowSpan": 1,
+        "columnSpan": 1
+      },
+      {
+        "id": "panel-2",
+        "row": 0,
+        "column": 1,
+        "rowSpan": 1,
+        "columnSpan": 1
+      }
+    ],
+    "grid": {
+      "rows": 1,
+      "columns": 2
+    },
+    "outerBorder": {
+      "enabled": true,
+      "thickness": 8,
+      "color": "#000000"
+    },
+    "dividers": {
+      "enabled": true,
+      "thickness": 8,
+      "color": "#000000"
+    },
+    "additionalInstructions": "Contain deliberately"
+  },
+  "color": {
+    "strategy": {
+      "kind": "builtin",
+      "id": "high_contrast_structured"
+    },
+    "roles": [
+      {
+        "id": "role-a",
+        "importance": "major",
+        "domain": "subject",
+        "displayLabel": "Primary mass",
+        "panelScope": {
+          "kind": "all"
+        }
+      },
+      {
+        "id": "role-b",
+        "importance": "major",
+        "domain": "subject",
+        "materialLabel": "Secondary material",
+        "panelScope": {
+          "kind": "all"
+        }
+      },
+      {
+        "id": "background-a",
+        "importance": "major",
+        "domain": "background",
+        "panelScope": {
+          "kind": "all"
+        }
+      },
+      {
+        "id": "accent-a",
+        "importance": "minor",
+        "domain": "accent",
+        "panelScope": {
+          "kind": "all"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "roleIds": [
+          "role-a",
+          "role-b"
+        ],
+        "type": "touching",
+        "panelScope": {
+          "kind": "all"
+        },
+        "separators": [
+          {
+            "type": "black_contour",
+            "description": "Stable structural outline",
+            "strength": "supporting"
+          }
+        ]
+      }
+    ]
+  },
+  "panels": [
+    {
+      "panelId": "panel-1",
+      "composition": {
+        "framing": "full-length",
+        "camera": "eye-level",
+        "pose": "still",
+        "headOrientation": "forward",
+        "eyeDirection": "image-left",
+        "expression": "calm"
+      },
+      "color": {
+        "assignments": [
+          {
+            "roleId": "role-a",
+            "color": "Random"
+          },
+          {
+            "roleId": "role-b",
+            "color": "#FF8C00"
+          },
+          {
+            "roleId": "background-a",
+            "color": "#FFFFFF"
+          },
+          {
+            "roleId": "accent-a",
+            "color": "#0057B8"
+          }
+        ]
+      },
+      "texture": {
+        "backgroundField": "flat-single-color-field",
+        "subject": {
+          "family": "flat-field",
+          "intensity": 1,
+          "region": "all",
+          "exclusions": [],
+          "additionalInstructions": ""
+        },
+        "background": {
+          "family": "flat-field",
+          "intensity": 1,
+          "region": "all",
+          "exclusions": [],
+          "additionalInstructions": ""
+        },
+        "finishes": []
+      },
+      "lightingRendering": {
+        "subjectLighting": {
+          "style": "front-even",
+          "direction": "front",
+          "intensity": 5,
+          "colorBehavior": "neutral",
+          "additionalInstructions": ""
+        },
+        "backgroundLighting": {
+          "style": "front-even",
+          "direction": "front",
+          "intensity": 5,
+          "colorBehavior": "neutral",
+          "additionalInstructions": ""
+        },
+        "ink": "clean-bold-lines",
+        "rendering": "classic-pop-art"
+      },
+      "sliders": {
+        "subjectPreservation": 5,
+        "themePreservation": 5,
+        "subjectAbstraction": 5,
+        "backgroundAbstraction": 5,
+        "subjectStyleIntensity": 5,
+        "backgroundStyleIntensity": 5,
+        "subjectTextureIntensity": 5,
+        "backgroundTextureIntensity": 5
+      }
+    },
+    {
+      "panelId": "panel-2",
+      "composition": {
+        "framing": "full-length",
+        "camera": "eye-level",
+        "pose": "still",
+        "headOrientation": "forward",
+        "eyeDirection": "image-left",
+        "expression": "calm"
+      },
+      "color": {
+        "assignments": [
+          {
+            "roleId": "role-a",
+            "color": "Random"
+          },
+          {
+            "roleId": "role-b",
+            "color": "#FF8C00"
+          },
+          {
+            "roleId": "background-a",
+            "color": "#FFFFFF"
+          },
+          {
+            "roleId": "accent-a",
+            "color": "#0057B8"
+          }
+        ]
+      },
+      "texture": {
+        "backgroundField": "flat-single-color-field",
+        "subject": {
+          "family": "flat-field",
+          "intensity": 1,
+          "region": "all",
+          "exclusions": [],
+          "additionalInstructions": ""
+        },
+        "background": {
+          "family": "flat-field",
+          "intensity": 1,
+          "region": "all",
+          "exclusions": [],
+          "additionalInstructions": ""
+        },
+        "finishes": []
+      },
+      "lightingRendering": {
+        "subjectLighting": {
+          "style": "front-even",
+          "direction": "front",
+          "intensity": 5,
+          "colorBehavior": "neutral",
+          "additionalInstructions": ""
+        },
+        "backgroundLighting": {
+          "style": "front-even",
+          "direction": "front",
+          "intensity": 5,
+          "colorBehavior": "neutral",
+          "additionalInstructions": ""
+        },
+        "ink": "clean-bold-lines",
+        "rendering": "classic-pop-art"
+      },
+      "sliders": {
+        "subjectPreservation": 5,
+        "themePreservation": 5,
+        "subjectAbstraction": 5,
+        "backgroundAbstraction": 5,
+        "subjectStyleIntensity": 5,
+        "backgroundStyleIntensity": 5,
+        "subjectTextureIntensity": 5,
+        "backgroundTextureIntensity": 5
+      }
+    }
+  ],
+  "categoryInstructions": {
+    "composition": "",
+    "color": "",
+    "texture": "",
+    "lightingRendering": "",
+    "sliders": "",
+    "typography": "",
+    "props": "",
+    "effects": ""
+  },
+  "typography": {
+    "enabled": false,
+    "elements": [],
+    "additionalInstructions": ""
+  },
+  "props": {
+    "elements": [],
+    "additionalInstructions": ""
+  },
+  "effects": {
+    "elements": [],
+    "additionalInstructions": ""
+  },
+  "exemplars": [
+    {
+      "id": "exemplar-1",
+      "asset": {
+        "id": "asset-1",
+        "path": "exemplars/reference.png",
+        "mediaType": "image/png",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "name": "Shape evidence",
+      "role": "composition",
+      "panelScope": {
+        "kind": "all"
+      },
+      "transfer": [
+        "Placement relationship"
+      ],
+      "doNotTransfer": [
+        "Identity"
+      ],
+      "notes": "Bounded evidence"
+    }
+  ]
+}

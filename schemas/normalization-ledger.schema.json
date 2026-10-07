@@ -1,0 +1,305 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://pop-art.local/schemas/normalization-ledger.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "sourceInventoryPath",
+    "sourceInventorySha256",
+    "records",
+    "assets",
+    "derivatives"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "sourceInventoryPath": {
+      "type": "string"
+    },
+    "sourceInventorySha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sourcePath",
+          "sourceSha256",
+          "historicalPath",
+          "normalizedPath",
+          "packId",
+          "unchanged",
+          "transformed",
+          "added",
+          "unresolved",
+          "caveats",
+          "options",
+          "exemplars",
+          "documents",
+          "presets"
+        ],
+        "properties": {
+          "sourcePath": {
+            "type": "string"
+          },
+          "sourceSha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "historicalPath": {
+            "type": "string"
+          },
+          "normalizedPath": {
+            "type": "string"
+          },
+          "packId": {
+            "type": "string"
+          },
+          "unchanged": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "transformed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "added": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unresolved": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "caveats": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "normalizedId",
+                "sourcePointer"
+              ],
+              "properties": {
+                "normalizedId": {
+                  "type": "string"
+                },
+                "sourcePointer": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            }
+          },
+          "exemplars": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "normalizedId",
+                "sourcePointer",
+                "sourceAsset"
+              ],
+              "properties": {
+                "normalizedId": {
+                  "type": "string"
+                },
+                "sourcePointer": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "sourceAsset": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "documents": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "normalizedId",
+                "sourcePointer",
+                "sourceAsset"
+              ],
+              "properties": {
+                "normalizedId": {
+                  "type": "string"
+                },
+                "sourcePointer": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "sourceAsset": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "presets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "normalizedId",
+                "sourcePointer",
+                "status"
+              ],
+              "properties": {
+                "normalizedId": {
+                  "type": "string"
+                },
+                "sourcePointer": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sourcePath",
+          "path",
+          "sha256",
+          "bytes",
+          "kind",
+          "derivedFrom",
+          "redistribution",
+          "inventoryVerified"
+        ],
+        "properties": {
+          "sourcePath": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "kind": {
+            "enum": [
+              "source-original",
+              "derivative"
+            ]
+          },
+          "derivedFrom": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "redistribution": {
+            "enum": [
+              "unresolved",
+              "source-license-review"
+            ]
+          },
+          "inventoryVerified": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "derivatives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sourcePath",
+          "path",
+          "sha256",
+          "bytes",
+          "kind",
+          "derivedFrom",
+          "redistribution",
+          "inventoryVerified"
+        ],
+        "properties": {
+          "sourcePath": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "kind": {
+            "enum": [
+              "source-original",
+              "derivative"
+            ]
+          },
+          "derivedFrom": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "redistribution": {
+            "enum": [
+              "unresolved",
+              "source-license-review"
+            ]
+          },
+          "inventoryVerified": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

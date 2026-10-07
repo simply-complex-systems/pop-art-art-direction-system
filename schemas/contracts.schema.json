@@ -1,0 +1,5185 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://pop-art.local/schemas/contracts.schema.json",
+  "definitions": {
+    "Provenance": {
+      "type": "string",
+      "enum": [
+        "official",
+        "community"
+      ]
+    },
+    "PresetReference": {
+      "type": "object",
+      "properties": {
+        "presetId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance": {
+          "$ref": "#/definitions/Provenance"
+        }
+      },
+      "required": [
+        "presetId",
+        "provenance"
+      ],
+      "additionalProperties": false
+    },
+    "PanelScope": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "all"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "panels"
+            },
+            "panelIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "kind",
+            "panelIds"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "AssetReference": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\)(?![A-Za-z]:).+$"
+        },
+        "mediaType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "id",
+        "path",
+        "mediaType",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "PackAssetReference": {
+      "oneOf": [
+        {
+          "$ref": "#/definitions/AssetReference"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sourceUrl": {
+              "type": "string",
+              "pattern": "^https?://[^\\s]+$"
+            },
+            "mediaType": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "sourceUrl",
+            "mediaType"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "mediaType": {
+              "type": "string",
+              "minLength": 1
+            },
+            "unavailableReason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "mediaType",
+            "unavailableReason"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "LicenseInfo": {
+      "type": "object",
+      "properties": {
+        "identifier": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "declared",
+            "intended",
+            "verified",
+            "unknown"
+          ]
+        },
+        "attribution": {
+          "type": "string"
+        },
+        "sourceUrl": {
+          "type": "string"
+        },
+        "redistribution": {
+          "type": "string",
+          "enum": [
+            "allowed",
+            "external_only",
+            "not_redistributable",
+            "unresolved",
+            "private_use_only"
+          ]
+        }
+      },
+      "required": [
+        "identifier",
+        "status",
+        "attribution"
+      ],
+      "additionalProperties": false
+    },
+    "ContextPackReference": {
+      "type": "object",
+      "properties": {
+        "packId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance": {
+          "$ref": "#/definitions/Provenance"
+        },
+        "contextAssets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AssetReference"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "packId",
+        "displayName",
+        "provenance",
+        "contextAssets"
+      ],
+      "additionalProperties": false
+    },
+    "ProjectIdentity": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "Canvas": {
+      "type": "object",
+      "properties": {
+        "aspectRatio": {
+          "type": "object",
+          "properties": {
+            "width": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "height": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "width",
+            "height"
+          ],
+          "additionalProperties": false
+        },
+        "panels": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "row": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "column": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "rowSpan": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "columnSpan": {
+                "type": "integer",
+                "minimum": 1
+              }
+            },
+            "required": [
+              "id",
+              "row",
+              "column",
+              "rowSpan",
+              "columnSpan"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "grid": {
+          "type": "object",
+          "properties": {
+            "rows": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "columns": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "rows",
+            "columns"
+          ],
+          "additionalProperties": false
+        },
+        "outerBorder": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "thickness": {
+              "type": "number",
+              "minimum": 0
+            },
+            "color": {
+              "type": "string",
+              "pattern": "^#[0-9a-fA-F]{6}$"
+            }
+          },
+          "required": [
+            "enabled",
+            "thickness",
+            "color"
+          ],
+          "additionalProperties": false
+        },
+        "dividers": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "thickness": {
+              "type": "number",
+              "minimum": 0
+            },
+            "color": {
+              "type": "string",
+              "pattern": "^#[0-9a-fA-F]{6}$"
+            }
+          },
+          "required": [
+            "enabled",
+            "thickness",
+            "color"
+          ],
+          "additionalProperties": false
+        },
+        "additionalInstructions": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "aspectRatio",
+        "panels",
+        "grid",
+        "outerBorder",
+        "dividers",
+        "additionalInstructions"
+      ],
+      "additionalProperties": false
+    },
+    "Composition": {
+      "type": "object",
+      "properties": {
+        "framing": {
+          "type": "string",
+          "minLength": 1
+        },
+        "camera": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "headOrientation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "eyeDirection": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expression": {
+          "type": "string",
+          "minLength": 1
+        },
+        "family": {
+          "enum": [
+            "conventional",
+            "unconventional"
+          ]
+        },
+        "technique": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subjectPlacement": {
+          "type": "object",
+          "properties": {
+            "x": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "y": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "x",
+            "y"
+          ],
+          "additionalProperties": false
+        },
+        "cropExtent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cameraElevation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cameraOrientation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "torsoOrientation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "focalRegion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "negativeSpace": {
+          "type": "object",
+          "properties": {
+            "direction": {
+              "type": "string",
+              "minLength": 1
+            },
+            "amount": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "direction",
+            "amount"
+          ],
+          "additionalProperties": false
+        },
+        "edgeTreatment": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "framing",
+        "camera",
+        "pose",
+        "headOrientation",
+        "eyeDirection",
+        "expression"
+      ],
+      "additionalProperties": false
+    },
+    "ColorStrategy": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "builtin"
+            },
+            "id": {
+              "type": "string",
+              "enum": [
+                "high_contrast_structured",
+                "complementary",
+                "split_complementary",
+                "triadic",
+                "analogous",
+                "monochromatic",
+                "custom"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "id"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "pack"
+            },
+            "packId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "strategyId": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "kind",
+            "packId",
+            "strategyId"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "ColorRole": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "importance": {
+          "type": "string",
+          "enum": [
+            "major",
+            "minor"
+          ]
+        },
+        "domain": {
+          "type": "string",
+          "enum": [
+            "subject",
+            "background",
+            "prop",
+            "accent"
+          ]
+        },
+        "displayLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "materialLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "panelScope": {
+          "$ref": "#/definitions/PanelScope"
+        }
+      },
+      "required": [
+        "id",
+        "importance",
+        "domain",
+        "panelScope"
+      ],
+      "additionalProperties": false
+    },
+    "IntentionalSeparator": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "black_contour",
+            "gap",
+            "explicit_boundary",
+            "other"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "strength": {
+          "type": "string",
+          "enum": [
+            "supporting",
+            "strong"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "description",
+        "strength"
+      ],
+      "additionalProperties": false
+    },
+    "ColorRelationship": {
+      "type": "object",
+      "properties": {
+        "roleIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "touching",
+            "overlapping",
+            "same_focal_region",
+            "likely_visual_merging"
+          ]
+        },
+        "panelScope": {
+          "$ref": "#/definitions/PanelScope"
+        },
+        "separators": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IntentionalSeparator"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "roleIds",
+        "type",
+        "panelScope",
+        "separators"
+      ],
+      "additionalProperties": false
+    },
+    "Palette": {
+      "type": "object",
+      "properties": {
+        "assignments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "roleId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "color": {
+                "type": "string",
+                "pattern": "^#[0-9a-fA-F]{6}$"
+              }
+            },
+            "required": [
+              "roleId",
+              "color"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "mood": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "assignments"
+      ],
+      "additionalProperties": false
+    },
+    "ColorState": {
+      "type": "object",
+      "properties": {
+        "global": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "literal"
+                },
+                "value": {
+                  "$ref": "#/definitions/Palette"
+                }
+              },
+              "required": [
+                "kind",
+                "value"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "preset"
+                },
+                "reference": {
+                  "$ref": "#/definitions/PresetReference"
+                }
+              },
+              "required": [
+                "kind",
+                "reference"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "random"
+                },
+                "candidates": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Palette"
+                  },
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "kind",
+                "candidates"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "perPanel": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "minLength": 1
+          },
+          "additionalProperties": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "literal"
+                  },
+                  "value": {
+                    "$ref": "#/definitions/Palette"
+                  }
+                },
+                "required": [
+                  "kind",
+                  "value"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "preset"
+                  },
+                  "reference": {
+                    "$ref": "#/definitions/PresetReference"
+                  }
+                },
+                "required": [
+                  "kind",
+                  "reference"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "random"
+                  },
+                  "candidates": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/definitions/Palette"
+                    },
+                    "minItems": 1
+                  }
+                },
+                "required": [
+                  "kind",
+                  "candidates"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "const": "inherit"
+                  }
+                },
+                "required": [
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "strategy": {
+          "$ref": "#/definitions/ColorStrategy"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ColorRole"
+          },
+          "minItems": 1
+        },
+        "relationships": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ColorRelationship"
+          },
+          "minItems": 0
+        },
+        "variation": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "mode": {
+                  "const": "uniform"
+                }
+              },
+              "required": [
+                "mode"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "mode": {
+                  "const": "structured"
+                },
+                "pattern": {
+                  "type": "string",
+                  "enum": [
+                    "role_rotation",
+                    "alternation",
+                    "paired_echo",
+                    "inversion",
+                    "progressive_shift",
+                    "controlled_sequence"
+                  ]
+                },
+                "sequence": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Palette"
+                  },
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "mode",
+                "pattern",
+                "sequence"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "mode": {
+                  "const": "random"
+                },
+                "candidates": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Palette"
+                  },
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "mode",
+                "candidates"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "mode": {
+                  "const": "manual"
+                },
+                "perPanel": {
+                  "type": "object",
+                  "propertyNames": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "additionalProperties": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "kind": {
+                            "const": "literal"
+                          },
+                          "value": {
+                            "$ref": "#/definitions/Palette"
+                          }
+                        },
+                        "required": [
+                          "kind",
+                          "value"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "kind": {
+                            "const": "preset"
+                          },
+                          "reference": {
+                            "$ref": "#/definitions/PresetReference"
+                          }
+                        },
+                        "required": [
+                          "kind",
+                          "reference"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "kind": {
+                            "const": "random"
+                          },
+                          "candidates": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/definitions/Palette"
+                            },
+                            "minItems": 1
+                          }
+                        },
+                        "required": [
+                          "kind",
+                          "candidates"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "kind": {
+                            "const": "inherit"
+                          }
+                        },
+                        "required": [
+                          "kind"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "mode",
+                "perPanel"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "additionalInstructions": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "global",
+        "perPanel",
+        "strategy",
+        "roles",
+        "relationships",
+        "variation",
+        "additionalInstructions"
+      ],
+      "additionalProperties": false
+    },
+    "TextureLayer": {
+      "type": "object",
+      "properties": {
+        "family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "intensity": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "region": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exclusions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "additionalInstructions": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "family",
+        "intensity",
+        "region",
+        "exclusions",
+        "additionalInstructions"
+      ],
+      "additionalProperties": false
+    },
+    "PrintFinish": {
+      "type": "object",
+      "properties": {
+        "family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "intensity": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "scope": {
+          "type": "string",
+          "enum": [
+            "subject",
+            "background",
+            "global"
+          ]
+        },
+        "additionalInstructions": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "family",
+        "intensity",
+        "scope",
+        "additionalInstructions"
+      ],
+      "additionalProperties": false
+    },
+    "TextureTreatment": {
+      "type": "object",
+      "properties": {
+        "backgroundField": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subject": {
+          "$ref": "#/definitions/TextureLayer"
+        },
+        "background": {
+          "$ref": "#/definitions/TextureLayer"
+        },
+        "finishes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PrintFinish"
+          },
+          "minItems": 0
+        },
+        "environment": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "backgroundField",
+        "subject",
+        "background",
+        "finishes"
+      ],
+      "additionalProperties": false
+    },
+    "Lighting": {
+      "type": "object",
+      "properties": {
+        "style": {
+          "type": "string",
+          "minLength": 1
+        },
+        "direction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "intensity": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "colorBehavior": {
+          "type": "string",
+          "minLength": 1
+        },
+        "additionalInstructions": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        }
+      },
+      "required": [
+        "style",
+        "direction",
+        "intensity",
+        "colorBehavior",
+        "additionalInstructions"
+      ],
+      "additionalProperties": false
+    },
+    "LightingRendering": {
+      "type": "object",
+      "properties": {
+        "subjectLighting": {
+          "$ref": "#/definitions/Lighting"
+        },
+        "backgroundLighting": {
+          "$ref": "#/definitions/Lighting"
+        },
+        "ink": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rendering": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "subjectLighting",
+        "backgroundLighting",
+        "ink",
+        "rendering"
+      ],
+      "additionalProperties": false
+    },
+    "RenderingSliders": {
+      "type": "object",
+      "properties": {
+        "subjectPreservation": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "themePreservation": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "subjectAbstraction": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "backgroundAbstraction": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "subjectStyleIntensity": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "backgroundStyleIntensity": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "subjectTextureIntensity": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "backgroundTextureIntensity": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        }
+      },
+      "required": [
+        "subjectPreservation",
+        "themePreservation",
+        "subjectAbstraction",
+        "backgroundAbstraction",
+        "subjectStyleIntensity",
+        "backgroundStyleIntensity",
+        "subjectTextureIntensity",
+        "backgroundTextureIntensity"
+      ],
+      "additionalProperties": false
+    },
+    "TextElement": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "panelScope": {
+          "$ref": "#/definitions/PanelScope"
+        },
+        "placement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "orientation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "layering": {
+          "type": "string",
+          "minLength": 1
+        },
+        "additionalInstructions": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "speech_balloon",
+            "thought_balloon",
+            "caption",
+            "title",
+            "sound_effect"
+          ]
+        },
+        "content": {
+          "type": "string"
+        },
+        "style": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cropBehavior": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "panelScope",
+        "placement",
+        "scale",
+        "orientation",
+        "layering",
+        "additionalInstructions",
+        "type",
+        "content",
+        "style",
+        "cropBehavior"
+      ],
+      "additionalProperties": false
+    },
+    "PropElement": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "panelScope": {
+          "$ref": "#/definitions/PanelScope"
+        },
+        "placement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "orientation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "layering": {
+          "type": "string",
+          "minLength": 1
+        },
+        "additionalInstructions": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interaction": {
+          "type": "string"
+        },
+        "contactLogic": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "panelScope",
+        "placement",
+        "scale",
+        "orientation",
+        "layering",
+        "additionalInstructions",
+        "description",
+        "interaction",
+        "contactLogic"
+      ],
+      "additionalProperties": false
+    },
+    "EffectElement": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "panelScope": {
+          "$ref": "#/definitions/PanelScope"
+        },
+        "placement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "orientation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "layering": {
+          "type": "string",
+          "minLength": 1
+        },
+        "additionalInstructions": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "intensity": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "spread": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "panelScope",
+        "placement",
+        "scale",
+        "orientation",
+        "layering",
+        "additionalInstructions",
+        "description",
+        "target",
+        "intensity",
+        "spread"
+      ],
+      "additionalProperties": false
+    },
+    "ProductionExemplar": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "asset": {
+          "$ref": "#/definitions/AssetReference"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "panelScope": {
+          "$ref": "#/definitions/PanelScope"
+        },
+        "transfer": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "doNotTransfer": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "notes": {
+          "type": "string"
+        },
+        "packMetadata": {
+          "type": "object",
+          "properties": {
+            "packId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "provenance": {
+              "$ref": "#/definitions/Provenance"
+            },
+            "license": {
+              "$ref": "#/definitions/LicenseInfo"
+            },
+            "governs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0
+            },
+            "doesNotGovern": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0
+            },
+            "approvedFeatures": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0
+            },
+            "knownDefects": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0
+            },
+            "tags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "packId",
+            "provenance",
+            "license",
+            "governs",
+            "doesNotGovern",
+            "approvedFeatures",
+            "knownDefects",
+            "tags"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "asset",
+        "name",
+        "role",
+        "panelScope",
+        "transfer",
+        "doNotTransfer",
+        "notes"
+      ],
+      "additionalProperties": false
+    },
+    "GenerationRecord": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "accepted",
+            "rejected",
+            "working"
+          ]
+        },
+        "image": {
+          "$ref": "#/definitions/AssetReference"
+        },
+        "projectStateAsset": {
+          "$ref": "#/definitions/AssetReference"
+        },
+        "productionSpecAsset": {
+          "$ref": "#/definitions/AssetReference"
+        },
+        "label": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "FeedbackRecord": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "generationOrAssetId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "accepted",
+            "rejected",
+            "working"
+          ]
+        },
+        "positiveFeedback": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "negativeFeedback": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "nextChange": {
+          "type": "string"
+        },
+        "endorsementScope": {
+          "type": "string",
+          "enum": [
+            "global_preference",
+            "project_specific",
+            "local_exception",
+            "exemplar_candidate"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        },
+        "recordedAt": {
+          "type": "string"
+        },
+        "productionSpecAsset": {
+          "$ref": "#/definitions/AssetReference"
+        },
+        "endorsed": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "generationOrAssetId",
+        "status",
+        "positiveFeedback",
+        "negativeFeedback",
+        "nextChange",
+        "endorsementScope"
+      ],
+      "additionalProperties": false
+    },
+    "FeedbackLedger": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FeedbackRecord"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "records"
+      ],
+      "additionalProperties": false
+    },
+    "ProjectState": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "project": {
+          "$ref": "#/definitions/ProjectIdentity"
+        },
+        "subject": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ContextPackReference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ContextPackReference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "canvas": {
+          "$ref": "#/definitions/Canvas"
+        },
+        "composition": {
+          "type": "object",
+          "properties": {
+            "global": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "literal"
+                    },
+                    "value": {
+                      "$ref": "#/definitions/Composition"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "preset"
+                    },
+                    "reference": {
+                      "$ref": "#/definitions/PresetReference"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "reference"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/Composition"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "perPanel": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "minLength": 1
+              },
+              "additionalProperties": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "literal"
+                      },
+                      "value": {
+                        "$ref": "#/definitions/Composition"
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "preset"
+                      },
+                      "reference": {
+                        "$ref": "#/definitions/PresetReference"
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "reference"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "random"
+                      },
+                      "candidates": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/definitions/Composition"
+                        },
+                        "minItems": 1
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "candidates"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "inherit"
+                      }
+                    },
+                    "required": [
+                      "kind"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            },
+            "variation": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "uniform"
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "structured"
+                    },
+                    "pattern": {
+                      "type": "string",
+                      "enum": [
+                        "role_rotation",
+                        "alternation",
+                        "paired_echo",
+                        "inversion",
+                        "progression",
+                        "escalation",
+                        "controlled_sequence"
+                      ]
+                    },
+                    "sequence": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/Composition"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "pattern",
+                    "sequence"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/Composition"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "manual"
+                    },
+                    "perPanel": {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "additionalProperties": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "literal"
+                              },
+                              "value": {
+                                "$ref": "#/definitions/Composition"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "preset"
+                              },
+                              "reference": {
+                                "$ref": "#/definitions/PresetReference"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "reference"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "random"
+                              },
+                              "candidates": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/definitions/Composition"
+                                },
+                                "minItems": 1
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "candidates"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "inherit"
+                              }
+                            },
+                            "required": [
+                              "kind"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "perPanel"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "additionalInstructions": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "global",
+            "perPanel",
+            "variation",
+            "additionalInstructions"
+          ],
+          "additionalProperties": false
+        },
+        "color": {
+          "$ref": "#/definitions/ColorState"
+        },
+        "texture": {
+          "type": "object",
+          "properties": {
+            "global": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "literal"
+                    },
+                    "value": {
+                      "$ref": "#/definitions/TextureTreatment"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "preset"
+                    },
+                    "reference": {
+                      "$ref": "#/definitions/PresetReference"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "reference"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/TextureTreatment"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "perPanel": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "minLength": 1
+              },
+              "additionalProperties": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "literal"
+                      },
+                      "value": {
+                        "$ref": "#/definitions/TextureTreatment"
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "preset"
+                      },
+                      "reference": {
+                        "$ref": "#/definitions/PresetReference"
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "reference"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "random"
+                      },
+                      "candidates": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/definitions/TextureTreatment"
+                        },
+                        "minItems": 1
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "candidates"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "inherit"
+                      }
+                    },
+                    "required": [
+                      "kind"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            },
+            "variation": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "uniform"
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "structured"
+                    },
+                    "pattern": {
+                      "type": "string",
+                      "enum": [
+                        "role_rotation",
+                        "alternation",
+                        "paired_echo",
+                        "inversion",
+                        "progression",
+                        "escalation",
+                        "controlled_sequence"
+                      ]
+                    },
+                    "sequence": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/TextureTreatment"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "pattern",
+                    "sequence"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/TextureTreatment"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "manual"
+                    },
+                    "perPanel": {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "additionalProperties": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "literal"
+                              },
+                              "value": {
+                                "$ref": "#/definitions/TextureTreatment"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "preset"
+                              },
+                              "reference": {
+                                "$ref": "#/definitions/PresetReference"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "reference"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "random"
+                              },
+                              "candidates": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/definitions/TextureTreatment"
+                                },
+                                "minItems": 1
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "candidates"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "inherit"
+                              }
+                            },
+                            "required": [
+                              "kind"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "perPanel"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "additionalInstructions": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "global",
+            "perPanel",
+            "variation",
+            "additionalInstructions"
+          ],
+          "additionalProperties": false
+        },
+        "lightingRendering": {
+          "type": "object",
+          "properties": {
+            "global": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "literal"
+                    },
+                    "value": {
+                      "$ref": "#/definitions/LightingRendering"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "preset"
+                    },
+                    "reference": {
+                      "$ref": "#/definitions/PresetReference"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "reference"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/LightingRendering"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "perPanel": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "minLength": 1
+              },
+              "additionalProperties": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "literal"
+                      },
+                      "value": {
+                        "$ref": "#/definitions/LightingRendering"
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "preset"
+                      },
+                      "reference": {
+                        "$ref": "#/definitions/PresetReference"
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "reference"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "random"
+                      },
+                      "candidates": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/definitions/LightingRendering"
+                        },
+                        "minItems": 1
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "candidates"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "inherit"
+                      }
+                    },
+                    "required": [
+                      "kind"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            },
+            "variation": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "uniform"
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "structured"
+                    },
+                    "pattern": {
+                      "type": "string",
+                      "enum": [
+                        "role_rotation",
+                        "alternation",
+                        "paired_echo",
+                        "inversion",
+                        "progression",
+                        "escalation",
+                        "controlled_sequence"
+                      ]
+                    },
+                    "sequence": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/LightingRendering"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "pattern",
+                    "sequence"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/LightingRendering"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "manual"
+                    },
+                    "perPanel": {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "additionalProperties": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "literal"
+                              },
+                              "value": {
+                                "$ref": "#/definitions/LightingRendering"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "preset"
+                              },
+                              "reference": {
+                                "$ref": "#/definitions/PresetReference"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "reference"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "random"
+                              },
+                              "candidates": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/definitions/LightingRendering"
+                                },
+                                "minItems": 1
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "candidates"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "inherit"
+                              }
+                            },
+                            "required": [
+                              "kind"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "perPanel"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "additionalInstructions": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "global",
+            "perPanel",
+            "variation",
+            "additionalInstructions"
+          ],
+          "additionalProperties": false
+        },
+        "sliders": {
+          "type": "object",
+          "properties": {
+            "global": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "literal"
+                    },
+                    "value": {
+                      "$ref": "#/definitions/RenderingSliders"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "preset"
+                    },
+                    "reference": {
+                      "$ref": "#/definitions/PresetReference"
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "reference"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/RenderingSliders"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "perPanel": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string",
+                "minLength": 1
+              },
+              "additionalProperties": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "literal"
+                      },
+                      "value": {
+                        "$ref": "#/definitions/RenderingSliders"
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "preset"
+                      },
+                      "reference": {
+                        "$ref": "#/definitions/PresetReference"
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "reference"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "random"
+                      },
+                      "candidates": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/definitions/RenderingSliders"
+                        },
+                        "minItems": 1
+                      }
+                    },
+                    "required": [
+                      "kind",
+                      "candidates"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "kind": {
+                        "const": "inherit"
+                      }
+                    },
+                    "required": [
+                      "kind"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            },
+            "variation": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "uniform"
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "structured"
+                    },
+                    "pattern": {
+                      "type": "string",
+                      "enum": [
+                        "role_rotation",
+                        "alternation",
+                        "paired_echo",
+                        "inversion",
+                        "progression",
+                        "escalation",
+                        "controlled_sequence"
+                      ]
+                    },
+                    "sequence": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/RenderingSliders"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "pattern",
+                    "sequence"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/RenderingSliders"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "manual"
+                    },
+                    "perPanel": {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "additionalProperties": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "literal"
+                              },
+                              "value": {
+                                "$ref": "#/definitions/RenderingSliders"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "preset"
+                              },
+                              "reference": {
+                                "$ref": "#/definitions/PresetReference"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "reference"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "random"
+                              },
+                              "candidates": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/definitions/RenderingSliders"
+                                },
+                                "minItems": 1
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "candidates"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "inherit"
+                              }
+                            },
+                            "required": [
+                              "kind"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "perPanel"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            "additionalInstructions": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "global",
+            "perPanel",
+            "variation",
+            "additionalInstructions"
+          ],
+          "additionalProperties": false
+        },
+        "typography": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "elements": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/TextElement"
+              },
+              "minItems": 0
+            },
+            "additionalInstructions": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "enabled",
+            "elements",
+            "additionalInstructions"
+          ],
+          "additionalProperties": false
+        },
+        "props": {
+          "type": "object",
+          "properties": {
+            "elements": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PropElement"
+              },
+              "minItems": 0
+            },
+            "additionalInstructions": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "elements",
+            "additionalInstructions"
+          ],
+          "additionalProperties": false
+        },
+        "effects": {
+          "type": "object",
+          "properties": {
+            "elements": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/EffectElement"
+              },
+              "minItems": 0
+            },
+            "additionalInstructions": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "elements",
+            "additionalInstructions"
+          ],
+          "additionalProperties": false
+        },
+        "exemplars": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductionExemplar"
+          },
+          "minItems": 0
+        },
+        "generationHistory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GenerationRecord"
+          },
+          "minItems": 0
+        },
+        "feedbackLedger": {
+          "$ref": "#/definitions/FeedbackLedger"
+        },
+        "exemplarInstructions": {
+          "type": "string"
+        },
+        "randomDecisions": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/JsonValue"
+          }
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "project",
+        "subject",
+        "theme",
+        "canvas",
+        "composition",
+        "color",
+        "texture",
+        "lightingRendering",
+        "sliders",
+        "typography",
+        "props",
+        "effects",
+        "exemplars",
+        "generationHistory",
+        "feedbackLedger"
+      ],
+      "additionalProperties": false
+    },
+    "ResolvedPanel": {
+      "type": "object",
+      "properties": {
+        "panelId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "composition": {
+          "$ref": "#/definitions/Composition"
+        },
+        "color": {
+          "$ref": "#/definitions/Palette"
+        },
+        "texture": {
+          "$ref": "#/definitions/TextureTreatment"
+        },
+        "lightingRendering": {
+          "$ref": "#/definitions/LightingRendering"
+        },
+        "sliders": {
+          "$ref": "#/definitions/RenderingSliders"
+        }
+      },
+      "required": [
+        "panelId",
+        "composition",
+        "color",
+        "texture",
+        "lightingRendering",
+        "sliders"
+      ],
+      "additionalProperties": false
+    },
+    "ProductionSpec": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "project": {
+          "$ref": "#/definitions/ProjectIdentity"
+        },
+        "subject": {
+          "$ref": "#/definitions/ContextPackReference"
+        },
+        "theme": {
+          "$ref": "#/definitions/ContextPackReference"
+        },
+        "canvas": {
+          "$ref": "#/definitions/Canvas"
+        },
+        "color": {
+          "type": "object",
+          "properties": {
+            "strategy": {
+              "$ref": "#/definitions/ColorStrategy"
+            },
+            "roles": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ColorRole"
+              },
+              "minItems": 1
+            },
+            "relationships": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ColorRelationship"
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "strategy",
+            "roles",
+            "relationships"
+          ],
+          "additionalProperties": false
+        },
+        "panels": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ResolvedPanel"
+          },
+          "minItems": 1
+        },
+        "categoryInstructions": {
+          "type": "object",
+          "properties": {
+            "composition": {
+              "type": "string"
+            },
+            "color": {
+              "type": "string"
+            },
+            "texture": {
+              "type": "string"
+            },
+            "lightingRendering": {
+              "type": "string"
+            },
+            "sliders": {
+              "type": "string"
+            },
+            "typography": {
+              "type": "string"
+            },
+            "props": {
+              "type": "string"
+            },
+            "effects": {
+              "type": "string"
+            },
+            "exemplars": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "composition",
+            "color",
+            "texture",
+            "lightingRendering",
+            "sliders",
+            "typography",
+            "props",
+            "effects"
+          ],
+          "additionalProperties": false
+        },
+        "typography": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "elements": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/TextElement"
+              },
+              "minItems": 0
+            },
+            "additionalInstructions": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "enabled",
+            "elements",
+            "additionalInstructions"
+          ],
+          "additionalProperties": false
+        },
+        "props": {
+          "type": "object",
+          "properties": {
+            "elements": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PropElement"
+              },
+              "minItems": 0
+            },
+            "additionalInstructions": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "elements",
+            "additionalInstructions"
+          ],
+          "additionalProperties": false
+        },
+        "effects": {
+          "type": "object",
+          "properties": {
+            "elements": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/EffectElement"
+              },
+              "minItems": 0
+            },
+            "additionalInstructions": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "elements",
+            "additionalInstructions"
+          ],
+          "additionalProperties": false
+        },
+        "exemplars": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductionExemplar"
+          },
+          "minItems": 0
+        },
+        "choreography": {
+          "type": "object",
+          "properties": {
+            "composition": {
+              "$ref": "#/definitions/ResolvedChoreography"
+            },
+            "color": {
+              "$ref": "#/definitions/ResolvedChoreography"
+            },
+            "texture": {
+              "$ref": "#/definitions/ResolvedChoreography"
+            },
+            "lightingRendering": {
+              "$ref": "#/definitions/ResolvedChoreography"
+            },
+            "sliders": {
+              "$ref": "#/definitions/ResolvedChoreography"
+            }
+          },
+          "required": [
+            "composition",
+            "color",
+            "texture",
+            "lightingRendering",
+            "sliders"
+          ],
+          "additionalProperties": false
+        },
+        "display": {
+          "type": "object",
+          "properties": {
+            "layoutName": {
+              "type": "string",
+              "minLength": 1
+            },
+            "terms": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "layoutName",
+            "terms"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "project",
+        "subject",
+        "theme",
+        "canvas",
+        "color",
+        "panels",
+        "categoryInstructions",
+        "typography",
+        "props",
+        "effects",
+        "exemplars"
+      ],
+      "additionalProperties": false
+    },
+    "Preset": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "schemaVersion": {
+              "const": "1.0"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "provenance": {
+              "$ref": "#/definitions/Provenance"
+            },
+            "category": {
+              "const": "composition"
+            },
+            "value": {
+              "$ref": "#/definitions/Composition"
+            }
+          },
+          "required": [
+            "schemaVersion",
+            "id",
+            "name",
+            "provenance",
+            "category",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schemaVersion": {
+              "const": "1.0"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "provenance": {
+              "$ref": "#/definitions/Provenance"
+            },
+            "category": {
+              "const": "color"
+            },
+            "value": {
+              "$ref": "#/definitions/Palette"
+            },
+            "strategy": {
+              "$ref": "#/definitions/ColorStrategy"
+            }
+          },
+          "required": [
+            "schemaVersion",
+            "id",
+            "name",
+            "provenance",
+            "category",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schemaVersion": {
+              "const": "1.0"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "provenance": {
+              "$ref": "#/definitions/Provenance"
+            },
+            "category": {
+              "const": "texture"
+            },
+            "value": {
+              "$ref": "#/definitions/TextureTreatment"
+            }
+          },
+          "required": [
+            "schemaVersion",
+            "id",
+            "name",
+            "provenance",
+            "category",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schemaVersion": {
+              "const": "1.0"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "provenance": {
+              "$ref": "#/definitions/Provenance"
+            },
+            "category": {
+              "const": "lightingRendering"
+            },
+            "value": {
+              "$ref": "#/definitions/LightingRendering"
+            }
+          },
+          "required": [
+            "schemaVersion",
+            "id",
+            "name",
+            "provenance",
+            "category",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schemaVersion": {
+              "const": "1.0"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "provenance": {
+              "$ref": "#/definitions/Provenance"
+            },
+            "category": {
+              "const": "sliders"
+            },
+            "value": {
+              "$ref": "#/definitions/RenderingSliders"
+            }
+          },
+          "required": [
+            "schemaVersion",
+            "id",
+            "name",
+            "provenance",
+            "category",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schemaVersion": {
+              "const": "1.0"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "provenance": {
+              "$ref": "#/definitions/Provenance"
+            },
+            "category": {
+              "const": "typography"
+            },
+            "value": {
+              "type": "object",
+              "properties": {
+                "enabled": {
+                  "type": "boolean"
+                },
+                "elements": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/TextElement"
+                  },
+                  "minItems": 0
+                },
+                "additionalInstructions": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "enabled",
+                "elements",
+                "additionalInstructions"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "schemaVersion",
+            "id",
+            "name",
+            "provenance",
+            "category",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schemaVersion": {
+              "const": "1.0"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "provenance": {
+              "$ref": "#/definitions/Provenance"
+            },
+            "category": {
+              "const": "props"
+            },
+            "value": {
+              "type": "object",
+              "properties": {
+                "elements": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/PropElement"
+                  },
+                  "minItems": 0
+                },
+                "additionalInstructions": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "elements",
+                "additionalInstructions"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "schemaVersion",
+            "id",
+            "name",
+            "provenance",
+            "category",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schemaVersion": {
+              "const": "1.0"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "provenance": {
+              "$ref": "#/definitions/Provenance"
+            },
+            "category": {
+              "const": "effects"
+            },
+            "value": {
+              "type": "object",
+              "properties": {
+                "elements": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/EffectElement"
+                  },
+                  "minItems": 0
+                },
+                "additionalInstructions": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "elements",
+                "additionalInstructions"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "schemaVersion",
+            "id",
+            "name",
+            "provenance",
+            "category",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "schemaVersion": {
+              "const": "1.0"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "provenance": {
+              "$ref": "#/definitions/Provenance"
+            },
+            "category": {
+              "const": "panelChoreography"
+            },
+            "value": {
+              "$ref": "#/definitions/PanelChoreography"
+            }
+          },
+          "required": [
+            "schemaVersion",
+            "id",
+            "name",
+            "provenance",
+            "category",
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "JsonValue": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/JsonValue"
+          },
+          "minItems": 0
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "minLength": 1
+          },
+          "additionalProperties": {
+            "$ref": "#/definitions/JsonValue"
+          }
+        }
+      ]
+    },
+    "PackExemplar": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "asset": {
+          "$ref": "#/definitions/PackAssetReference"
+        },
+        "thumbnail": {
+          "$ref": "#/definitions/PackAssetReference"
+        },
+        "governs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "doesNotGovern": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "approvedFeatures": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "knownDefects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "provenance": {
+          "$ref": "#/definitions/Provenance"
+        },
+        "license": {
+          "$ref": "#/definitions/LicenseInfo"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "production": {
+          "type": "object",
+          "properties": {
+            "role": {
+              "type": "string",
+              "minLength": 1
+            },
+            "panelScope": {
+              "$ref": "#/definitions/PanelScope"
+            },
+            "transfer": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0
+            },
+            "doNotTransfer": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0
+            },
+            "notes": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "role",
+            "panelScope",
+            "transfer",
+            "doNotTransfer",
+            "notes"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "asset",
+        "governs",
+        "doesNotGovern",
+        "approvedFeatures",
+        "knownDefects",
+        "provenance",
+        "license",
+        "tags"
+      ],
+      "additionalProperties": false
+    },
+    "PackOption": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1
+        },
+        "axis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "$ref": "#/definitions/JsonValue"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "category",
+        "axis",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "PackColorStrategy": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "basis": {
+          "type": "string",
+          "enum": [
+            "high_contrast_structured",
+            "complementary",
+            "split_complementary",
+            "triadic",
+            "analogous",
+            "monochromatic",
+            "custom"
+          ]
+        },
+        "hueOffsets": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMaximum": 360
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "basis",
+        "hueOffsets"
+      ],
+      "additionalProperties": false
+    },
+    "PackManifest": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "packId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "provenance": {
+          "$ref": "#/definitions/Provenance"
+        },
+        "packType": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string"
+        },
+        "license": {
+          "$ref": "#/definitions/LicenseInfo"
+        },
+        "governs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "doesNotGovern": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        },
+        "documents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "asset": {
+                "$ref": "#/definitions/PackAssetReference"
+              },
+              "license": {
+                "$ref": "#/definitions/LicenseInfo"
+              }
+            },
+            "required": [
+              "id",
+              "title",
+              "asset",
+              "license"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "exemplars": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PackExemplar"
+          },
+          "minItems": 0
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PackOption"
+          },
+          "minItems": 0
+        },
+        "presets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Preset"
+          },
+          "minItems": 0
+        },
+        "colorStrategies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PackColorStrategy"
+          },
+          "minItems": 0
+        },
+        "colorRoles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ColorRole"
+          },
+          "minItems": 0
+        },
+        "colorRelationships": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ColorRelationship"
+          },
+          "minItems": 0
+        },
+        "compatibility": {
+          "type": "object",
+          "properties": {
+            "categories": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 0
+            },
+            "notes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 0
+            }
+          },
+          "required": [
+            "categories",
+            "notes"
+          ],
+          "additionalProperties": false
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "packId",
+        "displayName",
+        "version",
+        "provenance",
+        "packType",
+        "description",
+        "license",
+        "governs",
+        "doesNotGovern",
+        "documents",
+        "exemplars",
+        "options",
+        "presets",
+        "colorStrategies",
+        "colorRoles",
+        "colorRelationships",
+        "compatibility",
+        "tags"
+      ],
+      "additionalProperties": false
+    },
+    "ApplicationState": {
+      "type": "object",
+      "properties": {
+        "project": {
+          "$ref": "#/definitions/ProjectState"
+        },
+        "globalUserPresets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Preset"
+          },
+          "minItems": 0
+        },
+        "ui": {
+          "type": "object",
+          "properties": {
+            "appearance": {
+              "type": "string",
+              "enum": [
+                "light",
+                "dark"
+              ]
+            },
+            "activeTab": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "appearance",
+            "activeTab"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "project",
+        "globalUserPresets",
+        "ui"
+      ],
+      "additionalProperties": false
+    },
+    "ProjectManifest": {
+      "type": "object",
+      "properties": {
+        "schemaVersion": {
+          "const": "1.0"
+        },
+        "projectId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\)(?![A-Za-z]:).+$"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "mediaType": {
+                "type": "string",
+                "minLength": 1
+              },
+              "assetIds": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              },
+              "originalNames": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "byteLength": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "path",
+              "sha256",
+              "mediaType"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0
+        },
+        "projectName": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "modifiedAt": {
+          "type": "string"
+        },
+        "applicationVersion": {
+          "type": "string"
+        },
+        "provenance": {
+          "const": "personal-project"
+        },
+        "subject": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ContextPackReference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "theme": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/ContextPackReference"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "exemplarCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "historyCounts": {
+          "type": "object",
+          "properties": {
+            "accepted": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "rejected": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "working": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "accepted",
+            "rejected",
+            "working"
+          ],
+          "additionalProperties": false
+        },
+        "production": {
+          "type": "object",
+          "properties": {
+            "available": {
+              "type": "boolean"
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "available"
+          ],
+          "additionalProperties": false
+        },
+        "unavailableAssets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "assetId": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "assetId",
+              "path",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "projectId",
+        "files"
+      ],
+      "additionalProperties": false
+    },
+    "PanelChoreography": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "const": "composition"
+            },
+            "variation": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "uniform"
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "structured"
+                    },
+                    "pattern": {
+                      "type": "string",
+                      "enum": [
+                        "role_rotation",
+                        "alternation",
+                        "paired_echo",
+                        "inversion",
+                        "progression",
+                        "escalation",
+                        "controlled_sequence"
+                      ]
+                    },
+                    "sequence": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/Composition"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "pattern",
+                    "sequence"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/Composition"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "manual"
+                    },
+                    "perPanel": {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "additionalProperties": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "literal"
+                              },
+                              "value": {
+                                "$ref": "#/definitions/Composition"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "preset"
+                              },
+                              "reference": {
+                                "$ref": "#/definitions/PresetReference"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "reference"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "random"
+                              },
+                              "candidates": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/definitions/Composition"
+                                },
+                                "minItems": 1
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "candidates"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "inherit"
+                              }
+                            },
+                            "required": [
+                              "kind"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "perPanel"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "required": [
+            "category",
+            "variation"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "const": "color"
+            },
+            "variation": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "uniform"
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "structured"
+                    },
+                    "pattern": {
+                      "type": "string",
+                      "enum": [
+                        "role_rotation",
+                        "alternation",
+                        "paired_echo",
+                        "inversion",
+                        "progressive_shift",
+                        "controlled_sequence"
+                      ]
+                    },
+                    "sequence": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/Palette"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "pattern",
+                    "sequence"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/Palette"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "manual"
+                    },
+                    "perPanel": {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "additionalProperties": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "literal"
+                              },
+                              "value": {
+                                "$ref": "#/definitions/Palette"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "preset"
+                              },
+                              "reference": {
+                                "$ref": "#/definitions/PresetReference"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "reference"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "random"
+                              },
+                              "candidates": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/definitions/Palette"
+                                },
+                                "minItems": 1
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "candidates"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "inherit"
+                              }
+                            },
+                            "required": [
+                              "kind"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "perPanel"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "required": [
+            "category",
+            "variation"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "const": "texture"
+            },
+            "variation": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "uniform"
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "structured"
+                    },
+                    "pattern": {
+                      "type": "string",
+                      "enum": [
+                        "role_rotation",
+                        "alternation",
+                        "paired_echo",
+                        "inversion",
+                        "progression",
+                        "escalation",
+                        "controlled_sequence"
+                      ]
+                    },
+                    "sequence": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/TextureTreatment"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "pattern",
+                    "sequence"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/TextureTreatment"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "manual"
+                    },
+                    "perPanel": {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "additionalProperties": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "literal"
+                              },
+                              "value": {
+                                "$ref": "#/definitions/TextureTreatment"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "preset"
+                              },
+                              "reference": {
+                                "$ref": "#/definitions/PresetReference"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "reference"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "random"
+                              },
+                              "candidates": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/definitions/TextureTreatment"
+                                },
+                                "minItems": 1
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "candidates"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "inherit"
+                              }
+                            },
+                            "required": [
+                              "kind"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "perPanel"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "required": [
+            "category",
+            "variation"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "const": "lightingRendering"
+            },
+            "variation": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "uniform"
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "structured"
+                    },
+                    "pattern": {
+                      "type": "string",
+                      "enum": [
+                        "role_rotation",
+                        "alternation",
+                        "paired_echo",
+                        "inversion",
+                        "progression",
+                        "escalation",
+                        "controlled_sequence"
+                      ]
+                    },
+                    "sequence": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/LightingRendering"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "pattern",
+                    "sequence"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/LightingRendering"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "manual"
+                    },
+                    "perPanel": {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "additionalProperties": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "literal"
+                              },
+                              "value": {
+                                "$ref": "#/definitions/LightingRendering"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "preset"
+                              },
+                              "reference": {
+                                "$ref": "#/definitions/PresetReference"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "reference"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "random"
+                              },
+                              "candidates": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/definitions/LightingRendering"
+                                },
+                                "minItems": 1
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "candidates"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "inherit"
+                              }
+                            },
+                            "required": [
+                              "kind"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "perPanel"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "required": [
+            "category",
+            "variation"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "category": {
+              "const": "sliders"
+            },
+            "variation": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "uniform"
+                    }
+                  },
+                  "required": [
+                    "mode"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "structured"
+                    },
+                    "pattern": {
+                      "type": "string",
+                      "enum": [
+                        "role_rotation",
+                        "alternation",
+                        "paired_echo",
+                        "inversion",
+                        "progression",
+                        "escalation",
+                        "controlled_sequence"
+                      ]
+                    },
+                    "sequence": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/RenderingSliders"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "pattern",
+                    "sequence"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "random"
+                    },
+                    "candidates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/RenderingSliders"
+                      },
+                      "minItems": 1
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "candidates"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "mode": {
+                      "const": "manual"
+                    },
+                    "perPanel": {
+                      "type": "object",
+                      "propertyNames": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "additionalProperties": {
+                        "oneOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "literal"
+                              },
+                              "value": {
+                                "$ref": "#/definitions/RenderingSliders"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "preset"
+                              },
+                              "reference": {
+                                "$ref": "#/definitions/PresetReference"
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "reference"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "random"
+                              },
+                              "candidates": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/definitions/RenderingSliders"
+                                },
+                                "minItems": 1
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "candidates"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "const": "inherit"
+                              }
+                            },
+                            "required": [
+                              "kind"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "mode",
+                    "perPanel"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "required": [
+            "category",
+            "variation"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "ResolvedChoreography": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "const": "structured"
+            },
+            "pattern": {
+              "enum": [
+                "role_rotation",
+                "alternation",
+                "paired_echo",
+                "inversion",
+                "progression",
+                "escalation",
+                "progressive_shift",
+                "controlled_sequence"
+              ]
+            },
+            "panelSources": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "panelId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "source": {
+                    "enum": [
+                      "global",
+                      "structured",
+                      "committed_random",
+                      "manual",
+                      "override"
+                    ]
+                  }
+                },
+                "required": [
+                  "panelId",
+                  "source"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "mode",
+            "panelSources",
+            "pattern"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "enum": [
+                "uniform",
+                "random",
+                "manual"
+              ]
+            },
+            "panelSources": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "panelId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "source": {
+                    "enum": [
+                      "global",
+                      "structured",
+                      "committed_random",
+                      "manual",
+                      "override"
+                    ]
+                  }
+                },
+                "required": [
+                  "panelId",
+                  "source"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "mode",
+            "panelSources"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1442 @@
+[
+  {
+    "path": ".env.example",
+    "sha256": "ddbbeb4513fa6f3b9d8113cce93c14789ff2d35b63ed991d46432440695f77ba",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": ".github/workflows/ci.yml",
+    "sha256": "f60fdc8b72772aa501dedeb983d18cdd7b3b4e2c7f37b023bcac370aebc576d5",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": ".github/workflows/deploy-pages.yml",
+    "sha256": "ea37d6e4c0578f53741e2925fc16f00f01e64c012e9777e5a14397b29d4f1c0c",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "bc5c00850b05b2d933c17fd669e135672f2722e431e4d501e450474d9fe957e1",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "sha256": "fd019f6ec577231126c55f99a30819d207683e7dc93dda0b23943a9b541a6e27",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "LICENSE-DOCS",
+    "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "README.md",
+    "sha256": "b89fa6b46e678da23b1b2da142b6b1275773c509985e29eafdd7268c370728ec",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "docs/ARCHITECTURE.md",
+    "sha256": "02f3e5c75df59fbc8d8689edd8e0fd12afbb0e9e912b02faeebad01950b77fea",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "docs/CONTRACTS.md",
+    "sha256": "cb8564e780881e099ca860748823fa79ac83e94c29a851d474c858f77f421752",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "docs/LIBRARY_ARCHITECTURE.md",
+    "sha256": "5ad274717d65464cb61864ddd7df7b15dfd333991f3a0e08362e801823e96379",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "docs/LICENSING_AND_PROVENANCE.md",
+    "sha256": "f584507bc51d89c0d9f651e07da52d6c8f520c7fe16f721a6e02caf3ffed69c6",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "docs/OFFICIAL_LIBRARY_NORMALIZATION.md",
+    "sha256": "a9de2dc06669f579c31fa82f569dc6d679ebe3a6e804b0a76e76b8740c12ba8b",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "docs/PACK_AUTHORING.md",
+    "sha256": "ed9a374962cd6ff9c6078141d48d6fb802d008172dc790687c62bdedee38d271",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "docs/PRIMARY_EXEMPLAR_PROVENANCE.json",
+    "sha256": "58cc4e38f28607df2ae1e7b5203a195b63465eb3f78f54bcbcb43b529c81c055",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "docs/PUBLICATION_ASSET_REVIEW.json",
+    "sha256": "6db0cf008fa402bb1d712f48b09ad711cc23273d1e0552e98c69c76d4c205e6e",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "docs/PUBLICATION_ASSET_REVIEW.md",
+    "sha256": "d10119177b104317602512cfe8637e1646abfb4fcf2e0669c73ea17e4cef9480",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "docs/REPOSITORY_FOUNDATION.md",
+    "sha256": "65db264c6d8e139d6649fe006fac62ff517bfb39cbbdd9524150ca86c96cbcda",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "docs/THIRD_PARTY_NOTICES.md",
+    "sha256": "5c6b6df37a3feccb288957ce687f11a3455a11a778b11e6025caf59c59460e90",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "index.html",
+    "sha256": "195db7c533696e1640affe96f1d794ebff603bff44f55e6ecfba8923f9d7d9e5",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/00_START_HERE.md",
+    "sha256": "b72c8d832fcc21336fd582a6e84520d16995bdd4284d5b34067f9f24acff8e25",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/00_START_HERE.pdf",
+    "sha256": "4e2bb72f4c201eb38444b538bc789f9ac052bf07b496e64129e047cdbb9ab702",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/01_ROLE_AND_SYSTEM_BOUNDARIES.md",
+    "sha256": "f619759518f135f87b3128b7a77f173a0801c1d4be0823015f7c3704b249344d",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/01_ROLE_AND_SYSTEM_BOUNDARIES.pdf",
+    "sha256": "060916234be0216509ed6d75a66d069867548e6abd23eb93b5db430ae3c835dd",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/02_VISUAL_LANGUAGE.md",
+    "sha256": "ee2a29994e667e54ca44a9eb3dc78f17d47d261324cdcd5ddcd6475189926343",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/02_VISUAL_LANGUAGE.pdf",
+    "sha256": "ef0c5e76b1648e8334445727d2c214dabe38400fdd6dad210aa93fa880fb74e6",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/03_COMPOSITION_CAMERA_AND_EDGES.md",
+    "sha256": "4c4041a98c6b048e8e6c24b72833e0a7ccdfbd11b0b8c654e8a5ebb587c85937",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/03_COMPOSITION_CAMERA_AND_EDGES.pdf",
+    "sha256": "4fba87845f163b03b3b0c9295d6d35048a4cd5d0256bc52e0e59c3ec35b4cc8f",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/04_COLOR_BACKGROUND_TEXTURE.md",
+    "sha256": "ef32235ef2c6f101fb59114405e06436ec07ed694d28fcefdf81477de48b05a1",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/04_COLOR_BACKGROUND_TEXTURE.pdf",
+    "sha256": "ac0f056df02166d4c081d32a61a5b9c0772ee4fc67fede99f339bbf60674bf54",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/05_LIGHTING_RENDERING_AND_INK.md",
+    "sha256": "812df65fbcb4dc37e168d604e74e3bb7535574c8b69254f49a4b4ebbd3e159b5",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/05_LIGHTING_RENDERING_AND_INK.pdf",
+    "sha256": "85def04bd6f962997e09508ef76333cb595334bb59c638c30afb5c65e652e89c",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/06_EXPRESSION_PROPS_EFFECTS_TYPOGRAPHY.md",
+    "sha256": "3969ea164c02f668abec916e455b28a9912e2a7219602bd5cc5b0bb9322e46cb",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/06_EXPRESSION_PROPS_EFFECTS_TYPOGRAPHY.pdf",
+    "sha256": "611adc72ca29020641fe762500f7b96f8f2fbda8d17406aae24024ad7a0a2845",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/07_PRODUCTION_WORKFLOW_AND_FEEDBACK.md",
+    "sha256": "e87cde33ee8c6b469857a435dfee88aa11864e69599fb6547a4fca8a363faabe",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/07_PRODUCTION_WORKFLOW_AND_FEEDBACK.pdf",
+    "sha256": "b6399bfe376523b77e29e2d7f3e8fd2b0d7a38fac2b430dafbb7b9d679238326",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/08_SUBJECT_NEGOTIATION.md",
+    "sha256": "5e8f9c55ac6d89fceb96a9cbb4d9bf93ad170572dd8530ab5d9d74644fbb77d3",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/08_SUBJECT_NEGOTIATION.pdf",
+    "sha256": "eddd31248f3e674ec480827b73280534c492532c4956795d511a6ae347f4e8d1",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/09_THEME_NEGOTIATION.md",
+    "sha256": "da4f7b5c6702d2d31c4d1c134cf603d2cddaac8a7824aefbe367eb271fc56a18",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/09_THEME_NEGOTIATION.pdf",
+    "sha256": "8cd958605885ff287412425bc56c00a969dabe3356077deeca86253bf1017b8c",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/10_CALIBRATION_AND_UI_HANDOFF.md",
+    "sha256": "65590d0dd2a2bf3b1a89779cf6b24fefeb11c2b3b75213c7768650a2096aa3e9",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/10_CALIBRATION_AND_UI_HANDOFF.pdf",
+    "sha256": "3b9356f1da907d790a4b6b0d302b636d3e54a967ea100208da5b2e6bba2d80d8",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/README.md",
+    "sha256": "4aac29dbed509e7277dd21348f3cb9ec32006c0c70dfed90615ebe4de88807b1",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "orientation/references.json",
+    "sha256": "0275b13e7084d527d426a8b544f3110f706303fc3b75489235693e23d6873045",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "4f047c3e9ef17a0c43293bfcd6b73ce0305c9bdcadfe3b9ec235eecc1ef3bdf3",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "package.json",
+    "sha256": "901526763b997a9c3156a7a7d9a98fc04b80244a1d038ca4ddc60265b4b16ea7",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "packs/community/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "packs/community/generic-graphic-study/README_PACK.txt",
+    "sha256": "768012820d0742546a201ad7d64a616fee4ee2dcf7af3bbecc01d67cac5bc8a1",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "packs/community/generic-graphic-study/manifest.json",
+    "sha256": "f1430adc122cba3989cae0a70f8bf4be25978f0574e266bd9583ea6d56586596",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "packs/external-reference-index.json",
+    "sha256": "bc9699505547ad8c7a5f18a4f29497c35d47a3a2b473c8edb6e33e913c5acd03",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "packs/normalization-ledger.json",
+    "sha256": "53d4a23c8abb37243251a0071816969a9dd058a0a15d9340bafc7bc3b2966efe",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "packs/official-library.json",
+    "sha256": "3704a70be3aa7f3f0857748b18e1d6b99ac058f383523f46d06025fd62654e00",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "packs/official/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/01-subject-identity/exemplars/category-01-approved-sheet.png",
+    "sha256": "bbaf4c806a80a197d833be2eb46b00fa87530a50ab30f7542586db41e8b0de75",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/01-subject-identity/manifest.json",
+    "sha256": "8b3f0096210327eab27522b5a35f40f59823e3d56ce3f26ddd778f49ebdc56c2",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/02-conventional-composition/exemplars/category-02-approved-sheet.png",
+    "sha256": "9aaf8eefd52d1b5fe848198e3a93c47920f940f484cf53d141a0ac6a3cf31d0b",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/02-conventional-composition/manifest.json",
+    "sha256": "96574559f9d19e15e190241f1019edd87a6dfc159bd7354b0e688f55a2b53c8c",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/03-unconventional-composition/exemplars/category-03-approved-sheet.png",
+    "sha256": "64ba87c8d1506a75c0059be307fbc51f643c1111042cf5ed114a6b56929247cf",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/03-unconventional-composition/manifest.json",
+    "sha256": "403378f651d69cc087a6eb771781a8ffe8fea95a7727b149549d7b11ed2d7bf4",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/04-color-triad-contrast/exemplars/category-04-approved-sheet.png",
+    "sha256": "ab939e3db1d5881ef0a05ec2da6c0cae71768cd2a11cb6e03cdd8df58fb91aab",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/04-color-triad-contrast/manifest.json",
+    "sha256": "067b76e11fc3ec7f17dcb7b1e70b214b8f5f5b67101a4fa853ec3e35908e781e",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/05-background-treatment/exemplars/category-05-approved-sheet.png",
+    "sha256": "f36594906d84bdd1c96980563f58eb976a5578b57ff579002c08e74109e2c0a8",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/05-background-treatment/manifest.json",
+    "sha256": "cb3b1bade47c7468314ec194f8df84a72f94dea10ff852fec11ca34ef29754e2",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/06-lighting/exemplars/category-06-approved-sheet.png",
+    "sha256": "37e71a5453ee776de48ac6ec4c1ee960ca795f060e12ddee889b3e2b459d4c75",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/06-lighting/manifest.json",
+    "sha256": "5b633ef8fc6cd4b888eeee3d18f857549a61e03352de70a1c8c53729e9f5aa8b",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/07-ink-contour-black-structure/exemplars/category-07-approved-sheet.png",
+    "sha256": "9b9d0e2a8fe335f2308a0b5d9976db246444e1c4d56a0affbf31465fcfbc0dc1",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/07-ink-contour-black-structure/manifest.json",
+    "sha256": "ab8a67c315e6593b44c4baad7a79424ebe7729f90f17a99908a3271b2b4cdc04",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/08-pose-gesture-body-mechanics/exemplars/category-08-approved-sheet.png",
+    "sha256": "2fa25f06a7aa5d820dfd7da7394d04090a60b9b801b3feea1f71ed66c5e8588c",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/08-pose-gesture-body-mechanics/manifest.json",
+    "sha256": "d667059f1eff9b2604ebadeb360475255ee24d0e2c131916fb699091f9475923",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/09-color-palette-mood/exemplars/category-09-approved-sheet.png",
+    "sha256": "6d6d7a954a80c7f82c8c6a185af2b5bf41b0f59c11514c07adecdb366952e1b8",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/09-color-palette-mood/manifest.json",
+    "sha256": "2f43d8827fbc481c2ff55e97f26329bdc829559c5991617666f92f4f7df496d9",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/10-theme-costume-transformation/exemplars/category-10-approved-sheet.png",
+    "sha256": "009a4a0c2f61121d0c4cf56c7aadc9b066d90a9361dd10bcc4624f8e9dc9e375",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/10-theme-costume-transformation/manifest.json",
+    "sha256": "97802e3e31afc5253e9c263247f166174c877659086efb1775c6f0a5eb7acd32",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/11-rendering-style-illustration-technique/exemplars/category-11-approved-sheet.png",
+    "sha256": "8fecf8f303de17ccdf52b41e7a90ed6b6cffad89c3788ed6a183aada0ab90087",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/11-rendering-style-illustration-technique/manifest.json",
+    "sha256": "0f66c080be12a59ba42d798f0a97349fdc0148851e16eab8db9ccc2fdeb070ef",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/12-environment-background-abstraction/exemplars/category-12-approved-sheet.png",
+    "sha256": "85e1670b794949116e5fab1f98af7a68b23ca7692f8940ae10225fd7dfe891d3",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/12-environment-background-abstraction/manifest.json",
+    "sha256": "5a69a26c7ec2dcb1c038404076b7698566720ca44ca0625f3ed0290b4438825e",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/13-expression-micro-mood/exemplars/category-13-approved-sheet.png",
+    "sha256": "19188fdeeae3c94d510e2f0936041c870d22aef929befa5063b85d51beab5dfb",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/13-expression-micro-mood/manifest.json",
+    "sha256": "2bc583c7ac4dc1edeec534c1f65265cc8640ca5fdfe75e94a528658662dcdac1",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/14-camera-angle-perspective/exemplars/category-14-approved-sheet.png",
+    "sha256": "965d15a6945ead6893c7d0d502ceaee67286177592da22bd1d098c7f34fedd93",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/14-camera-angle-perspective/manifest.json",
+    "sha256": "7a3ec43c039b3d0683bef3149ccdc78ffede2347222ba66ed755e8525962763d",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/15-props-accessories/exemplars/category-15-approved-sheet.png",
+    "sha256": "5c3449d2919298e34a20876e77e363027de67a5b3e22d7a31f7442db8aefe7ea",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "packs/official/15-props-accessories/manifest.json",
+    "sha256": "0cbd949f384914c8bab7e121012a79fc85a6e9e3475010c15da443f7dad587dc",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Reviewed primary visual or sanitized scoped metadata"
+  },
+  {
+    "path": "public/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "release-profile.json",
+    "sha256": "35775b7b127f473934805ddf4ae451568d5472e7bd747f3b333e29ea89fe6587",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "schemas/application-state.schema.json",
+    "sha256": "e8fb4df70adc22358e5934247db697ce82d2d184f50ab31be399961d66e7c13f",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "schemas/contracts.schema.json",
+    "sha256": "c0d1c0a989b62d50ff3db0bd6fa3d19afffb88fb981648e0fbb1a2306f5492b4",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "schemas/feedback-ledger.schema.json",
+    "sha256": "05303a06d546743491507632d28725ba1915d251681a818aab0289999e057249",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "schemas/normalization-ledger.schema.json",
+    "sha256": "87429e2866e0f874ad391fcce8d3242458d40bd29c60199ff3ac010f56ca654e",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "schemas/official-library.schema.json",
+    "sha256": "b919e7c3e6a76aea5fda4029f9ff83f9be83a46c8d5e720179b769093db8dc59",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "schemas/pack.schema.json",
+    "sha256": "9eb237cbdd7091ab3dd2f0ef921cdeda05065746680a71e130846a4a36dd23e0",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "schemas/preset.schema.json",
+    "sha256": "51ad927f275298677317f43be5258764c3e36caaa9ff35cea66a4e9b7fe88b2f",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "schemas/production-spec.schema.json",
+    "sha256": "9c196b34f844cf105fd31d5a663cb006faa246bc01fbda01c91385bc573e7327",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "schemas/project-manifest.schema.json",
+    "sha256": "d95850e9815cb5d0762e4490b44c277e1c82421e403f0a4f8d2df46b407ce07e",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "schemas/project-state.schema.json",
+    "sha256": "2efeb10ce78d87376fb8c376ccdfcd396c7515a311c6433e2a3bbbb0b2228064",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/base-path.ts",
+    "sha256": "5269b40d5d9e2abe37e44aaf82734915117af7b082d73eccde3faf8e16d0be5f",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/dependency-notices.mjs",
+    "sha256": "f5e910379fda54e0e00f235a66359cd8135722190538ac01ec366e2b4cb57f95",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/generate-phase8-review.ts",
+    "sha256": "4ed80b1abcf837c04d9f27aea749a022bf9eab3281e206e37d289de0c152dae3",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/generate-phase9-review.ts",
+    "sha256": "01fa345a52137ebb81c8fab455bfba7e2ea52a7b74e8a5fd024b382f04ffa544",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/library-audit.ts",
+    "sha256": "6cd793c18280ca4c7a3691b505f3adb2395f306d104b71eeb0f2bd327bd131f4",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/pack-validation.ts",
+    "sha256": "0d9375e63253513fafd06b52996d7f3ebe69b09efb421d8023ced50270bb6f01",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/package-orientation.mjs",
+    "sha256": "f0b97108e6bd86ec4dbc8fee826ded3ddbb7c47150b225c181667727bebe733c",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/prepare-cjk-font.py",
+    "sha256": "b882df189f0d5fd268e75b12aa3e11aaed9d783ec1bd3017f842c41d84608558",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/release.mjs",
+    "sha256": "24317e0dd1efaf947c8199c9f5248e6e3a95970213c09618ce716b82befe5097",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/render-orientation.py",
+    "sha256": "fe0dd11bf85cb10c61a9c06336bacc7c6a9e2e52bcffa724f1c2473ccd866ca1",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/validate-packs.ts",
+    "sha256": "5b298ace394926e6ae7b024cebb66a4e8dc3eff8791f89d59b83afe85916bf71",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "scripts/validate-public.mjs",
+    "sha256": "5c1f5fd56f246e9de338a885dbacf3ab72a17b8886c482d2bc3923ace967741d",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/app/App.tsx",
+    "sha256": "929db190bdf0c234534a2b8aed726dd1e805c5131fa04a7771291728464c0484",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/app/appearance.ts",
+    "sha256": "ff2b41bda679211a4a0cfdde1c0aa83aa2a830d50e781e56e81e8defe5180764",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/app/contracts.ts",
+    "sha256": "7ea71b3449a8fa6956e0924f4ca6d8a56a2bfac3ff4aabd61883348b20a844f4",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/app/layouts.ts",
+    "sha256": "a753418b6febc4ff3db2cd715d83656704e0c128d843f190728c645bb3e3810e",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/app/resolution-context.ts",
+    "sha256": "52954d93e8ba13ce599b8e821c90333532888d7fbddee12689d46ff3837219df",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/app/schematic.ts",
+    "sha256": "94c3712e966a0759beca9a4e2988c36889dce954f32a9182c3c70b28f6eacce7",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/app/tabs.ts",
+    "sha256": "f45b1d3edecd2d43b340835e1b98ca62f3de27d8a3039c6dd029983294a17ef9",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/app/ui-options.ts",
+    "sha256": "c3cf79bd49b30aebf5f5b50420dbba0e21c7f9dbf70f9f1e4e1d9e42cda63494",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/app/use-library.ts",
+    "sha256": "c36363700396d6b9f285974046c1ee51b172f56c753c273aef56ce1863c715fd",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/app/workspace-state.ts",
+    "sha256": "7b97b196b568c6ee79a45a96eee00e3c370500dc9b43bf98e03546c2877b0370",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/color/generation.ts",
+    "sha256": "6a1d3762002750c6a0f7718bf264a76718141ae78600bd0489920fd172da4a9b",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/color/perception.ts",
+    "sha256": "5b6af1b6b9f69c0faf1024e2597f9d1bcd8f8fa4f32b2b2d89adfcc242793518",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/components/AdvisoryDetails.tsx",
+    "sha256": "9676d295fbf7f8adb6fc6dce8675ae61ce47f6b31e149099784c192e6cf00da6",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/components/LibraryStatus.tsx",
+    "sha256": "13dc30e1fb6e482d772eac81db82ba43c5fc0f94ee9795693ece46b554e9a733",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/components/SchematicPreview.tsx",
+    "sha256": "db6b2301668a86a5057c0193a87147e2353026928d5b927140610e1cfafbcb2a",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/components/SummaryStrip.tsx",
+    "sha256": "4a53881e67314f425ccd4689c77aed9e238b8e114855db07ea271fce89f6fc8b",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/components/WorkspaceNavigation.tsx",
+    "sha256": "1f5912f2e692687b3794586728db9942cdfc4bf9372726ba086ed7ca216d51d8",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/controls/Fields.tsx",
+    "sha256": "c6e8dfd339aa01dfc714360915159be541b165c6abeaeae5ac688546250640b1",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/controls/ScopedEditor.tsx",
+    "sha256": "bef955621529ccc3d53bd747b3a00320d37d92981123875d22eac4a0ad5a3eb8",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/controls/catalog.ts",
+    "sha256": "acc819bf3e4907c6c6b6d0f8221d103a57c160682d458eb5c6ff531d4be54f7e",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/controls/scoped.ts",
+    "sha256": "b4cbb5c1a74144362503241caa604b1716be8f5b8e08012196b4f6de5263ea85",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/controls/state-edits.ts",
+    "sha256": "5d2cd7bed3f1df7223a799c57de84a9c85cb5e4949ee909055846c57ef8c868c",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/export/clipboard.ts",
+    "sha256": "0c3fce558027fd0c2b4ba073a0f2ab145eaae82350c401b896ff87173bf78d0b",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/export/display.ts",
+    "sha256": "ac6f4101310f8318341216d77f376d79b33ffa2175fc31a924591144921d7a04",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/export/snapshot.ts",
+    "sha256": "5cc00aecf50cf54b6cfda182d1c2b8d5c28cabc8a8699c8dbfa05de892ad0fbc",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/json-compiler/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/json-compiler/compile.ts",
+    "sha256": "86ff7e069c78baf71aed20a8ee95cf9803c89c776f348b7dbf7af78390d49eeb",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/main.tsx",
+    "sha256": "57571352dfdf212b94835bc5bc108e51e6abad9f46af0bd1633f701028f2869b",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pack-loader/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pack-loader/browser.ts",
+    "sha256": "84dac06513c3147f29b2df981cceb0f6a400c181b498aa783d90af5bc89a34bb",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pack-loader/community-registry.ts",
+    "sha256": "db366f5aec775ff29f874b4dca1ad5b5c566e95704fbc849cfb7e4a4d3ed5b06",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pack-loader/community.ts",
+    "sha256": "7744001d8e1f1304f31cf1b7921f874e16227e1951908a593eb7b1dc2ec14a6a",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pack-loader/registry.ts",
+    "sha256": "d9b27ea39a00da330536bc9fa9accf183ec88fbfc8ab0b48c963fb8f0101bd3a",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pack-loader/types.ts",
+    "sha256": "6ead4d3a30eb60196a074b25337532db95b3c45276e701e753706fb12c6d5e27",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pdf/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pdf/dossier.ts",
+    "sha256": "542e82556f9ea9fbb95e9822a5d0e1a71f8305c9fda3770aceca5c66262b1469",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pdf/font-data.ts",
+    "sha256": "088d5e94ba22d9ea013e13f37d3b94474621169f3fe351ec688cc96d4dc73b89",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pdf/fonts/DejaVuSans.ttf",
+    "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pdf/fonts/LICENSE.txt",
+    "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pdf/fonts/OFL-CJK.txt",
+    "sha256": "71e2c48e790f87578819017363fc9e04cb63bd2c5c801fb9975de6a22c2ef401",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/pdf/fonts/PopArtCJKFallback.ttf.gz",
+    "sha256": "2d05980c080f8c84c99259b10e6143101852204664ca2a50b39a854f21802626",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/presets/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/presets/PresetControls.tsx",
+    "sha256": "810a0aebb3ecb9065f8af143b03a4aba405cf917f26f22c259c7aac1e16873c1",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/presets/PresetValueEditor.tsx",
+    "sha256": "2cbacc2ca722f9da668cf101892d6f210136d974dba39207c863ef0c040abde5",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/presets/library.ts",
+    "sha256": "f485187fedf5da6f21c0e3a9e476d2dc72c6d5e97ea1fbaeab6a040a68eb9dde",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/presets/storage.ts",
+    "sha256": "8d5ebe8e2f5fa03312004c6f9648f8e6476207eeebb202d5e61e7dff6a0484bd",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/project-package/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/project-package/assets.ts",
+    "sha256": "3057646639d0f93a1ec3354baa8583310507f8e959d8adb1f82d59bd458982d0",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/project-package/browser.ts",
+    "sha256": "6a34d4e3db4b3b7523961ef8167e569188a2e8d28f2b7d5288fe8d549b65f259",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/project-package/guidance.ts",
+    "sha256": "e0d2607b240f67073f718449424af9dc88858a64ffca719b595a5b54a0386930",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/project-package/package.ts",
+    "sha256": "b1604b135c606d1c1de0384a2fe95b9e28a5c4d33a71a0b2ceee11185667052b",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/project-package/zip-safety.ts",
+    "sha256": "8ea1cd8f695f7dcf10cc7c6664f5f6f3b96afa650e88203aedd59ed9532b52cd",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/prompt-compiler/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/prompt-compiler/compile.ts",
+    "sha256": "ffcdcac60dbb43a1045548c18646b2286002916c4899c1c499095d7ae1344dfd",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/prompt-compiler/coverage.ts",
+    "sha256": "d7b647d21432b98968023495bc97eb47ac15224da8e862211b8e4b01bfcc2c82",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/prompt-compiler/format.ts",
+    "sha256": "2e82fd6c10a0bb44f3e79406513ba0cfc22ac81f9e7324926cbf5c8b5403594d",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/prompt-compiler/pack-prompts.ts",
+    "sha256": "3874237dbc0fd8be9314f0a87a72c664597c8691cf9f08c36b90edf8ef3dbc04",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/randomization/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/randomization/decisions.ts",
+    "sha256": "7f8f4750b0a6ab2cebb3efaede23486f2711a1806da12807ab6a81e11be625c2",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/randomization/engine.ts",
+    "sha256": "450262fcdaa7c1f9869b19cd99cf2c24ac1f96cd713be422b4d96d64dfa2dbf9",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/state/defaults.ts",
+    "sha256": "4e1bb7a4fa217d182585d690af1aaedfe5833d319fff3f343eed0d26ef3e5921",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/state/integrity.ts",
+    "sha256": "87930553ed9c3d9e26f05f3b59f5b0c24e830c99e7e32ba85f195380573f18fc",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/state/provenance.ts",
+    "sha256": "7452066b7970df195da361c448e00ab3a674a17765f310c5196f51bd7f1f11d0",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/state/resolve-production.ts",
+    "sha256": "cfa66f06933a6be0a35130c999d13bf39301d6d157982d959e023346b5147be2",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/state/schema-validation.ts",
+    "sha256": "ef7c8dff96a597c51a351a881ceaebe7ff754494250841e578ea3184d5126cee",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/state/serialization.ts",
+    "sha256": "f8da91edc51cd2df75a05f62d8243c483b440b652dbe28dab17827c1471c3fea",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/state/types.ts",
+    "sha256": "8c0fcaa7fab64ef7d91d19ee0fdf69f1591fcbbc56483db684c83e887f2205c0",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/styles/base.css",
+    "sha256": "833a2ecbb00025071745708531741336ad2f3ee6a5762ed12ed41afa8b584466",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/styles/controls.css",
+    "sha256": "e06d10934e3d4fb166a5e4ce1774adec1f0a66dc3ca1214e76b820e62bfc6b18",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/styles/tokens.css",
+    "sha256": "105920b7c0760e0c9becffc9ad9206ba4670ffffb4a35e786e5fabfe76bf1c46",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/styles/workspace.css",
+    "sha256": "0bb0ccae3fcad49c95588fbb558010a1ca45796dcd1ceae6e018cb21c795af26",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/tabs/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/tabs/ArtDirectionTabs.tsx",
+    "sha256": "9018c55c9a50b5400c1fde533c8269dd624f5174adea3ef2a12fa7d431d0bc3c",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/tabs/CanvasLayoutTab.tsx",
+    "sha256": "c340d41b51f2b50c581455f5503378305bae45467b1c4717f2ef7a43d32e1f2c",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/tabs/ColorTab.tsx",
+    "sha256": "d2888917e23cf6cad2c4dfd020d38a502dad9e80e62cd8367005b8b208832607",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/tabs/ElementsTabs.tsx",
+    "sha256": "a6c85f3bf3fd7e2de2c54cb6464e12c1f11a34de5008919004706d0f6a80aa6e",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/tabs/ExemplarsTab.tsx",
+    "sha256": "d221a4c1d4cc6f0210c114456ff2ff4a293258a1923e78882cc94904bf38f7b9",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/tabs/ExportTab.tsx",
+    "sha256": "6e764f418bcab85e2241e718df75ecf085cf65cdc6d83c02d8ef395207e0d986",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/tabs/PacksLibrary.tsx",
+    "sha256": "62078c91f69d9f90d92cd463365bee528db919245b8eb42325f219240dcb3b16",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/tabs/PlaceholderTab.tsx",
+    "sha256": "8f745f7c27ef09a1045214dd48a8e5773dbeacfef79cdc92a9189f27c0144056",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/tabs/PresetsTab.tsx",
+    "sha256": "9740f9c67a6c9dc92b805eb5d1645c07354b4a49d1787df777d69e6639327076",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/tabs/ProjectTab.tsx",
+    "sha256": "3553f99d74c7d7a66eff2f5ae9362a312d1d9f9534d677dbc3d908794cff909f",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/validation/.gitkeep",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/validation/advisories.ts",
+    "sha256": "37d63719056b435604d5db06de68d3dfdad4476fd845f9fbc24d426171cad4f6",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "src/validation/engine.ts",
+    "sha256": "34a9d142fd418295ee0d7b3fd982b79dfc4c45d5724b93aba9b8ba55fbbcf689",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/color.test.ts",
+    "sha256": "e79bae9a82470136feb118c9e0fd934262040bfb1cda2f196994b38804938b3f",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/contracts.test.ts",
+    "sha256": "7b6cc5e177583b00684e264fc1643309e8ebbed44ddcd04be8c536798f7e1034",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/controls.test.tsx",
+    "sha256": "679535bcf844b4d4c8587f1b603ed36d6cde1c8d30d77bbf2a9a7e6126b0c0d2",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/application-state.invalid.json",
+    "sha256": "856592e5f2d485b098f79368d3c4b2b68bd5a631a9335beb057c79a2e5edcc95",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/application-state.valid.json",
+    "sha256": "48fceb5435d71e4ce0e30f6b54b3b7bd1d7e885042e7901155d11e37a5eb328b",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/feedback-ledger.invalid.json",
+    "sha256": "e69ea26c855360bc9ff95f44861b99fec8df82025b2a7edc1293c3c99b087857",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/feedback-ledger.valid.json",
+    "sha256": "0543354d62fdba8d1ef34adb27d3116e148a6d27b7b8569c54cbb8040003ba25",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/pack.invalid.json",
+    "sha256": "4d463894ce2d04c0653168c936bbce66e4cbc597b500b030e95499dce61edd04",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/pack.valid.json",
+    "sha256": "d4690711788c047523d3394db1093526182b0c89d0cee233d4fc096ed59a4796",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/phase5-project.invalid.json",
+    "sha256": "71d8e431838f5b8df0654a4de7d807ddbe1173d0fb25f47558293b1d8f4e9f3d",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/phase5-project.valid.json",
+    "sha256": "f79286a3d4e8ed4ae394bb17515642a9787b9dbacbed7d00d414b44e563c36f8",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/phase6-preset.invalid.json",
+    "sha256": "90859f2ec6b04dc14c01ef8d1db1c5d4390f27272b974c63de3084388a6285f9",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/phase6-preset.valid.json",
+    "sha256": "c8b9ffe4f78210bfd3481dfa0d3a54eb66783cc83388039e4757b6680f30d31e",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/phase6-project.invalid.json",
+    "sha256": "e1c27b4d49b0052a5215a9743dbf671f7e1edee48332d10b1814fe5a4b76d875",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/phase6-project.valid.json",
+    "sha256": "6e194dab4ae631342346fdae49d1b791452e458598088c2c3d3f9e9873efe7f6",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/phase7-production.invalid.json",
+    "sha256": "ea62583ddd7abe726ba424a5db795def01ddb0d48c8bf6e14ce7522651e86d25",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/phase7-production.valid.json",
+    "sha256": "83e0c391fbe66616f731ed09074754fae8dfe139ffc0073ffbf6b1c12ceca255",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/phase8-project-manifest.invalid.json",
+    "sha256": "151ff01d8f2c6478394a814a3698b97eef7bef48a5ecd5054e41a38cc20f3ffe",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/phase8-project-manifest.valid.json",
+    "sha256": "d2de84d252571d8ee7ac1f92650c38e3b00c330a327397dab997b0289fda2deb",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/preset.invalid.json",
+    "sha256": "ffba99cdc70d58f9a7ef2c8e6f6113fb4d60c01c7c9b632a777e6a14f9f79b4f",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/preset.valid.json",
+    "sha256": "df80e8cf35f83e529c34812ee961d35f6f74b73779d79655494c92749d59e731",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/production-spec.invalid.json",
+    "sha256": "9b0bd09f5d8bbc06f53a01506e8e9c13842c67e68b48e0b6f209d82f517b9add",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/production-spec.valid.json",
+    "sha256": "932aa647178d43a6a14ebc5e7c6434e380727e27fdef516f120ed55eb4ee3004",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/project-manifest.invalid.json",
+    "sha256": "025fee60443c16bd17a73debbdf01355a81798abc78ec406a0f1dc1d10f54bc3",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/project-manifest.valid.json",
+    "sha256": "6885716196ca6c0609be686c8935dfd27dbbdb4758ac91773e45df4b528e5f3f",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/project-state.invalid.json",
+    "sha256": "2d5b3eb781fc6f8d7fae2f7e2c4015c4da89fed2470d531b164252eb951d4bde",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/fixtures/project-state.valid.json",
+    "sha256": "4ed1be6cde3eeda51d99bbd1f0d1224b8096a30a86801db03b20fe3d0b147b70",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/helpers.ts",
+    "sha256": "11c3140862a80b5636507fa8dace3b9c293eaa7342dc3ff956be463236243e2f",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/infrastructure.test.ts",
+    "sha256": "7aee3b574883e06bb49861403fbf25bb20044df7cf42bf96884bf803f71f9d26",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/library.test.ts",
+    "sha256": "80ddeba93c2881d398be5118a3e8d0c833e9e399e9311ab8700d51e339df2e42",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/phase10.test.ts",
+    "sha256": "4faf236ed7d8fea606f7b2ee071a820c6b76b7aa35f725a4b2783f9673b78ac6",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/phase5-data.ts",
+    "sha256": "e989341208f5a9bf964e87b69e2fdbc5d53a2a1f83950c49ce8083271e05ce54",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/phase6-data.ts",
+    "sha256": "1dcd37e9e3c9ed5b84f5ac50f98882fcdc34c27905a91ed40ee8b35c5a1b79ac",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/phase6.test.tsx",
+    "sha256": "77756d4ce4a47ae993346fa2374485b574c5cbb578f29e7cfdfece9a078b05c4",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/phase7-data.ts",
+    "sha256": "af6ded0d711d8ff2e7f109291aaf9bb98ff3f5c6666b37c30472d69d12e83938",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/phase7.test.tsx",
+    "sha256": "bb94cf69ace5a65f731ae5a141472146c85ac6a46f2ec217a262b113f8b5fd12",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/phase8-data.ts",
+    "sha256": "d9e516fa6291306769fda860a8cd451ea7c4822ce058cd319b55ae6806b05958",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/phase8.test.tsx",
+    "sha256": "5686aa520faeb86f922e3d5ce0d1799454ce16b6a2c3839de4c4fd8a1c250b16",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/phase9-data.ts",
+    "sha256": "357cdfee95dce080e05a3c140d9f1bfd43b52e3029c5c615c049400bb790bbde",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/phase9.test.tsx",
+    "sha256": "37fd5559eff669e3d9856d0702d27b8f4a9b1e02420f3b97b9b58615331ced5a",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/public-visual-release.test.ts",
+    "sha256": "062f9bd119703f1e50e5f9500eb963033a455639190b35ae968299a0e59740f9",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/resolution.test.ts",
+    "sha256": "f9602982d8649a37612ca828f78d932ee35ceb6ad7170b6f23d9f2a30590fd67",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tests/workspace.test.tsx",
+    "sha256": "a818d2279abfc46277f4e453401d639f707905d081630053782758375dd00041",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tsconfig.app.json",
+    "sha256": "ffd5d91ee286fee81a21bdb23ea0da7c7f7eb7042564323689c1d9f855f4e495",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tsconfig.json",
+    "sha256": "cdc2058a4ce9f48854a600e3b1ab98b7b6a9881e75d62d1a1efd7eeacab9100b",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tsconfig.node.json",
+    "sha256": "86284a67fec42b886a513906664a67a4d35b75df6b7a739cc05aba3e54fd2f71",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "tsconfig.test.json",
+    "sha256": "853693d0be650f2557acbe079f77235c14e18eb59cc689feaf9fbb364094edac",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  },
+  {
+    "path": "vite.config.ts",
+    "sha256": "b84a92990665befb4ebe11479d4308e71da27790e4dc6aeb92b4b4a534def9cb",
+    "classification": "READY FOR PUBLIC DISTRIBUTION",
+    "reason": "Allowed source/document/font asset or generated release inventory"
+  }
+]

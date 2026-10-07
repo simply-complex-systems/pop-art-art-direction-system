@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-08.pose-gesture-body-mechanics.v1",
+  "displayName": "Pose / Gesture / Body Mechanics Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "pose",
+  "description": "Approved exemplar pack for Pose / Gesture / Body Mechanics Exemplars.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "pose family",
+    "body language",
+    "gesture",
+    "staging relationship between body and framing"
+  ],
+  "doesNotGovern": [
+    "camera-angle taxonomy when Category 14 is available",
+    "subject identity",
+    "theme/costume",
+    "palette",
+    "camera-angle and perspective definitions (Category 14 authority)"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "category-08-sheet",
+      "title": "Pose / Gesture / Body Mechanics Exemplars",
+      "asset": {
+        "id": "category-08-sheet.original",
+        "path": "official/08-pose-gesture-body-mechanics/exemplars/category-08-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "2fa25f06a7aa5d820dfd7da7394d04090a60b9b801b3feea1f71ed66c5e8588c"
+      },
+      "governs": [
+        "pose family",
+        "body language",
+        "gesture",
+        "staging relationship between body and framing"
+      ],
+      "doesNotGovern": [
+        "camera-angle taxonomy when Category 14 is available",
+        "subject identity",
+        "theme/costume",
+        "palette",
+        "camera-angle and perspective definitions (Category 14 authority)"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "pose-gesture-body-mechanics",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "eye-level-front-staging",
+      "label": "eye-level/front staging",
+      "category": "pose",
+      "axis": "pose",
+      "value": {
+        "sourceLabel": "eye-level/front staging",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "low-angle-heroic-staging",
+      "label": "low-angle heroic staging",
+      "category": "pose",
+      "axis": "pose",
+      "value": {
+        "sourceLabel": "low-angle heroic staging",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "high-angle-staging",
+      "label": "high-angle staging",
+      "category": "pose",
+      "axis": "pose",
+      "value": {
+        "sourceLabel": "high-angle staging",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "three-quarter-pose",
+      "label": "three-quarter pose",
+      "category": "pose",
+      "axis": "pose",
+      "value": {
+        "sourceLabel": "three-quarter pose",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "profile-pose",
+      "label": "profile pose",
+      "category": "pose",
+      "axis": "pose",
+      "value": {
+        "sourceLabel": "profile pose",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "full-body-pose",
+      "label": "full-body pose",
+      "category": "pose",
+      "axis": "pose",
+      "value": {
+        "sourceLabel": "full-body pose",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "seated-pose",
+      "label": "seated pose",
+      "category": "pose",
+      "axis": "pose",
+      "value": {
+        "sourceLabel": "seated pose",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "action-dynamic-pose",
+      "label": "action/dynamic pose",
+      "category": "pose",
+      "axis": "pose",
+      "value": {
+        "sourceLabel": "action/dynamic pose",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "close-up-staging",
+      "label": "close-up staging",
+      "category": "pose",
+      "axis": "pose",
+      "value": {
+        "sourceLabel": "close-up staging",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "partial-crop-staging",
+      "label": "partial-crop staging",
+      "category": "pose",
+      "axis": "pose",
+      "value": {
+        "sourceLabel": "partial-crop staging",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "pose"
+    ],
+    "notes": [
+      "The approved sheet mixes pose, camera, and composition. In the normalized library, Category 14 is authoritative for camera-angle/perspective definitions; Category 8 is used primarily for pose/gesture/body staging.",
+      "Category 8 teaches pose, gesture and body staging; Category 14 defines camera angle and perspective.",
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "pose-gesture-body-mechanics",
+    "approved",
+    "reference-sheet"
+  ]
+}

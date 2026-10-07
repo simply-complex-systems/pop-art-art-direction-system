@@ -1,0 +1,10 @@
+node_modules/
+.phase1-build/
+.test-build/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+
+.release/

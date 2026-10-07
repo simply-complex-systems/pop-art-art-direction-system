@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "community.generic-study",
+  "displayName": "Generic Graphic Study",
+  "version": "1.0.0",
+  "description": "Generic test collection: exact-byte reference storage and concise composition suggestions.",
+  "provenance": "community",
+  "packType": "collection",
+  "license": {
+    "identifier": "CC0",
+    "status": "declared",
+    "attribution": "Schematic test fixtures; review evidence only.",
+    "redistribution": "allowed"
+  },
+  "governs": [],
+  "doesNotGovern": [],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "community.generic-study.exemplar.1",
+      "title": "Placement reference",
+      "asset": {
+        "id": "asset-a",
+        "path": "exemplars/asset-a-placement-review.png",
+        "mediaType": "image/png",
+        "sha256": "8819fa0c97be68efa13c460fe13dc194b814d4ad0d3a61fc0b7ba92b35bdc2bc"
+      },
+      "governs": [
+        "Relative placement and proportion relationships"
+      ],
+      "doesNotGovern": [
+        "Identity",
+        "Incidental costume"
+      ],
+      "approvedFeatures": [],
+      "knownDefects": [],
+      "provenance": "community",
+      "license": {
+        "identifier": "CC0",
+        "status": "declared",
+        "attribution": "Existing schematic test fixture",
+        "redistribution": "allowed"
+      },
+      "tags": [],
+      "production": {
+        "role": "subject proportions / composition",
+        "panelScope": {
+          "kind": "all"
+        },
+        "transfer": [
+          "Relative placement and proportion relationships"
+        ],
+        "doNotTransfer": [
+          "Identity",
+          "Incidental costume"
+        ],
+        "notes": "This reference governs placement only.\nDo not broaden its authority."
+      }
+    },
+    {
+      "id": "community.generic-study.exemplar.2",
+      "title": "Component reference",
+      "asset": {
+        "id": "asset-b",
+        "mediaType": "image/png",
+        "unavailableReason": "Redistribution unresolved or restricted; metadata only."
+      },
+      "governs": [
+        "The declared component topology"
+      ],
+      "doesNotGovern": [
+        "Source identity",
+        "Unrelated background details"
+      ],
+      "approvedFeatures": [],
+      "knownDefects": [],
+      "provenance": "community",
+      "license": {
+        "identifier": "private-use-only",
+        "status": "declared",
+        "attribution": "Metadata-only review fixture",
+        "redistribution": "private_use_only"
+      },
+      "tags": [],
+      "production": {
+        "role": "theme costume component",
+        "panelScope": {
+          "kind": "panels",
+          "panelIds": [
+            "panel-2",
+            "panel-4"
+          ]
+        },
+        "transfer": [
+          "The declared component topology"
+        ],
+        "doNotTransfer": [
+          "Source identity",
+          "Unrelated background details"
+        ],
+        "notes": "Keep the Theme portable to another Subject."
+      }
+    }
+  ],
+  "options": [
+    {
+      "id": "community.generic-study.option.1",
+      "label": "Offset graphic study",
+      "category": "composition",
+      "axis": "framing",
+      "value": "offset graphic framing"
+    }
+  ],
+  "presets": [
+    {
+      "schemaVersion": "1.0",
+      "id": "community.generic-study.preset.1",
+      "name": "Graphic placement",
+      "provenance": "community",
+      "category": "composition",
+      "value": {
+        "framing": "head-and-shoulders",
+        "camera": "eye-level",
+        "pose": "neutral",
+        "headOrientation": "left",
+        "eyeDirection": "right",
+        "expression": "neutral",
+        "family": "conventional",
+        "technique": "head-and-shoulders",
+        "subjectPlacement": {
+          "x": 0.45,
+          "y": 0.5
+        },
+        "cropExtent": "contained at framing boundary",
+        "cameraElevation": "eye level",
+        "cameraOrientation": "level",
+        "torsoOrientation": "three-quarter",
+        "focalRegion": "upper center",
+        "negativeSpace": {
+          "direction": "right",
+          "amount": 0.35
+        },
+        "edgeTreatment": "contained"
+      }
+    }
+  ],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "composition"
+    ],
+    "notes": [
+      "Data for known compatible controls; source rights are declarations, not independent verification."
+    ]
+  },
+  "tags": [
+    "review",
+    "generic"
+  ]
+}

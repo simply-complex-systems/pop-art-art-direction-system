@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "records": [
+    {
+      "id": "feedback-1",
+      "generationOrAssetId": "generation-1",
+      "status": "working",
+      "positiveFeedback": [
+        "Clear forms"
+      ],
+      "negativeFeedback": [
+        "Focal competition"
+      ],
+      "nextChange": "Reduce secondary density",
+      "endorsementScope": "local_exception"
+    }
+  ]
+}

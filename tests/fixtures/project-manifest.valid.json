@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0",
+  "projectId": "project-1",
+  "files": [
+    {
+      "path": "project-state.json",
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "mediaType": "application/json"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-07.ink-contour-black-structure.v1",
+  "displayName": "Ink / Contour / Black Structure Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "rendering",
+  "description": "Approved exemplar pack for Ink / Contour / Black Structure Exemplars.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "line weight",
+    "contour character",
+    "black-mass usage",
+    "shading mark language",
+    "edge treatment"
+  ],
+  "doesNotGovern": [
+    "subject identity",
+    "theme/costume",
+    "composition",
+    "palette"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "category-07-sheet",
+      "title": "Ink / Contour / Black Structure Exemplars",
+      "asset": {
+        "id": "category-07-sheet.original",
+        "path": "official/07-ink-contour-black-structure/exemplars/category-07-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "9b9d0e2a8fe335f2308a0b5d9976db246444e1c4d56a0affbf31465fcfbc0dc1"
+      },
+      "governs": [
+        "line weight",
+        "contour character",
+        "black-mass usage",
+        "shading mark language",
+        "edge treatment"
+      ],
+      "doesNotGovern": [
+        "subject identity",
+        "theme/costume",
+        "composition",
+        "palette"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "ink-contour-black-structure",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "clean-bold-lines",
+      "label": "clean bold lines",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "clean bold lines",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "thin-line-work",
+      "label": "thin line work",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "thin line work",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "expressive-dynamic",
+      "label": "expressive/dynamic",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "expressive/dynamic",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "heavy-blacks",
+      "label": "heavy blacks",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "heavy blacks",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "halftone-shading",
+      "label": "halftone shading",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "halftone shading",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "hatched-shading",
+      "label": "hatched shading",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "hatched shading",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "stipple-dot-work",
+      "label": "stipple/dot work",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "stipple/dot work",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "sketch-rough-ink",
+      "label": "sketch/rough ink",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "sketch/rough ink",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "minimal-lines",
+      "label": "minimal lines",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "minimal lines",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "ink-white-highlights",
+      "label": "ink + white highlights",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "ink + white highlights",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "rendering"
+    ],
+    "notes": [
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "ink-contour-black-structure",
+    "approved",
+    "reference-sheet"
+  ]
+}

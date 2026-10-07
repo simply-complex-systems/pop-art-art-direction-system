@@ -1,0 +1,65 @@
+import type {ProductionSpec,ResolvedPanel,ColorRole,Lighting,TextureLayer,RenderingSliders} from '../state/types.js';
+import {assertProductionIntegrity} from '../state/integrity.js';
+import {panelName,panelLabel,scopeText,term,section,instructions,lines,baseDescription,exemplarBrief} from './format.js';
+interface Fact {key:string;group:'Composition'|'Color'|'Background, texture & print'|'Lighting & rendering'|'Master rendering controls';text:string}
+const pct=(value:number)=>`${Number((value*100).toPrecision(15))}%`;
+const sliderLabels:Record<keyof RenderingSliders,string>={subjectPreservation:'Subject Preservation',themePreservation:'Theme Preservation',subjectAbstraction:'Subject Abstraction',backgroundAbstraction:'Environment / Background Abstraction',subjectStyleIntensity:'Subject Style Intensity',backgroundStyleIntensity:'Environment / Background Style Intensity',subjectTextureIntensity:'Subject Texture Intensity',backgroundTextureIntensity:'Environment / Background Texture Intensity'};
+function degree(value:number):string {return value<=3?'low':value<=7?'moderate':'high';}
+function roleName(role:ColorRole,spec:ProductionSpec):string {const ordinal=spec.color.roles.findIndex(r=>r.id===role.id)+1;if(role.displayLabel)return spec.color.roles.filter(r=>r.displayLabel===role.displayLabel).length>1?`${role.displayLabel} (role ${ordinal})`:role.displayLabel;return `${role.domain==='background'?'Background':'Color'} role ${ordinal}`;}
+function lighting(value:Lighting,spec:ProductionSpec):string {return `${term(value.style,spec)}; direction: ${value.direction}; local intensity: ${value.intensity}/10; color behavior: ${value.colorBehavior}${value.color?`; light color: ${value.color}`:''}.`;}
+function texture(value:TextureLayer,spec:ProductionSpec):string {return `${term(value.family,spec)}; local intensity: ${value.intensity}/10; region: ${value.region}; exclusions: ${value.exclusions.length?value.exclusions.join('; '):'none declared'}.`;}
+function panelFacts(panel:ResolvedPanel,spec:ProductionSpec):Fact[] {
+ const facts:Fact[]=[];const add=(group:Fact['group'],key:string,text:string)=>{if(text)facts.push({group,key,text});};const c=panel.composition;
+ const compositionFields={family:'Composition family',technique:'Composition technique',framing:'Framing',camera:'Camera',pose:'Pose / staging',headOrientation:'Head direction',eyeDirection:'Gaze',expression:'Expression',cropExtent:'Crop extent',cameraElevation:'Camera elevation',cameraOrientation:'Camera orientation',torsoOrientation:'Torso orientation',focalRegion:'Focal region',edgeTreatment:'Edge behavior'} as const;
+ for(const [field,label] of Object.entries(compositionFields)) {const value=c[field as keyof typeof compositionFields];if(value)add('Composition',`composition.${field}`,`${label}: ${term(value,spec)}.`);}
+ if(c.subjectPlacement)add('Composition','composition.subjectPlacement',`Subject center: ${pct(c.subjectPlacement.x)} from the left and ${pct(c.subjectPlacement.y)} from the top.`);
+ if(c.negativeSpace)add('Composition','composition.negativeSpace',`Negative space: ${pct(c.negativeSpace.amount)} toward ${c.negativeSpace.direction}.`);
+ for(const assignment of panel.color.assignments){const role=spec.color.roles.find(r=>r.id===assignment.roleId)!;add('Color',`color.${assignment.roleId}`,`${roleName(role,spec)}: ${assignment.color}.`);}
+ if(panel.color.mood)add('Color','color.mood',`Palette mood: ${term(panel.color.mood,spec)}.`);
+ const t=panel.texture;add('Background, texture & print','texture.backgroundField',`Field construction: ${term(t.backgroundField,spec)}. Field colors follow the background role assignments above.`);
+ if(t.environment)add('Background, texture & print','texture.environment',`Environment: ${term(t.environment,spec)}.`);
+ for(const name of ['subject','background'] as const){const label=name==='subject'?'Subject':'Environment / Background';add('Background, texture & print',`texture.${name}`,`${label} surface texture: ${texture(t[name],spec)}`);add('Background, texture & print',`texture.${name}.instructions`,instructions(`${label} surface texture`,t[name].additionalInstructions));}
+ if(!t.finishes.length)add('Background, texture & print','texture.noFinishes','Print finishes: none.');
+ t.finishes.forEach((f,i)=>{const label=f.scope==='global'?'Global':f.scope==='subject'?'Subject':'Background';add('Background, texture & print',`texture.finish.${i}`,`${label} print finish ${i+1}: ${term(f.family,spec)}; local intensity: ${f.intensity}/10.${f.additionalInstructions?`\n${instructions(`${label} print finish ${i+1}`,f.additionalInstructions)}`:''}`);});
+ const l=panel.lightingRendering;for(const name of ['subjectLighting','backgroundLighting'] as const){const label=name==='subjectLighting'?'Subject lighting':'Environment / Background lighting';add('Lighting & rendering',`lighting.${name}`,`${label}: ${lighting(l[name],spec)}`);add('Lighting & rendering',`lighting.${name}.instructions`,instructions(label,l[name].additionalInstructions));}
+ add('Lighting & rendering','lighting.ink',`Ink / contour treatment: ${term(l.ink,spec)}.`);add('Lighting & rendering','lighting.rendering',`Rendering / illustration technique: ${term(l.rendering,spec)}.`);
+ for(const name of Object.keys(sliderLabels) as (keyof RenderingSliders)[]){const v=panel.sliders[name];add('Master rendering controls',`sliders.${name}`,`${sliderLabels[name]}: ${v}/10 — ${degree(v)} ${name.endsWith('Preservation')?'preservation emphasis':name.endsWith('Abstraction')?'abstraction':'intensity'}.`);}
+ return facts;
+}
+function choreography(spec:ProductionSpec):string[] {
+ if(spec.panels.length===1)return [];
+ if(!spec.choreography)return ['Use the concrete panel directions below. Choreography metadata is not supplied; do not infer a new pattern.'];
+ const names={composition:'Composition',color:'Color',texture:'Background / Texture / Print',lightingRendering:'Lighting / Rendering',sliders:'Master rendering controls'};
+ return Object.entries(spec.choreography).map(([key,rule])=>{
+  const mode=rule.mode==='uniform'?'Uniform':rule.mode==='structured'?`Structured Variation — ${term(rule.pattern!)}`:rule.mode==='random'?'Random Variation — concrete selections already committed':'Manual per panel';
+  const sources=rule.panelSources.filter(p=>p.source==='override'||p.source==='manual'||p.source==='global'&&rule.mode!=='uniform').map(p=>`${panelLabel(p.panelId,spec.canvas.panels)}: ${p.source==='global'?'global inheritance':p.source==='override'?'explicit override':'manual selection'}`);
+  return `${names[key as keyof typeof names]}: ${mode}.${sources.length?' '+sources.join('; ')+'.':''}`;
+ }).concat('Follow the stated concrete values. Do not randomize again.');
+}
+/** Pure presentation of one concrete snapshot. No editable state, library loading, inference or entropy. */
+export function compileHumanPrompt(spec:ProductionSpec):string {
+ assertProductionIntegrity(spec);
+ const allFacts=spec.panels.map(p=>panelFacts(p,spec));const common=(allFacts[0]??[]).filter(f=>allFacts.every(p=>p.some(other=>other.key===f.key&&other.text===f.text)));const commonKeys=new Set(common.map(f=>f.key));
+ const shared=(group:Fact['group'])=>common.filter(f=>f.group===group).map(f=>f.text);
+ const sections:string[]=[];const title=spec.project.name;
+ const context=[`Production brief: ${title}`,`Use the established Subject pack: ${spec.subject.displayName} (${spec.subject.provenance==='official'?'Official':'Community'} provenance).`,`Use the established Theme pack: ${spec.theme.displayName} (${spec.theme.provenance==='official'?'Official':'Community'} provenance).`,`${spec.canvas.panels.length} ${spec.canvas.panels.length===1?'panel':'panels'}; overall aspect ratio ${spec.canvas.aspectRatio.width}:${spec.canvas.aspectRatio.height}.`,`Layout: ${spec.display?.layoutName??`${spec.canvas.grid.rows} rows × ${spec.canvas.grid.columns} columns`}.`];
+ if(spec.canvas.panels.length>1)context.push(...spec.canvas.panels.map((p,i)=>`${panelName(i)}: row ${p.row+1}, column ${p.column+1}; spans ${p.rowSpan} ${p.rowSpan===1?'row':'rows'} × ${p.columnSpan} ${p.columnSpan===1?'column':'columns'}.`));
+ for(const key of ['outerBorder','dividers'] as const){const value=spec.canvas[key];const label=key==='outerBorder'?'Outer border':'Internal dividers';context.push(value.enabled?`${label}: enabled; thickness ${value.thickness}; color ${value.color}.`:`${label}: disabled.`);}
+ for(const [name,ref] of [['Subject',spec.subject],['Theme',spec.theme]] as const)if(ref.contextAssets.length)context.push(`${name} context references: ${ref.contextAssets.map(a=>a.path.split('/').at(-1)).join('; ')}. Use their established authority.`);
+ context.push(...lines([instructions('Canvas & Layout',spec.canvas.additionalInstructions)]));sections.push(section('PRODUCTION CONTEXT',context));
+ sections.push(section('GLOBAL ART DIRECTION',lines([...shared('Master rendering controls'),instructions('Master rendering controls',spec.categoryInstructions.sliders)])));
+ sections.push(section('PANEL CHOREOGRAPHY',choreography(spec)));
+ sections.push(section('COMPOSITION',lines([...shared('Composition'),instructions('Composition',spec.categoryInstructions.composition)])));
+ const colors=[`Color strategy: ${term(spec.color.strategy.kind==='builtin'?spec.color.strategy.id:spec.color.strategy.strategyId,spec)}. Use the concrete colors specified here.`,...spec.color.roles.map(r=>`${roleName(r,spec)}: ${r.importance} ${r.domain} role${r.materialLabel?`; semantic / material meaning: ${r.materialLabel}`:''}; ${scopeText(r.panelScope,spec.canvas.panels)}.`),...shared('Color')];
+ for(const relation of spec.color.relationships){const roles=relation.roleIds.map(id=>roleName(spec.color.roles.find(r=>r.id===id)!,spec));colors.push(`${roles.join(' and ')}: ${term(relation.type)}; ${scopeText(relation.panelScope,spec.canvas.panels)}.${relation.separators.length?' Intentional separators: '+relation.separators.map(s=>`${term(s.type)} (${s.strength}) — ${s.description}`).join('; '):' No intentional separator declared.'}`);}
+ colors.push(...lines([instructions('Color',spec.categoryInstructions.color)]));sections.push(section('COLOR DIRECTION',colors));
+ sections.push(section('BACKGROUND FIELD, SURFACE TEXTURE & PRINT FINISH',lines([...shared('Background, texture & print'),instructions('Texture & Print',spec.categoryInstructions.texture)])));
+ sections.push(section('LIGHTING & RENDERING',lines([...shared('Lighting & rendering'),instructions('Lighting & Rendering',spec.categoryInstructions.lightingRendering)])));
+ const differences=allFacts.map(facts=>facts.filter(f=>!commonKeys.has(f.key)));if(differences.some(f=>f.length))sections.push(section('PANEL-BY-PANEL DIRECTION',differences.flatMap((facts,i)=>facts.length?[`${panelName(i)}\n`+(['Master rendering controls','Composition','Color','Background, texture & print','Lighting & rendering'] as const).map(group=>section(group,facts.filter(f=>f.group===group).map(f=>f.text))).filter(Boolean).join('\n')]:[])));
+ const typography=spec.typography.enabled?spec.typography.elements.map((e,i)=>lines([`Text element ${i+1}: ${term(e.type)}; ${baseDescription(e,spec.canvas.panels)} Style: ${e.style}; crop behavior: ${e.cropBehavior}.`,e.content?`Text (verbatim):\n${e.content}`:'Text content is empty; do not invent wording.',instructions(`Text element ${i+1}`,e.additionalInstructions)]).join('\n')):['Typography is disabled; do not render stored text devices.'];
+ if(spec.typography.enabled&&!spec.typography.elements.length)typography.push('No text devices are assigned.');typography.push(...lines([instructions('Typography',spec.categoryInstructions.typography),spec.typography.additionalInstructions!==spec.categoryInstructions.typography?instructions('Typography collection',spec.typography.additionalInstructions):'']));sections.push(section('TYPOGRAPHY',typography));
+ sections.push(section('PROPS / OBJECTS',lines([...spec.props.elements.map((e,i)=>lines([`Object ${i+1}: ${e.description}; ${baseDescription(e,spec.canvas.panels)} Interaction: ${e.interaction}; contact / holding logic: ${e.contactLogic}.`,instructions(`Object ${i+1}`,e.additionalInstructions)]).join('\n')),instructions('Props / Objects',spec.categoryInstructions.props),spec.props.additionalInstructions!==spec.categoryInstructions.props?instructions('Props collection',spec.props.additionalInstructions):''])));
+ sections.push(section('EFFECTS',lines([...spec.effects.elements.map((e,i)=>lines([`Effect ${i+1}: ${e.description}; target: ${e.target}; intensity: ${e.intensity}/10; spread: ${e.spread}; ${baseDescription(e,spec.canvas.panels)}`,instructions(`Effect ${i+1}`,e.additionalInstructions)]).join('\n')),instructions('Effects',spec.categoryInstructions.effects),spec.effects.additionalInstructions!==spec.categoryInstructions.effects?instructions('Effects collection',spec.effects.additionalInstructions):''])));
+ sections.push(section('PRODUCTION EXEMPLARS',lines([...spec.exemplars.map((e,i)=>exemplarBrief(e,i,spec.canvas.panels)),instructions('Exemplars',spec.categoryInstructions.exemplars)])));
+ return sections.filter(Boolean).join('\n\n')+'\n';
+}

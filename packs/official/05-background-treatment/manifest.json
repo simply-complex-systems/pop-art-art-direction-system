@@ -1,0 +1,365 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-05.background-treatment.v1",
+  "displayName": "Background Treatment Library",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "background",
+  "description": "Approved exemplar pack for Background Treatment Library.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "background field construction",
+    "surface texture",
+    "print finish/reproduction effects"
+  ],
+  "doesNotGovern": [
+    "subject identity",
+    "theme/costume",
+    "pose",
+    "composition"
+  ],
+  "documents": [
+    {
+      "id": "official.category-05.background-treatment.v1.document-1",
+      "title": "POP_ART_BACKGROUND_TEXTURE_REFERENCE_LIBRARY_v1",
+      "asset": {
+        "id": "official.category-05.background-treatment.v1.document-1.original",
+        "mediaType": "application/pdf",
+        "unavailableReason": "Approved local reference omitted from public distribution: redistribution rights unresolved. Original path and hash retained in external-reference-index.json."
+      },
+      "license": {
+        "identifier": "UNRESOLVED",
+        "status": "unknown",
+        "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+      }
+    },
+    {
+      "id": "official.category-05.background-treatment.v1.document-2",
+      "title": "CATEGORY_05_BACKGROUND_TREATMENT_LIBRARY_v1",
+      "asset": {
+        "id": "official.category-05.background-treatment.v1.document-2.original",
+        "mediaType": "application/pdf",
+        "unavailableReason": "Approved local reference omitted from public distribution: redistribution rights unresolved. Original path and hash retained in external-reference-index.json."
+      },
+      "license": {
+        "identifier": "UNRESOLVED",
+        "status": "unknown",
+        "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+      }
+    },
+    {
+      "id": "official.category-05.background-treatment.v1.document-3",
+      "title": "CATEGORY_05A_BACKGROUND_FIELD_CONSTRUCTION_v1",
+      "asset": {
+        "id": "official.category-05.background-treatment.v1.document-3.original",
+        "mediaType": "application/pdf",
+        "unavailableReason": "Approved local reference omitted from public distribution: redistribution rights unresolved. Original path and hash retained in external-reference-index.json."
+      },
+      "license": {
+        "identifier": "UNRESOLVED",
+        "status": "unknown",
+        "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+      }
+    },
+    {
+      "id": "official.category-05.background-treatment.v1.document-4",
+      "title": "CATEGORY_05B_SURFACE_TEXTURE_v1",
+      "asset": {
+        "id": "official.category-05.background-treatment.v1.document-4.original",
+        "mediaType": "application/pdf",
+        "unavailableReason": "Approved local reference omitted from public distribution: redistribution rights unresolved. Original path and hash retained in external-reference-index.json."
+      },
+      "license": {
+        "identifier": "UNRESOLVED",
+        "status": "unknown",
+        "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+      }
+    },
+    {
+      "id": "official.category-05.background-treatment.v1.document-5",
+      "title": "CATEGORY_05C_PRINT_FINISH_REPRO_EFFECTS_v1",
+      "asset": {
+        "id": "official.category-05.background-treatment.v1.document-5.original",
+        "mediaType": "application/pdf",
+        "unavailableReason": "Approved local reference omitted from public distribution: redistribution rights unresolved. Original path and hash retained in external-reference-index.json."
+      },
+      "license": {
+        "identifier": "UNRESOLVED",
+        "status": "unknown",
+        "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+      }
+    }
+  ],
+  "exemplars": [
+    {
+      "id": "category-05-sheet",
+      "title": "Background Treatment Library",
+      "asset": {
+        "id": "category-05-sheet.original",
+        "path": "official/05-background-treatment/exemplars/category-05-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "f36594906d84bdd1c96980563f58eb976a5578b57ff579002c08e74109e2c0a8"
+      },
+      "governs": [
+        "background field construction",
+        "surface texture",
+        "print finish/reproduction effects"
+      ],
+      "doesNotGovern": [
+        "subject identity",
+        "theme/costume",
+        "pose",
+        "composition"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "background-treatment",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "flat-single-color-field",
+      "label": "flat single-color field",
+      "category": "background",
+      "axis": "field",
+      "value": {
+        "definition": "One luminous poster-color field without internal geometry.",
+        "sourceEvidence": "Category 05A PDF"
+      }
+    },
+    {
+      "id": "hard-two-tone-split",
+      "label": "hard two-tone split",
+      "category": "background",
+      "axis": "field",
+      "value": {
+        "definition": "Two flat fields separated by one decisive boundary.",
+        "sourceEvidence": "Category 05A PDF"
+      }
+    },
+    {
+      "id": "two-tone-geometric-blocked-field",
+      "label": "two-tone geometric/blocked field",
+      "category": "background",
+      "axis": "field",
+      "value": {
+        "definition": "Large color blocks provide structure without scenery.",
+        "sourceEvidence": "Category 05A PDF"
+      }
+    },
+    {
+      "id": "linear-pop-gradient",
+      "label": "linear pop gradient",
+      "category": "background",
+      "axis": "field",
+      "value": {
+        "definition": "Stepped graphic transition along one axis, avoiding photorealistic airbrush.",
+        "sourceEvidence": "Category 05A PDF"
+      }
+    },
+    {
+      "id": "radial-spotlight-gradient",
+      "label": "radial/spotlight gradient",
+      "category": "background",
+      "axis": "field",
+      "value": {
+        "definition": "High-value focal zone transitions outward in controlled graphic steps.",
+        "sourceEvidence": "Category 05A PDF"
+      }
+    },
+    {
+      "id": "color-bands-stripes",
+      "label": "color bands/stripes",
+      "category": "background",
+      "axis": "field",
+      "value": {
+        "definition": "Broad repeating bands with deliberate spacing and direction.",
+        "sourceEvidence": "Category 05A PDF"
+      }
+    },
+    {
+      "id": "radial-burst-sunburst",
+      "label": "radial burst/sunburst",
+      "category": "background",
+      "axis": "field",
+      "value": {
+        "definition": "Alternating wedges radiate from a chosen focal origin.",
+        "sourceEvidence": "Category 05A PDF"
+      }
+    },
+    {
+      "id": "concentric-target-field",
+      "label": "concentric/target field",
+      "category": "background",
+      "axis": "field",
+      "value": {
+        "definition": "Nested circles or rings form a centered or offset target.",
+        "sourceEvidence": "Category 05A PDF"
+      }
+    },
+    {
+      "id": "repeating-graphic-motif",
+      "label": "repeating graphic motif",
+      "category": "background",
+      "axis": "field",
+      "value": {
+        "definition": "Simple repeated symbols create pattern without narrative scenery.",
+        "sourceEvidence": "Category 05A PDF"
+      }
+    },
+    {
+      "id": "checker-grid-geometric-pattern",
+      "label": "checker/grid/geometric pattern",
+      "category": "background",
+      "axis": "field",
+      "value": {
+        "definition": "Regular geometry supplies rhythm; scale stays subordinate to the subject.",
+        "sourceEvidence": "Category 05A PDF"
+      }
+    },
+    {
+      "id": "ben-day-dots",
+      "label": "Ben-Day dots",
+      "category": "background",
+      "axis": "texture",
+      "value": {
+        "definition": "Regular equal-size mechanically spaced dots; no tonal dot growth.",
+        "sourceEvidence": "Category 05B PDF"
+      }
+    },
+    {
+      "id": "halftone-gradient",
+      "label": "halftone gradient",
+      "category": "background",
+      "axis": "texture",
+      "value": {
+        "definition": "Dot size or density varies to describe tone.",
+        "sourceEvidence": "Category 05B PDF"
+      }
+    },
+    {
+      "id": "coarse-halftone-raster",
+      "label": "coarse halftone/raster",
+      "category": "background",
+      "axis": "texture",
+      "value": {
+        "definition": "Oversized raster dots act as graphic shapes.",
+        "sourceEvidence": "Category 05B PDF"
+      }
+    },
+    {
+      "id": "stipple",
+      "label": "stipple",
+      "category": "background",
+      "axis": "texture",
+      "value": {
+        "definition": "Irregular scattered points without a grid.",
+        "sourceEvidence": "Category 05B PDF"
+      }
+    },
+    {
+      "id": "diagonal-hatch",
+      "label": "diagonal hatch",
+      "category": "background",
+      "axis": "texture",
+      "value": {
+        "definition": "Parallel lines in one deliberate direction.",
+        "sourceEvidence": "Category 05B PDF"
+      }
+    },
+    {
+      "id": "crosshatch",
+      "label": "crosshatch",
+      "category": "background",
+      "axis": "texture",
+      "value": {
+        "definition": "Two or more intersecting line families.",
+        "sourceEvidence": "Category 05B PDF"
+      }
+    },
+    {
+      "id": "screenprint-grain",
+      "label": "screenprint grain",
+      "category": "background",
+      "axis": "finish",
+      "value": {
+        "definition": "Subtle pinholes and uneven ink coverage, preserving clean shapes.",
+        "sourceEvidence": "Category 05C PDF"
+      }
+    },
+    {
+      "id": "distressed-newsprint",
+      "label": "distressed/newsprint",
+      "category": "background",
+      "axis": "finish",
+      "value": {
+        "definition": "Controlled broken ink, rough edges and sparse missing patches.",
+        "sourceEvidence": "Category 05C PDF"
+      }
+    },
+    {
+      "id": "misregistration",
+      "label": "misregistration",
+      "category": "background",
+      "axis": "finish",
+      "value": {
+        "definition": "Small consistent color-layer offsets; black structure stays stable, without chromatic blur.",
+        "sourceEvidence": "Category 05C PDF"
+      }
+    },
+    {
+      "id": "flat-field",
+      "label": "Flat Field",
+      "category": "background",
+      "axis": "texture",
+      "value": {
+        "definition": "No surface texture; field geometry remains independently selected.",
+        "sourceEvidence": "Phase 3 authorization: explicit neutral option"
+      }
+    },
+    {
+      "id": "none",
+      "label": "None",
+      "category": "background",
+      "axis": "finish",
+      "value": {
+        "definition": "No reproduction finish; field and texture remain independently selected.",
+        "sourceEvidence": "Phase 3 authorization: explicit neutral option"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "background"
+    ],
+    "notes": [
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "background-treatment",
+    "approved",
+    "reference-sheet"
+  ]
+}

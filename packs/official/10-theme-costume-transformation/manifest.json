@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-10.theme-costume-transformation.v1",
+  "displayName": "Theme / Costume Transformation Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "theme",
+  "description": "Approved exemplar pack for Theme / Costume Transformation Exemplars.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "theme transformation modularity",
+    "costume/archetype signals",
+    "how theme changes without replacing subject"
+  ],
+  "doesNotGovern": [
+    "subject identity",
+    "composition",
+    "rendering quality",
+    "general subject proportions"
+  ],
+  "documents": [
+    {
+      "id": "official.category-10.theme-costume-transformation.v1.document-1",
+      "title": "WITCH-01-HANDOFF",
+      "asset": {
+        "id": "official.category-10.theme-costume-transformation.v1.document-1.original",
+        "mediaType": "application/pdf",
+        "unavailableReason": "Approved local reference omitted from public distribution: redistribution rights unresolved. Original path and hash retained in external-reference-index.json."
+      },
+      "license": {
+        "identifier": "UNRESOLVED",
+        "status": "unknown",
+        "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+      }
+    }
+  ],
+  "exemplars": [
+    {
+      "id": "category-10-sheet",
+      "title": "Theme / Costume Transformation Exemplars",
+      "asset": {
+        "id": "category-10-sheet.original",
+        "path": "official/10-theme-costume-transformation/exemplars/category-10-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "009a4a0c2f61121d0c4cf56c7aadc9b066d90a9361dd10bcc4624f8e9dc9e375"
+      },
+      "governs": [
+        "theme transformation modularity",
+        "costume/archetype signals",
+        "how theme changes without replacing subject"
+      ],
+      "doesNotGovern": [
+        "subject identity",
+        "composition",
+        "rendering quality",
+        "general subject proportions"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "theme-costume-transformation",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "classic-witch",
+      "label": "classic witch",
+      "category": "theme",
+      "axis": "theme",
+      "value": {
+        "sourceLabel": "classic witch",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "gothic-elegance",
+      "label": "gothic elegance",
+      "category": "theme",
+      "axis": "theme",
+      "value": {
+        "sourceLabel": "gothic elegance",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "casual-modern",
+      "label": "casual modern",
+      "category": "theme",
+      "axis": "theme",
+      "value": {
+        "sourceLabel": "casual modern",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "fantasy-armor",
+      "label": "fantasy armor",
+      "category": "theme",
+      "axis": "theme",
+      "value": {
+        "sourceLabel": "fantasy armor",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "masquerade",
+      "label": "masquerade",
+      "category": "theme",
+      "axis": "theme",
+      "value": {
+        "sourceLabel": "masquerade",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "vampire",
+      "label": "vampire",
+      "category": "theme",
+      "axis": "theme",
+      "value": {
+        "sourceLabel": "vampire",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "cat-woman",
+      "label": "cat woman",
+      "category": "theme",
+      "axis": "theme",
+      "value": {
+        "sourceLabel": "cat woman",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "cowgirl",
+      "label": "cowgirl",
+      "category": "theme",
+      "axis": "theme",
+      "value": {
+        "sourceLabel": "cowgirl",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "santa-holiday",
+      "label": "Santa/holiday",
+      "category": "theme",
+      "axis": "theme",
+      "value": {
+        "sourceLabel": "Santa/holiday",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "steampunk",
+      "label": "steampunk",
+      "category": "theme",
+      "axis": "theme",
+      "value": {
+        "sourceLabel": "steampunk",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "theme"
+    ],
+    "notes": [
+      "WITCH-01-HANDOFF is a deep worked example of one Theme Pack; it is not a universal costume canon.",
+      "Attached handoff is an example project, not a default subject or theme.",
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "theme-costume-transformation",
+    "approved",
+    "reference-sheet"
+  ]
+}

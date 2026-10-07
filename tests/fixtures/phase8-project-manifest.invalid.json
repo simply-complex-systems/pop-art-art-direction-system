@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "99",
+  "projectId": "phase7-generic-review",
+  "projectName": "Mechanical Owl - Winter study",
+  "createdAt": "2026-10-07T12:00:00.000Z",
+  "modifiedAt": "2026-10-07T12:00:00.000Z",
+  "applicationVersion": "0.1.0",
+  "provenance": "personal-project",
+  "subject": {
+    "packId": "community.mechanical-owl",
+    "displayName": "Mechanical Owl",
+    "provenance": "community",
+    "contextAssets": []
+  },
+  "theme": {
+    "packId": "community.winter-festival",
+    "displayName": "Winter Festival",
+    "provenance": "community",
+    "contextAssets": []
+  },
+  "exemplarCount": 2,
+  "historyCounts": {
+    "accepted": 1,
+    "rejected": 1,
+    "working": 1
+  },
+  "production": {
+    "available": true
+  },
+  "unavailableAssets": [],
+  "files": [
+    {
+      "path": "exemplars/asset-a-placement-review.png",
+      "sha256": "8819fa0c97be68efa13c460fe13dc194b814d4ad0d3a61fc0b7ba92b35bdc2bc",
+      "mediaType": "image/png",
+      "byteLength": 3085,
+      "assetIds": [
+        "asset-a"
+      ],
+      "originalNames": [
+        "placement-review.png"
+      ]
+    },
+    {
+      "path": "exemplars/asset-b-unassigned-review.png",
+      "sha256": "4a29729dbbbef8ef84fc1b8173786972a7a320c1605364fa9155a8ff8a77e814",
+      "mediaType": "image/png",
+      "byteLength": 26080,
+      "assetIds": [
+        "asset-b"
+      ],
+      "originalNames": [
+        "unassigned-review.png"
+      ]
+    },
+    {
+      "path": "generation-history/accepted/image-iteration-1-placement-review.png",
+      "sha256": "8819fa0c97be68efa13c460fe13dc194b814d4ad0d3a61fc0b7ba92b35bdc2bc",
+      "mediaType": "image/png",
+      "byteLength": 3085,
+      "assetIds": [
+        "image-iteration-1"
+      ],
+      "originalNames": [
+        "placement-review.png"
+      ]
+    },
+    {
+      "path": "generation-history/configurations/spec-iteration-1-iteration-1.json",
+      "sha256": "fb015e6f377537f863b89491bfcd0f09247fe25a28e9c719360d5b5dbb1c875e",
+      "mediaType": "application/json",
+      "byteLength": 25375,
+      "assetIds": [
+        "spec-iteration-1",
+        "spec-iteration-2",
+        "spec-iteration-3"
+      ],
+      "originalNames": [
+        "iteration-1.json",
+        "iteration-2.json",
+        "iteration-3.json"
+      ]
+    },
+    {
+      "path": "generation-history/working/image-iteration-2-unassigned-review.png",
+      "sha256": "4a29729dbbbef8ef84fc1b8173786972a7a320c1605364fa9155a8ff8a77e814",
+      "mediaType": "image/png",
+      "byteLength": 26080,
+      "assetIds": [
+        "image-iteration-2"
+      ],
+      "originalNames": [
+        "unassigned-review.png"
+      ]
+    },
+    {
+      "path": "generation-history/rejected/image-iteration-3-placement-review.png",
+      "sha256": "8819fa0c97be68efa13c460fe13dc194b814d4ad0d3a61fc0b7ba92b35bdc2bc",
+      "mediaType": "image/png",
+      "byteLength": 3085,
+      "assetIds": [
+        "image-iteration-3"
+      ],
+      "originalNames": [
+        "placement-review.png"
+      ]
+    },
+    {
+      "path": "project-state.json",
+      "sha256": "b26e5e3a6eb7dd0c85c8afda129ceb0c9c7638fa05cddd168115406cf3b7f79e",
+      "mediaType": "application/json",
+      "byteLength": 25396
+    },
+    {
+      "path": "feedback-ledger.json",
+      "sha256": "97f8fa595f7c489f2b613825612a47735307729ae784aa670a7288f1ed0625a5",
+      "mediaType": "application/json",
+      "byteLength": 2437
+    },
+    {
+      "path": "ART_DIRECTION_DOSSIER.pdf",
+      "sha256": "23858112457c4fad874e4196dc2f8fbfa861163d34260f43fdde6c16b4bb137d",
+      "mediaType": "application/pdf",
+      "byteLength": 86672
+    },
+    {
+      "path": "README_PROJECT.txt",
+      "sha256": "dd9c46eabd2a8e9b7c0cd7e8a04fe8ce74f67d282a67efdcfc0e353753ae0a7c",
+      "mediaType": "text/plain",
+      "byteLength": 1200
+    },
+    {
+      "path": "production-spec.json",
+      "sha256": "fb015e6f377537f863b89491bfcd0f09247fe25a28e9c719360d5b5dbb1c875e",
+      "mediaType": "application/json",
+      "byteLength": 25375
+    },
+    {
+      "path": "PRODUCTION_PROMPT.txt",
+      "sha256": "bef7c58f8ea0cfd4c4338d639d73d94b93db0cfafe2ba603e4e38ad32a29c8ab",
+      "mediaType": "text/plain",
+      "byteLength": 10236
+    }
+  ]
+}

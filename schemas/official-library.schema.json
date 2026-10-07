@@ -1,0 +1,154 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://pop-art.local/schemas/official-library.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "libraryId",
+    "displayName",
+    "provenance",
+    "status",
+    "ledgerPath",
+    "categories",
+    "colorSystem"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "libraryId": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "provenance": {
+      "const": "official"
+    },
+    "status": {
+      "type": "string"
+    },
+    "ledgerPath": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "number",
+          "packId",
+          "displayName",
+          "packType",
+          "provenance",
+          "manifestPath",
+          "manifestSha256",
+          "optionIds",
+          "presetIds"
+        ],
+        "properties": {
+          "number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "packId": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "packType": {
+            "type": "string"
+          },
+          "provenance": {
+            "const": "official"
+          },
+          "manifestPath": {
+            "type": "string"
+          },
+          "manifestSha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "optionIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "presetIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "colorSystem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "defaultStrategy",
+        "strategies",
+        "majorRoleSeparation",
+        "backgroundSeparation",
+        "custom",
+        "presetTargets"
+      ],
+      "properties": {
+        "defaultStrategy": {
+          "const": "high_contrast_structured"
+        },
+        "strategies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "exemplarEvidence"
+            ],
+            "properties": {
+              "id": {
+                "enum": [
+                  "high_contrast_structured",
+                  "complementary",
+                  "split_complementary",
+                  "triadic",
+                  "analogous",
+                  "monochromatic",
+                  "custom"
+                ]
+              },
+              "label": {
+                "type": "string"
+              },
+              "exemplarEvidence": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "majorRoleSeparation": {
+          "type": "string"
+        },
+        "backgroundSeparation": {
+          "type": "string"
+        },
+        "custom": {
+          "type": "string"
+        },
+        "presetTargets": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

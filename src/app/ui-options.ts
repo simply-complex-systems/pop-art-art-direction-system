@@ -1,0 +1,2 @@
+export const ASPECT_RATIOS=[{id:'1:1',width:1,height:1},{id:'4:3',width:4,height:3},{id:'3:4',width:3,height:4},{id:'16:9',width:16,height:9},{id:'9:16',width:9,height:16},{id:'3:2',width:3,height:2},{id:'2:3',width:2,height:3}];
+export const QUICK_ACTIONS=[{name:'Randomize Art Direction',phase:6},{name:'Randomize Everything',phase:6},{name:'Save Project',phase:8},{name:'Create Prompt',phase:7},{name:'Create JSON',phase:7}] as const;

@@ -1,0 +1,4 @@
+{
+  "profile": "public-primary-visuals",
+  "excludedCorpus": "Unresolved supporting images/PDFs and private review fixtures are absent. Exactly 15 user-attested primary sheets are included. Full integration tests remain in the development profile; public tests exercise shipped contracts and visual registry."
+}

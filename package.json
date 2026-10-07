@@ -1,0 +1,43 @@
+{
+  "name": "pop-art-art-direction-system",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Static Pop Art Art-Direction System: oriented agent workflow and portable creative memory.",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc -p tsconfig.app.json && tsc -p tsconfig.node.json && tsc -p tsconfig.test.json --noEmit",
+    "test": "npm run test:public",
+    "validate-packs": "npm run validate-public",
+    "build": "vite build",
+    "preview": "vite preview",
+    "review-assets": "node scripts/release.mjs review",
+    "release:public": "node scripts/release.mjs candidate",
+    "release:development": "node scripts/release.mjs development",
+    "validate-release": "node scripts/release.mjs verify",
+    "validate-public": "tsc -p tsconfig.test.json && node scripts/validate-public.mjs",
+    "build:public": "node scripts/release.mjs build-public",
+    "test:public": "tsc -p tsconfig.test.json && node --test --test-isolation=none .test-build/tests/color.test.js .test-build/tests/contracts.test.js .test-build/tests/resolution.test.js .test-build/tests/infrastructure.test.js .test-build/tests/workspace.test.js .test-build/tests/controls.test.js .test-build/tests/phase6.test.js .test-build/tests/phase7.test.js .test-build/tests/public-visual-release.test.js && node scripts/validate-public.mjs",
+    "release:orientation": "node scripts/package-orientation.mjs",
+    "review-dependencies": "node scripts/dependency-notices.mjs"
+  },
+  "dependencies": {
+    "@pdf-lib/fontkit": "1.1.1",
+    "ajv": "8.17.1",
+    "jszip": "3.10.2",
+    "pdf-lib": "1.17.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "typescript": "5.9.3",
+    "vite": "8.3.3"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

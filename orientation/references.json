@@ -1,0 +1,1254 @@
+{
+  "version": "1.0.0",
+  "authority": "Approved corpus with scoped governance; reference metadata does not grant redistribution rights.",
+  "stages": [
+    {
+      "stage": 0,
+      "source": "00_START_HERE.md",
+      "pdf": "00_START_HERE.pdf",
+      "next": "01_ROLE_AND_SYSTEM_BOUNDARIES.pdf",
+      "references": []
+    },
+    {
+      "stage": 1,
+      "source": "01_ROLE_AND_SYSTEM_BOUNDARIES.md",
+      "pdf": "01_ROLE_AND_SYSTEM_BOUNDARIES.pdf",
+      "next": "02_VISUAL_LANGUAGE.pdf",
+      "references": [
+        {
+          "category": 1,
+          "manifest": "packs/official/01-subject-identity/manifest.json",
+          "manifestSha256": "8b3f0096210327eab27522b5a35f40f59823e3d56ce3f26ddd778f49ebdc56c2",
+          "exemplars": [
+            {
+              "id": "category-01-sheet",
+              "title": "Subject Identity Exemplars",
+              "asset": {
+                "id": "category-01-sheet.original",
+                "path": "official/01-subject-identity/exemplars/category-01-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "bbaf4c806a80a197d833be2eb46b00fa87530a50ab30f7542586db41e8b0de75"
+              },
+              "governs": [
+                "subject identity continuity",
+                "facial feature relationships",
+                "hair/silhouette consistency",
+                "body-proportion continuity"
+              ],
+              "doesNotGovern": [
+                "theme",
+                "costume topology",
+                "composition",
+                "palette",
+                "background treatment"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "subject-identity",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        },
+        {
+          "category": 10,
+          "manifest": "packs/official/10-theme-costume-transformation/manifest.json",
+          "manifestSha256": "1798e7f1f59914449f113523d64763f7c3719902244114cf75ed569ddc0999d8",
+          "exemplars": [
+            {
+              "id": "category-10-sheet",
+              "title": "Theme / Costume Transformation Exemplars",
+              "asset": {
+                "id": "category-10-sheet.original",
+                "path": "official/10-theme-costume-transformation/exemplars/category-10-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "009a4a0c2f61121d0c4cf56c7aadc9b066d90a9361dd10bcc4624f8e9dc9e375"
+              },
+              "governs": [
+                "theme transformation modularity",
+                "costume/archetype signals",
+                "how theme changes without replacing subject"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "composition",
+                "rendering quality",
+                "general subject proportions"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "theme-costume-transformation",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": [
+            {
+              "id": "official.category-10.theme-costume-transformation.v1.document-1",
+              "title": "WITCH-01-HANDOFF",
+              "asset": {
+                "id": "official.category-10.theme-costume-transformation.v1.document-1.original",
+                "path": "example-projects/halloween-woman-witch/WITCH-01-HANDOFF.pdf",
+                "mediaType": "application/pdf",
+                "sha256": "2476cac93510e37a2443620c1d8f6480e4d17e388a386a324f90bc4d58160ed4"
+              },
+              "license": {
+                "identifier": "UNRESOLVED",
+                "status": "unknown",
+                "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "source": "02_VISUAL_LANGUAGE.md",
+      "pdf": "02_VISUAL_LANGUAGE.pdf",
+      "next": "03_COMPOSITION_CAMERA_AND_EDGES.pdf",
+      "references": [
+        {
+          "category": 11,
+          "manifest": "packs/official/11-rendering-style-illustration-technique/manifest.json",
+          "manifestSha256": "0f66c080be12a59ba42d798f0a97349fdc0148851e16eab8db9ccc2fdeb070ef",
+          "exemplars": [
+            {
+              "id": "category-11-sheet",
+              "title": "Rendering Style / Illustration Technique Exemplars",
+              "asset": {
+                "id": "category-11-sheet.original",
+                "path": "official/11-rendering-style-illustration-technique/exemplars/category-11-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "8fecf8f303de17ccdf52b41e7a90ed6b6cffad89c3788ed6a183aada0ab90087"
+              },
+              "governs": [
+                "overall illustration treatment",
+                "print/graphic style family",
+                "degree and type of stylization"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "pose",
+                "theme topology",
+                "composition"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "rendering-style-illustration-technique",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        },
+        {
+          "category": 12,
+          "manifest": "packs/official/12-environment-background-abstraction/manifest.json",
+          "manifestSha256": "5a69a26c7ec2dcb1c038404076b7698566720ca44ca0625f3ed0290b4438825e",
+          "exemplars": [
+            {
+              "id": "category-12-sheet",
+              "title": "Environment / Background Abstraction Exemplars",
+              "asset": {
+                "id": "category-12-sheet.original",
+                "path": "official/12-environment-background-abstraction/exemplars/category-12-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "85e1670b794949116e5fab1f98af7a68b23ca7692f8940ae10225fd7dfe891d3"
+              },
+              "governs": [
+                "environment abstraction level",
+                "background descriptive density",
+                "setting legibility"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "theme/costume",
+                "pose",
+                "core rendering identity"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "environment-background-abstraction",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "source": "03_COMPOSITION_CAMERA_AND_EDGES.md",
+      "pdf": "03_COMPOSITION_CAMERA_AND_EDGES.pdf",
+      "next": "04_COLOR_BACKGROUND_TEXTURE.pdf",
+      "references": [
+        {
+          "category": 2,
+          "manifest": "packs/official/02-conventional-composition/manifest.json",
+          "manifestSha256": "73ccd054cd78f539b223b67d6455f4e5a0c237b53056ccaabd1434eefc705f2d",
+          "exemplars": [
+            {
+              "id": "category-02-sheet",
+              "title": "Conventional Composition Exemplars",
+              "asset": {
+                "id": "category-02-sheet.original",
+                "path": "official/02-conventional-composition/exemplars/category-02-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "9aaf8eefd52d1b5fe848198e3a93c47920f940f484cf53d141a0ac6a3cf31d0b"
+              },
+              "governs": [
+                "conventional framing scale",
+                "containment",
+                "breathing room",
+                "natural body crops",
+                "frame-edge discipline"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "theme/costume",
+                "palette",
+                "texture"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "conventional-composition",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": [
+            {
+              "id": "official.category-02.conventional-composition.v1.document-1",
+              "title": "CONVENTIONAL_COMPOSITION_REFERENCE_LIBRARY_v1",
+              "asset": {
+                "id": "official.category-02.conventional-composition.v1.document-1.original",
+                "path": "official/02-conventional-composition/documents/CONVENTIONAL_COMPOSITION_REFERENCE_LIBRARY_v1.pdf",
+                "mediaType": "application/pdf",
+                "sha256": "e0197916dadc60eaaf04ff9c107b78d9c5eb331f45aea8c2979f24db88010c3d"
+              },
+              "license": {
+                "identifier": "UNRESOLVED",
+                "status": "unknown",
+                "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+              }
+            }
+          ]
+        },
+        {
+          "category": 3,
+          "manifest": "packs/official/03-unconventional-composition/manifest.json",
+          "manifestSha256": "8238f9b12baff1d381a4862939c4535139a56fe332dd5df64105a4fb574f6c43",
+          "exemplars": [
+            {
+              "id": "category-03-sheet",
+              "title": "Unconventional Composition Exemplars",
+              "asset": {
+                "id": "category-03-sheet.original",
+                "path": "official/03-unconventional-composition/exemplars/category-03-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "64ba87c8d1506a75c0059be307fbc51f643c1111042cf5ed114a6b56929247cf"
+              },
+              "governs": [
+                "unconventional crop logic",
+                "negative-space strategy",
+                "extreme viewpoint",
+                "frame cant",
+                "intentional concealment"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "theme/costume",
+                "palette",
+                "rendering style"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "unconventional-composition",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": [
+            {
+              "id": "official.category-03.unconventional-composition.v1.document-1",
+              "title": "Unconventional_Composition_Reference_Library",
+              "asset": {
+                "id": "official.category-03.unconventional-composition.v1.document-1.original",
+                "path": "official/03-unconventional-composition/documents/Unconventional_Composition_Reference_Library.pdf",
+                "mediaType": "application/pdf",
+                "sha256": "2db753907e09be52b927113b8170258281a78acf3063c9e372fb4a1c4e12bead"
+              },
+              "license": {
+                "identifier": "UNRESOLVED",
+                "status": "unknown",
+                "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+              }
+            }
+          ]
+        },
+        {
+          "category": 8,
+          "manifest": "packs/official/08-pose-gesture-body-mechanics/manifest.json",
+          "manifestSha256": "d667059f1eff9b2604ebadeb360475255ee24d0e2c131916fb699091f9475923",
+          "exemplars": [
+            {
+              "id": "category-08-sheet",
+              "title": "Pose / Gesture / Body Mechanics Exemplars",
+              "asset": {
+                "id": "category-08-sheet.original",
+                "path": "official/08-pose-gesture-body-mechanics/exemplars/category-08-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "2fa25f06a7aa5d820dfd7da7394d04090a60b9b801b3feea1f71ed66c5e8588c"
+              },
+              "governs": [
+                "pose family",
+                "body language",
+                "gesture",
+                "staging relationship between body and framing"
+              ],
+              "doesNotGovern": [
+                "camera-angle taxonomy when Category 14 is available",
+                "subject identity",
+                "theme/costume",
+                "palette",
+                "camera-angle and perspective definitions (Category 14 authority)"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "pose-gesture-body-mechanics",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        },
+        {
+          "category": 14,
+          "manifest": "packs/official/14-camera-angle-perspective/manifest.json",
+          "manifestSha256": "7a3ec43c039b3d0683bef3149ccdc78ffede2347222ba66ed755e8525962763d",
+          "exemplars": [
+            {
+              "id": "category-14-sheet",
+              "title": "Camera Angle / Perspective Exemplars",
+              "asset": {
+                "id": "category-14-sheet.original",
+                "path": "official/14-camera-angle-perspective/exemplars/category-14-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "965d15a6945ead6893c7d0d502ceaee67286177592da22bd1d098c7f34fedd93"
+              },
+              "governs": [
+                "camera elevation",
+                "view orientation",
+                "perspective relationship",
+                "viewpoint"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "theme/costume",
+                "palette",
+                "expression"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "camera-angle-perspective",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "source": "04_COLOR_BACKGROUND_TEXTURE.md",
+      "pdf": "04_COLOR_BACKGROUND_TEXTURE.pdf",
+      "next": "05_LIGHTING_RENDERING_AND_INK.pdf",
+      "references": [
+        {
+          "category": 4,
+          "manifest": "packs/official/04-color-triad-contrast/manifest.json",
+          "manifestSha256": "067b76e11fc3ec7f17dcb7b1e70b214b8f5f5b67101a4fa853ec3e35908e781e",
+          "exemplars": [
+            {
+              "id": "category-04-sheet",
+              "title": "Color Triad + Background Contrast Exemplars",
+              "asset": {
+                "id": "category-04-sheet.original",
+                "path": "official/04-color-triad-contrast/exemplars/category-04-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "ab939e3db1d5881ef0a05ec2da6c0cae71768cd2a11cb6e03cdd8df58fb91aab"
+              },
+              "governs": [
+                "successful structured color relationships",
+                "strong major-role separation",
+                "whole-figure/background contrast",
+                "high-impact figure-ground separation"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "composition",
+                "theme topology",
+                "texture family",
+                "mandatory harmony or fixed triad",
+                "mandatory light background"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "color-triad-contrast",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        },
+        {
+          "category": 5,
+          "manifest": "packs/official/05-background-treatment/manifest.json",
+          "manifestSha256": "51d183d6830c94f48ae4bb5d58cae30fdb2d55519e81c70d9d10b60e4f60596c",
+          "exemplars": [
+            {
+              "id": "category-05-sheet",
+              "title": "Background Treatment Library",
+              "asset": {
+                "id": "category-05-sheet.original",
+                "path": "official/05-background-treatment/exemplars/category-05-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "f36594906d84bdd1c96980563f58eb976a5578b57ff579002c08e74109e2c0a8"
+              },
+              "governs": [
+                "background field construction",
+                "surface texture",
+                "print finish/reproduction effects"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "theme/costume",
+                "pose",
+                "composition"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "background-treatment",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": [
+            {
+              "id": "official.category-05.background-treatment.v1.document-1",
+              "title": "POP_ART_BACKGROUND_TEXTURE_REFERENCE_LIBRARY_v1",
+              "asset": {
+                "id": "official.category-05.background-treatment.v1.document-1.original",
+                "path": "official/05-background-treatment/documents/POP_ART_BACKGROUND_TEXTURE_REFERENCE_LIBRARY_v1.pdf",
+                "mediaType": "application/pdf",
+                "sha256": "065331a3e1391a026a940de5d7bb97d55c8969cc8d4c48e3a01e76ff1d9f6c7a"
+              },
+              "license": {
+                "identifier": "UNRESOLVED",
+                "status": "unknown",
+                "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+              }
+            },
+            {
+              "id": "official.category-05.background-treatment.v1.document-2",
+              "title": "CATEGORY_05_BACKGROUND_TREATMENT_LIBRARY_v1",
+              "asset": {
+                "id": "official.category-05.background-treatment.v1.document-2.original",
+                "path": "official/05-background-treatment/documents/CATEGORY_05_BACKGROUND_TREATMENT_LIBRARY_v1.pdf",
+                "mediaType": "application/pdf",
+                "sha256": "af1d274a635ba786594190fb97be458bdccaae2d3668d316333430a4edea57ed"
+              },
+              "license": {
+                "identifier": "UNRESOLVED",
+                "status": "unknown",
+                "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+              }
+            },
+            {
+              "id": "official.category-05.background-treatment.v1.document-3",
+              "title": "CATEGORY_05A_BACKGROUND_FIELD_CONSTRUCTION_v1",
+              "asset": {
+                "id": "official.category-05.background-treatment.v1.document-3.original",
+                "path": "official/05-background-treatment/documents/CATEGORY_05A_BACKGROUND_FIELD_CONSTRUCTION_v1.pdf",
+                "mediaType": "application/pdf",
+                "sha256": "246184009bcdffdb7d015b3bc09d01d5fcde523f02b4ba0991ad0131f444bd99"
+              },
+              "license": {
+                "identifier": "UNRESOLVED",
+                "status": "unknown",
+                "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+              }
+            },
+            {
+              "id": "official.category-05.background-treatment.v1.document-4",
+              "title": "CATEGORY_05B_SURFACE_TEXTURE_v1",
+              "asset": {
+                "id": "official.category-05.background-treatment.v1.document-4.original",
+                "path": "official/05-background-treatment/documents/CATEGORY_05B_SURFACE_TEXTURE_v1.pdf",
+                "mediaType": "application/pdf",
+                "sha256": "7dad2413d6f53f740f0c16b15650652aae37950f823eefe5e83b1a3f67645d68"
+              },
+              "license": {
+                "identifier": "UNRESOLVED",
+                "status": "unknown",
+                "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+              }
+            },
+            {
+              "id": "official.category-05.background-treatment.v1.document-5",
+              "title": "CATEGORY_05C_PRINT_FINISH_REPRO_EFFECTS_v1",
+              "asset": {
+                "id": "official.category-05.background-treatment.v1.document-5.original",
+                "path": "official/05-background-treatment/documents/CATEGORY_05C_PRINT_FINISH_REPRO_EFFECTS_v1.pdf",
+                "mediaType": "application/pdf",
+                "sha256": "cf1616e7e87ea1a60c81daa0a86de3f83fc5af2f4504832ca44a955a0d5214b8"
+              },
+              "license": {
+                "identifier": "UNRESOLVED",
+                "status": "unknown",
+                "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+              }
+            }
+          ]
+        },
+        {
+          "category": 9,
+          "manifest": "packs/official/09-color-palette-mood/manifest.json",
+          "manifestSha256": "2f43d8827fbc481c2ff55e97f26329bdc829559c5991617666f92f4f7df496d9",
+          "exemplars": [
+            {
+              "id": "category-09-sheet",
+              "title": "Color Palette / Mood Exemplars",
+              "asset": {
+                "id": "category-09-sheet.original",
+                "path": "official/09-color-palette-mood/exemplars/category-09-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "6d6d7a954a80c7f82c8c6a185af2b5bf41b0f59c11514c07adecdb366952e1b8"
+              },
+              "governs": [
+                "palette strategy",
+                "palette mood",
+                "broad color-family treatment"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "pose",
+                "composition",
+                "theme topology"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "color-palette-mood",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "source": "05_LIGHTING_RENDERING_AND_INK.md",
+      "pdf": "05_LIGHTING_RENDERING_AND_INK.pdf",
+      "next": "06_EXPRESSION_PROPS_EFFECTS_TYPOGRAPHY.pdf",
+      "references": [
+        {
+          "category": 6,
+          "manifest": "packs/official/06-lighting/manifest.json",
+          "manifestSha256": "5b633ef8fc6cd4b888eeee3d18f857549a61e03352de70a1c8c53729e9f5aa8b",
+          "exemplars": [
+            {
+              "id": "category-06-sheet",
+              "title": "Lighting Style Exemplars",
+              "asset": {
+                "id": "category-06-sheet.original",
+                "path": "official/06-lighting/exemplars/category-06-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "37e71a5453ee776de48ac6ec4c1ee960ca795f060e12ddee889b3e2b459d4c75"
+              },
+              "governs": [
+                "lighting direction",
+                "lighting contrast",
+                "highlight/shadow placement",
+                "lighting mood"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "theme/costume",
+                "composition",
+                "core palette"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "lighting",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        },
+        {
+          "category": 7,
+          "manifest": "packs/official/07-ink-contour-black-structure/manifest.json",
+          "manifestSha256": "ab8a67c315e6593b44c4baad7a79424ebe7729f90f17a99908a3271b2b4cdc04",
+          "exemplars": [
+            {
+              "id": "category-07-sheet",
+              "title": "Ink / Contour / Black Structure Exemplars",
+              "asset": {
+                "id": "category-07-sheet.original",
+                "path": "official/07-ink-contour-black-structure/exemplars/category-07-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "9b9d0e2a8fe335f2308a0b5d9976db246444e1c4d56a0affbf31465fcfbc0dc1"
+              },
+              "governs": [
+                "line weight",
+                "contour character",
+                "black-mass usage",
+                "shading mark language",
+                "edge treatment"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "theme/costume",
+                "composition",
+                "palette"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "ink-contour-black-structure",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        },
+        {
+          "category": 11,
+          "manifest": "packs/official/11-rendering-style-illustration-technique/manifest.json",
+          "manifestSha256": "0f66c080be12a59ba42d798f0a97349fdc0148851e16eab8db9ccc2fdeb070ef",
+          "exemplars": [
+            {
+              "id": "category-11-sheet",
+              "title": "Rendering Style / Illustration Technique Exemplars",
+              "asset": {
+                "id": "category-11-sheet.original",
+                "path": "official/11-rendering-style-illustration-technique/exemplars/category-11-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "8fecf8f303de17ccdf52b41e7a90ed6b6cffad89c3788ed6a183aada0ab90087"
+              },
+              "governs": [
+                "overall illustration treatment",
+                "print/graphic style family",
+                "degree and type of stylization"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "pose",
+                "theme topology",
+                "composition"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "rendering-style-illustration-technique",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        }
+      ]
+    },
+    {
+      "stage": 6,
+      "source": "06_EXPRESSION_PROPS_EFFECTS_TYPOGRAPHY.md",
+      "pdf": "06_EXPRESSION_PROPS_EFFECTS_TYPOGRAPHY.pdf",
+      "next": "07_PRODUCTION_WORKFLOW_AND_FEEDBACK.pdf",
+      "references": [
+        {
+          "category": 13,
+          "manifest": "packs/official/13-expression-micro-mood/manifest.json",
+          "manifestSha256": "2bc583c7ac4dc1edeec534c1f65265cc8640ca5fdfe75e94a528658662dcdac1",
+          "exemplars": [
+            {
+              "id": "category-13-sheet",
+              "title": "Expression / Micro-Mood Exemplars",
+              "asset": {
+                "id": "category-13-sheet.original",
+                "path": "official/13-expression-micro-mood/exemplars/category-13-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "19188fdeeae3c94d510e2f0936041c870d22aef929befa5063b85d51beab5dfb"
+              },
+              "governs": [
+                "facial expression",
+                "micro-mood",
+                "visible emotional performance"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "theme/costume",
+                "camera",
+                "palette"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "expression-micro-mood",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        },
+        {
+          "category": 15,
+          "manifest": "packs/official/15-props-accessories/manifest.json",
+          "manifestSha256": "0cbd949f384914c8bab7e121012a79fc85a6e9e3475010c15da443f7dad587dc",
+          "exemplars": [
+            {
+              "id": "category-15-sheet",
+              "title": "Props / Accessories Exemplars",
+              "asset": {
+                "id": "category-15-sheet.original",
+                "path": "official/15-props-accessories/exemplars/category-15-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "5c3449d2919298e34a20876e77e363027de67a5b3e22d7a31f7442db8aefe7ea"
+              },
+              "governs": [
+                "prop/accessory categories",
+                "prop storytelling role",
+                "subject-prop interaction concepts"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "theme topology unless explicitly assigned",
+                "composition",
+                "palette"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "props-accessories",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        }
+      ]
+    },
+    {
+      "stage": 7,
+      "source": "07_PRODUCTION_WORKFLOW_AND_FEEDBACK.md",
+      "pdf": "07_PRODUCTION_WORKFLOW_AND_FEEDBACK.pdf",
+      "next": "08_SUBJECT_NEGOTIATION.pdf",
+      "references": [
+        {
+          "category": 1,
+          "manifest": "packs/official/01-subject-identity/manifest.json",
+          "manifestSha256": "8b3f0096210327eab27522b5a35f40f59823e3d56ce3f26ddd778f49ebdc56c2",
+          "exemplars": [
+            {
+              "id": "category-01-sheet",
+              "title": "Subject Identity Exemplars",
+              "asset": {
+                "id": "category-01-sheet.original",
+                "path": "official/01-subject-identity/exemplars/category-01-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "bbaf4c806a80a197d833be2eb46b00fa87530a50ab30f7542586db41e8b0de75"
+              },
+              "governs": [
+                "subject identity continuity",
+                "facial feature relationships",
+                "hair/silhouette consistency",
+                "body-proportion continuity"
+              ],
+              "doesNotGovern": [
+                "theme",
+                "costume topology",
+                "composition",
+                "palette",
+                "background treatment"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "subject-identity",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        },
+        {
+          "category": 10,
+          "manifest": "packs/official/10-theme-costume-transformation/manifest.json",
+          "manifestSha256": "1798e7f1f59914449f113523d64763f7c3719902244114cf75ed569ddc0999d8",
+          "exemplars": [
+            {
+              "id": "category-10-sheet",
+              "title": "Theme / Costume Transformation Exemplars",
+              "asset": {
+                "id": "category-10-sheet.original",
+                "path": "official/10-theme-costume-transformation/exemplars/category-10-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "009a4a0c2f61121d0c4cf56c7aadc9b066d90a9361dd10bcc4624f8e9dc9e375"
+              },
+              "governs": [
+                "theme transformation modularity",
+                "costume/archetype signals",
+                "how theme changes without replacing subject"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "composition",
+                "rendering quality",
+                "general subject proportions"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "theme-costume-transformation",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": [
+            {
+              "id": "official.category-10.theme-costume-transformation.v1.document-1",
+              "title": "WITCH-01-HANDOFF",
+              "asset": {
+                "id": "official.category-10.theme-costume-transformation.v1.document-1.original",
+                "path": "example-projects/halloween-woman-witch/WITCH-01-HANDOFF.pdf",
+                "mediaType": "application/pdf",
+                "sha256": "2476cac93510e37a2443620c1d8f6480e4d17e388a386a324f90bc4d58160ed4"
+              },
+              "license": {
+                "identifier": "UNRESOLVED",
+                "status": "unknown",
+                "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 8,
+      "source": "08_SUBJECT_NEGOTIATION.md",
+      "pdf": "08_SUBJECT_NEGOTIATION.pdf",
+      "next": "09_THEME_NEGOTIATION.pdf",
+      "references": [
+        {
+          "category": 1,
+          "manifest": "packs/official/01-subject-identity/manifest.json",
+          "manifestSha256": "8b3f0096210327eab27522b5a35f40f59823e3d56ce3f26ddd778f49ebdc56c2",
+          "exemplars": [
+            {
+              "id": "category-01-sheet",
+              "title": "Subject Identity Exemplars",
+              "asset": {
+                "id": "category-01-sheet.original",
+                "path": "official/01-subject-identity/exemplars/category-01-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "bbaf4c806a80a197d833be2eb46b00fa87530a50ab30f7542586db41e8b0de75"
+              },
+              "governs": [
+                "subject identity continuity",
+                "facial feature relationships",
+                "hair/silhouette consistency",
+                "body-proportion continuity"
+              ],
+              "doesNotGovern": [
+                "theme",
+                "costume topology",
+                "composition",
+                "palette",
+                "background treatment"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "subject-identity",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        }
+      ]
+    },
+    {
+      "stage": 9,
+      "source": "09_THEME_NEGOTIATION.md",
+      "pdf": "09_THEME_NEGOTIATION.pdf",
+      "next": "10_CALIBRATION_AND_UI_HANDOFF.pdf",
+      "references": [
+        {
+          "category": 10,
+          "manifest": "packs/official/10-theme-costume-transformation/manifest.json",
+          "manifestSha256": "1798e7f1f59914449f113523d64763f7c3719902244114cf75ed569ddc0999d8",
+          "exemplars": [
+            {
+              "id": "category-10-sheet",
+              "title": "Theme / Costume Transformation Exemplars",
+              "asset": {
+                "id": "category-10-sheet.original",
+                "path": "official/10-theme-costume-transformation/exemplars/category-10-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "009a4a0c2f61121d0c4cf56c7aadc9b066d90a9361dd10bcc4624f8e9dc9e375"
+              },
+              "governs": [
+                "theme transformation modularity",
+                "costume/archetype signals",
+                "how theme changes without replacing subject"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "composition",
+                "rendering quality",
+                "general subject proportions"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "theme-costume-transformation",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": [
+            {
+              "id": "official.category-10.theme-costume-transformation.v1.document-1",
+              "title": "WITCH-01-HANDOFF",
+              "asset": {
+                "id": "official.category-10.theme-costume-transformation.v1.document-1.original",
+                "path": "example-projects/halloween-woman-witch/WITCH-01-HANDOFF.pdf",
+                "mediaType": "application/pdf",
+                "sha256": "2476cac93510e37a2443620c1d8f6480e4d17e388a386a324f90bc4d58160ed4"
+              },
+              "license": {
+                "identifier": "UNRESOLVED",
+                "status": "unknown",
+                "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 10,
+      "source": "10_CALIBRATION_AND_UI_HANDOFF.md",
+      "pdf": "10_CALIBRATION_AND_UI_HANDOFF.pdf",
+      "next": "Art Director workspace; see README.md",
+      "references": [
+        {
+          "category": 1,
+          "manifest": "packs/official/01-subject-identity/manifest.json",
+          "manifestSha256": "8b3f0096210327eab27522b5a35f40f59823e3d56ce3f26ddd778f49ebdc56c2",
+          "exemplars": [
+            {
+              "id": "category-01-sheet",
+              "title": "Subject Identity Exemplars",
+              "asset": {
+                "id": "category-01-sheet.original",
+                "path": "official/01-subject-identity/exemplars/category-01-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "bbaf4c806a80a197d833be2eb46b00fa87530a50ab30f7542586db41e8b0de75"
+              },
+              "governs": [
+                "subject identity continuity",
+                "facial feature relationships",
+                "hair/silhouette consistency",
+                "body-proportion continuity"
+              ],
+              "doesNotGovern": [
+                "theme",
+                "costume topology",
+                "composition",
+                "palette",
+                "background treatment"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "subject-identity",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": []
+        },
+        {
+          "category": 10,
+          "manifest": "packs/official/10-theme-costume-transformation/manifest.json",
+          "manifestSha256": "1798e7f1f59914449f113523d64763f7c3719902244114cf75ed569ddc0999d8",
+          "exemplars": [
+            {
+              "id": "category-10-sheet",
+              "title": "Theme / Costume Transformation Exemplars",
+              "asset": {
+                "id": "category-10-sheet.original",
+                "path": "official/10-theme-costume-transformation/exemplars/category-10-approved-sheet.png",
+                "mediaType": "image/png",
+                "sha256": "009a4a0c2f61121d0c4cf56c7aadc9b066d90a9361dd10bcc4624f8e9dc9e375"
+              },
+              "governs": [
+                "theme transformation modularity",
+                "costume/archetype signals",
+                "how theme changes without replacing subject"
+              ],
+              "doesNotGovern": [
+                "subject identity",
+                "composition",
+                "rendering quality",
+                "general subject proportions"
+              ],
+              "approvedFeatures": [
+                "User endorsed this sheet for the named category."
+              ],
+              "knownDefects": [],
+              "provenance": "official",
+              "license": {
+                "identifier": "CC-BY-4.0",
+                "status": "intended",
+                "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+              },
+              "tags": [
+                "theme-costume-transformation",
+                "approved",
+                "reference-sheet"
+              ]
+            }
+          ],
+          "documents": [
+            {
+              "id": "official.category-10.theme-costume-transformation.v1.document-1",
+              "title": "WITCH-01-HANDOFF",
+              "asset": {
+                "id": "official.category-10.theme-costume-transformation.v1.document-1.original",
+                "path": "example-projects/halloween-woman-witch/WITCH-01-HANDOFF.pdf",
+                "mediaType": "application/pdf",
+                "sha256": "2476cac93510e37a2443620c1d8f6480e4d17e388a386a324f90bc4d58160ed4"
+              },
+              "license": {
+                "identifier": "UNRESOLVED",
+                "status": "unknown",
+                "attribution": "Supplied reference document; embedded third-party imagery may have separate rights. Public redistribution unresolved."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

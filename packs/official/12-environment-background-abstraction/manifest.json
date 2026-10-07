@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-12.environment-background-abstraction.v1",
+  "displayName": "Environment / Background Abstraction Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "environment",
+  "description": "Approved exemplar pack for Environment / Background Abstraction Exemplars.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "environment abstraction level",
+    "background descriptive density",
+    "setting legibility"
+  ],
+  "doesNotGovern": [
+    "subject identity",
+    "theme/costume",
+    "pose",
+    "core rendering identity"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "category-12-sheet",
+      "title": "Environment / Background Abstraction Exemplars",
+      "asset": {
+        "id": "category-12-sheet.original",
+        "path": "official/12-environment-background-abstraction/exemplars/category-12-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "85e1670b794949116e5fab1f98af7a68b23ca7692f8940ae10225fd7dfe891d3"
+      },
+      "governs": [
+        "environment abstraction level",
+        "background descriptive density",
+        "setting legibility"
+      ],
+      "doesNotGovern": [
+        "subject identity",
+        "theme/costume",
+        "pose",
+        "core rendering identity"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "environment-background-abstraction",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "solid-color-field",
+      "label": "solid color field",
+      "category": "environment",
+      "axis": "environment",
+      "value": {
+        "sourceLabel": "solid color field",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "halftone-field",
+      "label": "halftone field",
+      "category": "environment",
+      "axis": "environment",
+      "value": {
+        "sourceLabel": "halftone field",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "geometric-abstraction",
+      "label": "geometric abstraction",
+      "category": "environment",
+      "axis": "environment",
+      "value": {
+        "sourceLabel": "geometric abstraction",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "simple-symbolic-element",
+      "label": "simple symbolic element",
+      "category": "environment",
+      "axis": "environment",
+      "value": {
+        "sourceLabel": "simple symbolic element",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "minimal-architecture",
+      "label": "minimal architecture",
+      "category": "environment",
+      "axis": "environment",
+      "value": {
+        "sourceLabel": "minimal architecture",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "natural-landscape",
+      "label": "natural landscape",
+      "category": "environment",
+      "axis": "environment",
+      "value": {
+        "sourceLabel": "natural landscape",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "interior-suggestion",
+      "label": "interior suggestion",
+      "category": "environment",
+      "axis": "environment",
+      "value": {
+        "sourceLabel": "interior suggestion",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "atmospheric-sky",
+      "label": "atmospheric sky",
+      "category": "environment",
+      "axis": "environment",
+      "value": {
+        "sourceLabel": "atmospheric sky",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "reflective-surface",
+      "label": "reflective surface",
+      "category": "environment",
+      "axis": "environment",
+      "value": {
+        "sourceLabel": "reflective surface",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "descriptive-environment",
+      "label": "descriptive environment",
+      "category": "environment",
+      "axis": "environment",
+      "value": {
+        "sourceLabel": "descriptive environment",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "environment"
+    ],
+    "notes": [
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "environment-background-abstraction",
+    "approved",
+    "reference-sheet"
+  ]
+}

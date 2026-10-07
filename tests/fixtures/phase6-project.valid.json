@@ -1,0 +1,508 @@
+{
+  "schemaVersion": "1.0",
+  "project": {
+    "id": "phase5-review",
+    "name": "Generic control review"
+  },
+  "subject": {
+    "packId": "community.mechanical-owl",
+    "displayName": "Mechanical Owl",
+    "provenance": "community",
+    "contextAssets": []
+  },
+  "theme": {
+    "packId": "community.winter-festival",
+    "displayName": "Winter Festival",
+    "provenance": "community",
+    "contextAssets": []
+  },
+  "canvas": {
+    "aspectRatio": {
+      "width": 1,
+      "height": 1
+    },
+    "panels": [
+      {
+        "row": 0,
+        "column": 0,
+        "rowSpan": 1,
+        "columnSpan": 1,
+        "id": "panel-1"
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "rowSpan": 1,
+        "columnSpan": 1,
+        "id": "panel-2"
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "rowSpan": 1,
+        "columnSpan": 1,
+        "id": "panel-3"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "rowSpan": 1,
+        "columnSpan": 1,
+        "id": "panel-4"
+      }
+    ],
+    "grid": {
+      "rows": 2,
+      "columns": 2
+    },
+    "outerBorder": {
+      "enabled": true,
+      "thickness": 8,
+      "color": "#000000"
+    },
+    "dividers": {
+      "enabled": true,
+      "thickness": 8,
+      "color": "#000000"
+    },
+    "additionalInstructions": ""
+  },
+  "composition": {
+    "global": {
+      "kind": "literal",
+      "value": {
+        "framing": "head-and-shoulders",
+        "camera": "eye-level",
+        "pose": "neutral",
+        "headOrientation": "left",
+        "eyeDirection": "right",
+        "expression": "neutral",
+        "family": "conventional",
+        "technique": "head-and-shoulders",
+        "subjectPlacement": {
+          "x": 0.45,
+          "y": 0.5
+        },
+        "cropExtent": "contained at framing boundary",
+        "cameraElevation": "eye level",
+        "cameraOrientation": "level",
+        "torsoOrientation": "three-quarter",
+        "focalRegion": "upper center",
+        "negativeSpace": {
+          "direction": "right",
+          "amount": 0.35
+        },
+        "edgeTreatment": "contained"
+      }
+    },
+    "perPanel": {},
+    "variation": {
+      "mode": "uniform"
+    },
+    "additionalInstructions": "Keep the focal region clear while varying camera and pose independently."
+  },
+  "color": {
+    "strategy": {
+      "kind": "builtin",
+      "id": "high_contrast_structured"
+    },
+    "roles": [
+      {
+        "id": "role-a",
+        "importance": "major",
+        "domain": "subject",
+        "panelScope": {
+          "kind": "all"
+        },
+        "displayLabel": "Primary subject mass",
+        "materialLabel": "reflective surface"
+      },
+      {
+        "id": "role-b",
+        "importance": "major",
+        "domain": "subject",
+        "panelScope": {
+          "kind": "all"
+        },
+        "displayLabel": "Secondary subject mass"
+      },
+      {
+        "id": "background-a",
+        "importance": "major",
+        "domain": "background",
+        "panelScope": {
+          "kind": "all"
+        },
+        "displayLabel": "Background field"
+      }
+    ],
+    "relationships": [
+      {
+        "roleIds": [
+          "role-a",
+          "role-b"
+        ],
+        "type": "touching",
+        "panelScope": {
+          "kind": "all"
+        },
+        "separators": [
+          {
+            "type": "black_contour",
+            "description": "Distinct ink boundary",
+            "strength": "strong"
+          }
+        ]
+      }
+    ],
+    "global": {
+      "kind": "literal",
+      "value": {
+        "assignments": [
+          {
+            "roleId": "role-a",
+            "color": "#0057B8"
+          },
+          {
+            "roleId": "role-b",
+            "color": "#FF8C00"
+          },
+          {
+            "roleId": "background-a",
+            "color": "#FFFFFF"
+          }
+        ],
+        "mood": "cool-blues"
+      }
+    },
+    "perPanel": {},
+    "variation": {
+      "mode": "random",
+      "candidates": [
+        {
+          "assignments": [
+            {
+              "roleId": "role-a",
+              "color": "#0057B8"
+            },
+            {
+              "roleId": "role-b",
+              "color": "#FF8C00"
+            },
+            {
+              "roleId": "background-a",
+              "color": "#FFFFFF"
+            }
+          ],
+          "mood": "cool-blues"
+        }
+      ]
+    },
+    "additionalInstructions": "Keep major masses distinct; preserve any explicitly selected colors."
+  },
+  "texture": {
+    "global": {
+      "kind": "literal",
+      "value": {
+        "backgroundField": "hard-two-tone-split",
+        "subject": {
+          "family": "ben-day-dots",
+          "intensity": 4,
+          "region": "broad surfaces",
+          "exclusions": [
+            "focal region"
+          ],
+          "additionalInstructions": "Keep dot sizes uniform."
+        },
+        "background": {
+          "family": "diagonal-hatch",
+          "intensity": 2,
+          "region": "field",
+          "exclusions": [],
+          "additionalInstructions": "Keep line angles consistent."
+        },
+        "finishes": [
+          {
+            "scope": "subject",
+            "family": "screenprint-grain",
+            "intensity": 2,
+            "additionalInstructions": "Subtle finish only."
+          },
+          {
+            "scope": "background",
+            "family": "distressed-newsprint",
+            "intensity": 3,
+            "additionalInstructions": "Preserve clear boundaries."
+          },
+          {
+            "scope": "global",
+            "family": "misregistration",
+            "intensity": 1,
+            "additionalInstructions": "Keep black contours stable."
+          }
+        ],
+        "environment": "geometric-abstraction"
+      }
+    },
+    "perPanel": {},
+    "variation": {
+      "mode": "uniform"
+    },
+    "additionalInstructions": "Treat field construction, texture and finish independently."
+  },
+  "lightingRendering": {
+    "global": {
+      "kind": "literal",
+      "value": {
+        "subjectLighting": {
+          "style": "side-light-left",
+          "direction": "upper left",
+          "intensity": 6,
+          "colorBehavior": "cool accent",
+          "color": "#B8DFFF",
+          "additionalInstructions": "Emphasize the focal edge."
+        },
+        "backgroundLighting": {
+          "style": "high-key",
+          "direction": "front",
+          "intensity": 4,
+          "colorBehavior": "neutral",
+          "additionalInstructions": "Keep background readable."
+        },
+        "ink": "clean-bold-lines",
+        "rendering": "classic-pop-art"
+      }
+    },
+    "perPanel": {},
+    "variation": {
+      "mode": "uniform"
+    },
+    "additionalInstructions": "Use independent subject and environment lighting."
+  },
+  "sliders": {
+    "global": {
+      "kind": "literal",
+      "value": {
+        "subjectPreservation": 8,
+        "themePreservation": 8,
+        "subjectAbstraction": 5,
+        "backgroundAbstraction": 3,
+        "subjectStyleIntensity": 5,
+        "backgroundStyleIntensity": 5,
+        "subjectTextureIntensity": 3,
+        "backgroundTextureIntensity": 3
+      }
+    },
+    "perPanel": {},
+    "variation": {
+      "mode": "uniform"
+    },
+    "additionalInstructions": "Preserve established identity and theme."
+  },
+  "typography": {
+    "enabled": true,
+    "elements": [
+      {
+        "id": "text-a",
+        "panelScope": {
+          "kind": "all"
+        },
+        "placement": "center",
+        "scale": 1,
+        "orientation": "neutral",
+        "layering": "foreground",
+        "additionalInstructions": "",
+        "type": "title",
+        "content": "WINTER FESTIVAL",
+        "style": "bold condensed",
+        "cropBehavior": "contained"
+      },
+      {
+        "id": "text-b",
+        "panelScope": {
+          "kind": "panels",
+          "panelIds": [
+            "panel-1"
+          ]
+        },
+        "placement": "center",
+        "scale": 1,
+        "orientation": "neutral",
+        "layering": "foreground",
+        "additionalInstructions": "",
+        "type": "caption",
+        "content": "A mechanical visitor arrives.",
+        "style": "plain uppercase",
+        "cropBehavior": "may overlap"
+      }
+    ],
+    "additionalInstructions": "Let each text element retain its own placement."
+  },
+  "props": {
+    "elements": [
+      {
+        "id": "prop-a",
+        "panelScope": {
+          "kind": "all"
+        },
+        "placement": "center",
+        "scale": 1,
+        "orientation": "neutral",
+        "layering": "foreground",
+        "additionalInstructions": "",
+        "description": "signal lantern",
+        "interaction": "held near subject",
+        "contactLogic": "visible contact at support point"
+      },
+      {
+        "id": "prop-b",
+        "panelScope": {
+          "kind": "all"
+        },
+        "placement": "center",
+        "scale": 1,
+        "orientation": "neutral",
+        "layering": "foreground",
+        "additionalInstructions": "",
+        "description": "festival pennant",
+        "interaction": "independent",
+        "contactLogic": "attached to stand"
+      }
+    ],
+    "additionalInstructions": "Keep prop silhouettes distinct."
+  },
+  "effects": {
+    "elements": [
+      {
+        "id": "effect-a",
+        "panelScope": {
+          "kind": "all"
+        },
+        "placement": "center",
+        "scale": 1,
+        "orientation": "neutral",
+        "layering": "foreground",
+        "additionalInstructions": "",
+        "description": "glow",
+        "target": "signal lantern",
+        "intensity": 3,
+        "spread": "local"
+      },
+      {
+        "id": "effect-b",
+        "panelScope": {
+          "kind": "all"
+        },
+        "placement": "center",
+        "scale": 1,
+        "orientation": "neutral",
+        "layering": "foreground",
+        "additionalInstructions": "",
+        "description": "speed lines",
+        "target": "subject",
+        "intensity": 2,
+        "spread": "behind subject"
+      }
+    ],
+    "additionalInstructions": "Effects should not obscure the focal region."
+  },
+  "exemplars": [
+    {
+      "id": "reference-a",
+      "name": "Artist reference",
+      "role": "production reference",
+      "asset": {
+        "id": "asset-a",
+        "path": "project-assets/reference.png",
+        "mediaType": "image/png",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "panelScope": {
+        "kind": "all"
+      },
+      "transfer": [
+        "declared structure"
+      ],
+      "doNotTransfer": [
+        "subject identity"
+      ],
+      "notes": "Preserve this artist-authored reference note."
+    }
+  ],
+  "generationHistory": [],
+  "feedbackLedger": {
+    "schemaVersion": "1.0",
+    "records": []
+  },
+  "exemplarInstructions": "Transfer only the features explicitly requested.",
+  "randomDecisions": {
+    "color.variation.panel-1": {
+      "assignments": [
+        {
+          "roleId": "role-a",
+          "color": "#0057B8"
+        },
+        {
+          "roleId": "role-b",
+          "color": "#FF8C00"
+        },
+        {
+          "roleId": "background-a",
+          "color": "#FFFFFF"
+        }
+      ],
+      "mood": "cool-blues"
+    },
+    "color.variation.panel-2": {
+      "assignments": [
+        {
+          "roleId": "role-a",
+          "color": "#0057B8"
+        },
+        {
+          "roleId": "role-b",
+          "color": "#FF8C00"
+        },
+        {
+          "roleId": "background-a",
+          "color": "#FFFFFF"
+        }
+      ],
+      "mood": "cool-blues"
+    },
+    "color.variation.panel-3": {
+      "assignments": [
+        {
+          "roleId": "role-a",
+          "color": "#0057B8"
+        },
+        {
+          "roleId": "role-b",
+          "color": "#FF8C00"
+        },
+        {
+          "roleId": "background-a",
+          "color": "#FFFFFF"
+        }
+      ],
+      "mood": "cool-blues"
+    },
+    "color.variation.panel-4": {
+      "assignments": [
+        {
+          "roleId": "role-a",
+          "color": "#0057B8"
+        },
+        {
+          "roleId": "role-b",
+          "color": "#FF8C00"
+        },
+        {
+          "roleId": "background-a",
+          "color": "#FFFFFF"
+        }
+      ],
+      "mood": "cool-blues"
+    }
+  }
+}

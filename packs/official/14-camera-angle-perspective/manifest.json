@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-14.camera-angle-perspective.v1",
+  "displayName": "Camera Angle / Perspective Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "camera",
+  "description": "Approved exemplar pack for Camera Angle / Perspective Exemplars.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "camera elevation",
+    "view orientation",
+    "perspective relationship",
+    "viewpoint"
+  ],
+  "doesNotGovern": [
+    "subject identity",
+    "theme/costume",
+    "palette",
+    "expression"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "category-14-sheet",
+      "title": "Camera Angle / Perspective Exemplars",
+      "asset": {
+        "id": "category-14-sheet.original",
+        "path": "official/14-camera-angle-perspective/exemplars/category-14-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "965d15a6945ead6893c7d0d502ceaee67286177592da22bd1d098c7f34fedd93"
+      },
+      "governs": [
+        "camera elevation",
+        "view orientation",
+        "perspective relationship",
+        "viewpoint"
+      ],
+      "doesNotGovern": [
+        "subject identity",
+        "theme/costume",
+        "palette",
+        "expression"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "camera-angle-perspective",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "eye-level",
+      "label": "eye level",
+      "category": "camera",
+      "axis": "camera",
+      "value": {
+        "sourceLabel": "eye level",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "high-angle",
+      "label": "high angle",
+      "category": "camera",
+      "axis": "camera",
+      "value": {
+        "sourceLabel": "high angle",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "low-angle",
+      "label": "low angle",
+      "category": "camera",
+      "axis": "camera",
+      "value": {
+        "sourceLabel": "low angle",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "three-quarter-view",
+      "label": "three-quarter view",
+      "category": "camera",
+      "axis": "camera",
+      "value": {
+        "sourceLabel": "three-quarter view",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "profile",
+      "label": "profile",
+      "category": "camera",
+      "axis": "camera",
+      "value": {
+        "sourceLabel": "profile",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "over-the-shoulder",
+      "label": "over the shoulder",
+      "category": "camera",
+      "axis": "camera",
+      "value": {
+        "sourceLabel": "over the shoulder",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "dutch-angle",
+      "label": "dutch angle",
+      "category": "camera",
+      "axis": "camera",
+      "value": {
+        "sourceLabel": "dutch angle",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "bird-s-eye-view",
+      "label": "bird's-eye view",
+      "category": "camera",
+      "axis": "camera",
+      "value": {
+        "sourceLabel": "bird's-eye view",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "worm-s-eye-view",
+      "label": "worm's-eye view",
+      "category": "camera",
+      "axis": "camera",
+      "value": {
+        "sourceLabel": "worm's-eye view",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "close-up",
+      "label": "close-up",
+      "category": "camera",
+      "axis": "camera",
+      "value": {
+        "sourceLabel": "close-up",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "camera"
+    ],
+    "notes": [
+      "Authoritative category for camera-angle and perspective definitions; pose and staging remain Category 8.",
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "camera-angle-perspective",
+    "approved",
+    "reference-sheet"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-11.rendering-style-illustration-technique.v1",
+  "displayName": "Rendering Style / Illustration Technique Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "rendering",
+  "description": "Approved exemplar pack for Rendering Style / Illustration Technique Exemplars.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "overall illustration treatment",
+    "print/graphic style family",
+    "degree and type of stylization"
+  ],
+  "doesNotGovern": [
+    "subject identity",
+    "pose",
+    "theme topology",
+    "composition"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "category-11-sheet",
+      "title": "Rendering Style / Illustration Technique Exemplars",
+      "asset": {
+        "id": "category-11-sheet.original",
+        "path": "official/11-rendering-style-illustration-technique/exemplars/category-11-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "8fecf8f303de17ccdf52b41e7a90ed6b6cffad89c3788ed6a183aada0ab90087"
+      },
+      "governs": [
+        "overall illustration treatment",
+        "print/graphic style family",
+        "degree and type of stylization"
+      ],
+      "doesNotGovern": [
+        "subject identity",
+        "pose",
+        "theme topology",
+        "composition"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "rendering-style-illustration-technique",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "classic-pop-art",
+      "label": "classic pop art",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "classic pop art",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "retro-comic-book",
+      "label": "retro comic book",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "retro comic book",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "modern-vector",
+      "label": "modern vector",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "modern vector",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "screenprint",
+      "label": "screenprint",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "screenprint",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "risograph",
+      "label": "risograph",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "risograph",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "graphic-novel",
+      "label": "graphic novel",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "graphic novel",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "painted-brush",
+      "label": "painted/brush",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "painted/brush",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "halftone-realism",
+      "label": "halftone realism",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "halftone realism",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "line-art",
+      "label": "line art",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "line art",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    },
+    {
+      "id": "stylized-anime",
+      "label": "stylized anime",
+      "category": "rendering",
+      "axis": "rendering",
+      "value": {
+        "sourceLabel": "stylized anime",
+        "parameterStatus": "label-only; production parameters unresolved"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "rendering"
+    ],
+    "notes": [
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "rendering-style-illustration-technique",
+    "approved",
+    "reference-sheet"
+  ]
+}

@@ -1,0 +1,946 @@
+{
+  "canvas": {
+    "additionalInstructions": "Keep the outer frame continuous.\nDo not crop the overall canvas.",
+    "aspectRatio": {
+      "height": 2,
+      "width": 3
+    },
+    "dividers": {
+      "color": "#000000",
+      "enabled": true,
+      "thickness": 8
+    },
+    "grid": {
+      "columns": 2,
+      "rows": 2
+    },
+    "outerBorder": {
+      "color": "#000000",
+      "enabled": true,
+      "thickness": 8
+    },
+    "panels": [
+      {
+        "column": 0,
+        "columnSpan": 1,
+        "id": "panel-1",
+        "row": 0,
+        "rowSpan": 1
+      },
+      {
+        "column": 1,
+        "columnSpan": 1,
+        "id": "panel-2",
+        "row": 0,
+        "rowSpan": 1
+      },
+      {
+        "column": 0,
+        "columnSpan": 1,
+        "id": "panel-3",
+        "row": 1,
+        "rowSpan": 1
+      },
+      {
+        "column": 1,
+        "columnSpan": 1,
+        "id": "panel-4",
+        "row": 1,
+        "rowSpan": 1
+      }
+    ]
+  },
+  "categoryInstructions": {
+    "color": "Keep major masses distinct; preserve any explicitly selected colors.",
+    "composition": "Keep the focal region clear while varying camera and pose independently.",
+    "effects": "Effects should not obscure the focal region.",
+    "exemplars": "Transfer only the features explicitly requested.",
+    "lightingRendering": "Use independent subject and environment lighting.",
+    "props": "Keep prop silhouettes distinct.",
+    "sliders": "Preserve established identity and theme.",
+    "texture": "Treat field construction, texture and finish independently.",
+    "typography": "Let each text element retain its own placement."
+  },
+  "choreography": {
+    "color": {
+      "mode": "structured",
+      "panelSources": [
+        {
+          "panelId": "panel-1",
+          "source": "structured"
+        },
+        {
+          "panelId": "panel-2",
+          "source": "structured"
+        },
+        {
+          "panelId": "panel-3",
+          "source": "structured"
+        },
+        {
+          "panelId": "panel-4",
+          "source": "structured"
+        }
+      ],
+      "pattern": "role_rotation"
+    },
+    "composition": {
+      "mode": "structured",
+      "panelSources": [
+        {
+          "panelId": "panel-1",
+          "source": "structured"
+        },
+        {
+          "panelId": "panel-2",
+          "source": "structured"
+        },
+        {
+          "panelId": "panel-3",
+          "source": "structured"
+        },
+        {
+          "panelId": "panel-4",
+          "source": "structured"
+        }
+      ],
+      "pattern": "paired_echo"
+    },
+    "lightingRendering": {
+      "mode": "random",
+      "panelSources": [
+        {
+          "panelId": "panel-1",
+          "source": "committed_random"
+        },
+        {
+          "panelId": "panel-2",
+          "source": "committed_random"
+        },
+        {
+          "panelId": "panel-3",
+          "source": "committed_random"
+        },
+        {
+          "panelId": "panel-4",
+          "source": "committed_random"
+        }
+      ]
+    },
+    "sliders": {
+      "mode": "manual",
+      "panelSources": [
+        {
+          "panelId": "panel-1",
+          "source": "global"
+        },
+        {
+          "panelId": "panel-2",
+          "source": "global"
+        },
+        {
+          "panelId": "panel-3",
+          "source": "global"
+        },
+        {
+          "panelId": "panel-4",
+          "source": "manual"
+        }
+      ]
+    },
+    "texture": {
+      "mode": "uniform",
+      "panelSources": [
+        {
+          "panelId": "panel-1",
+          "source": "global"
+        },
+        {
+          "panelId": "panel-2",
+          "source": "global"
+        },
+        {
+          "panelId": "panel-3",
+          "source": "global"
+        },
+        {
+          "panelId": "panel-4",
+          "source": "global"
+        }
+      ]
+    }
+  },
+  "color": {
+    "relationships": [
+      {
+        "panelScope": {
+          "kind": "all"
+        },
+        "roleIds": [
+          "role-a",
+          "role-b"
+        ],
+        "separators": [
+          {
+            "description": "Distinct ink boundary",
+            "strength": "strong",
+            "type": "black_contour"
+          }
+        ],
+        "type": "touching"
+      },
+      {
+        "panelScope": {
+          "kind": "all"
+        },
+        "roleIds": [
+          "role-a",
+          "background-b"
+        ],
+        "separators": [
+          {
+            "description": "A deliberate strip of negative space separates the masses.",
+            "strength": "supporting",
+            "type": "gap"
+          }
+        ],
+        "type": "overlapping"
+      }
+    ],
+    "roles": [
+      {
+        "displayLabel": "Primary subject mass",
+        "domain": "subject",
+        "id": "role-a",
+        "importance": "major",
+        "materialLabel": "reflective surface",
+        "panelScope": {
+          "kind": "all"
+        }
+      },
+      {
+        "displayLabel": "Secondary subject mass",
+        "domain": "subject",
+        "id": "role-b",
+        "importance": "major",
+        "panelScope": {
+          "kind": "all"
+        }
+      },
+      {
+        "displayLabel": "Background field",
+        "domain": "background",
+        "id": "background-a",
+        "importance": "major",
+        "panelScope": {
+          "kind": "all"
+        }
+      },
+      {
+        "displayLabel": "Small signal accent",
+        "domain": "accent",
+        "id": "role-c",
+        "importance": "minor",
+        "materialLabel": "painted surface",
+        "panelScope": {
+          "kind": "all"
+        }
+      },
+      {
+        "displayLabel": "Secondary background field",
+        "domain": "background",
+        "id": "background-b",
+        "importance": "major",
+        "panelScope": {
+          "kind": "all"
+        }
+      }
+    ],
+    "strategy": {
+      "id": "high_contrast_structured",
+      "kind": "builtin"
+    }
+  },
+  "display": {
+    "layoutName": "2 × 2",
+    "terms": {
+      "ben-day-dots": "Ben-Day dots",
+      "classic-pop-art": "classic pop art",
+      "clean-bold-lines": "clean bold lines",
+      "close-up": "close-up",
+      "cool-blues": "cool blues",
+      "diagonal-hatch": "diagonal hatch",
+      "distressed-newsprint": "distressed/newsprint",
+      "eye-level": "eye level",
+      "geometric-abstraction": "geometric abstraction",
+      "hard-two-tone-split": "hard two-tone split",
+      "head-and-shoulders": "head-and-shoulders",
+      "high-angle": "high angle",
+      "high-key": "high key",
+      "high_contrast_structured": "High-Contrast Structured",
+      "misregistration": "misregistration",
+      "screenprint-grain": "screenprint grain",
+      "side-light-left": "side light left"
+    }
+  },
+  "effects": {
+    "additionalInstructions": "Effects should not obscure the focal region.",
+    "elements": [
+      {
+        "additionalInstructions": "Do not cover the title.",
+        "description": "glow",
+        "id": "effect-a",
+        "intensity": 3,
+        "layering": "foreground",
+        "orientation": "neutral",
+        "panelScope": {
+          "kind": "all"
+        },
+        "placement": "center",
+        "scale": 1,
+        "spread": "local",
+        "target": "signal lantern"
+      },
+      {
+        "additionalInstructions": "",
+        "description": "speed lines",
+        "id": "effect-b",
+        "intensity": 2,
+        "layering": "foreground",
+        "orientation": "neutral",
+        "panelScope": {
+          "kind": "all"
+        },
+        "placement": "center",
+        "scale": 1,
+        "spread": "behind subject",
+        "target": "subject"
+      }
+    ]
+  },
+  "exemplars": [
+    {
+      "asset": {
+        "id": "asset-a",
+        "mediaType": "image/png",
+        "path": "exemplars/placement-review.png",
+        "sha256": "8819fa0c97be68efa13c460fe13dc194b814d4ad0d3a61fc0b7ba92b35bdc2bc"
+      },
+      "doNotTransfer": [
+        "Identity",
+        "Incidental costume"
+      ],
+      "id": "reference-a",
+      "name": "Placement reference",
+      "notes": "This reference governs placement only.\nDo not broaden its authority.",
+      "panelScope": {
+        "kind": "all"
+      },
+      "role": "subject proportions / composition",
+      "transfer": [
+        "Relative placement and proportion relationships"
+      ]
+    },
+    {
+      "asset": {
+        "id": "asset-b",
+        "mediaType": "image/png",
+        "path": "exemplars/unassigned-review.png",
+        "sha256": "4a29729dbbbef8ef84fc1b8173786972a7a320c1605364fa9155a8ff8a77e814"
+      },
+      "doNotTransfer": [
+        "Source identity",
+        "Unrelated background details"
+      ],
+      "id": "reference-b",
+      "name": "Component reference",
+      "notes": "Keep the Theme portable to another Subject.",
+      "panelScope": {
+        "kind": "panels",
+        "panelIds": [
+          "panel-2",
+          "panel-4"
+        ]
+      },
+      "role": "theme costume component",
+      "transfer": [
+        "The declared component topology"
+      ]
+    }
+  ],
+  "panels": [
+    {
+      "color": {
+        "assignments": [
+          {
+            "color": "#0057B8",
+            "roleId": "role-a"
+          },
+          {
+            "color": "#FF8C00",
+            "roleId": "role-b"
+          },
+          {
+            "color": "#FFFFFF",
+            "roleId": "background-a"
+          },
+          {
+            "color": "#0057B8",
+            "roleId": "role-c"
+          },
+          {
+            "color": "#252525",
+            "roleId": "background-b"
+          }
+        ],
+        "mood": "cool-blues"
+      },
+      "composition": {
+        "camera": "eye-level",
+        "cameraElevation": "eye level",
+        "cameraOrientation": "level",
+        "cropExtent": "contained at framing boundary",
+        "edgeTreatment": "contained",
+        "expression": "neutral",
+        "eyeDirection": "right",
+        "family": "conventional",
+        "focalRegion": "upper center",
+        "framing": "head-and-shoulders",
+        "headOrientation": "left",
+        "negativeSpace": {
+          "amount": 0.35,
+          "direction": "right"
+        },
+        "pose": "neutral",
+        "subjectPlacement": {
+          "x": 0.45,
+          "y": 0.5
+        },
+        "technique": "head-and-shoulders",
+        "torsoOrientation": "three-quarter"
+      },
+      "lightingRendering": {
+        "backgroundLighting": {
+          "additionalInstructions": "Keep background readable.",
+          "colorBehavior": "neutral",
+          "direction": "front",
+          "intensity": 4,
+          "style": "high-key"
+        },
+        "ink": "clean-bold-lines",
+        "rendering": "classic-pop-art",
+        "subjectLighting": {
+          "additionalInstructions": "Emphasize the focal edge.",
+          "color": "#B8DFFF",
+          "colorBehavior": "cool accent",
+          "direction": "upper left",
+          "intensity": 6,
+          "style": "side-light-left"
+        }
+      },
+      "panelId": "panel-1",
+      "sliders": {
+        "backgroundAbstraction": 3,
+        "backgroundStyleIntensity": 5,
+        "backgroundTextureIntensity": 3,
+        "subjectAbstraction": 5,
+        "subjectPreservation": 8,
+        "subjectStyleIntensity": 5,
+        "subjectTextureIntensity": 3,
+        "themePreservation": 8
+      },
+      "texture": {
+        "background": {
+          "additionalInstructions": "Keep line angles consistent.",
+          "exclusions": [],
+          "family": "diagonal-hatch",
+          "intensity": 2,
+          "region": "field"
+        },
+        "backgroundField": "hard-two-tone-split",
+        "environment": "geometric-abstraction",
+        "finishes": [
+          {
+            "additionalInstructions": "Subtle finish only.",
+            "family": "screenprint-grain",
+            "intensity": 2,
+            "scope": "subject"
+          },
+          {
+            "additionalInstructions": "Preserve clear boundaries.",
+            "family": "distressed-newsprint",
+            "intensity": 3,
+            "scope": "background"
+          },
+          {
+            "additionalInstructions": "Keep black contours stable.",
+            "family": "misregistration",
+            "intensity": 1,
+            "scope": "global"
+          }
+        ],
+        "subject": {
+          "additionalInstructions": "Keep dot sizes uniform.",
+          "exclusions": [
+            "focal region"
+          ],
+          "family": "ben-day-dots",
+          "intensity": 4,
+          "region": "broad surfaces"
+        }
+      }
+    },
+    {
+      "color": {
+        "assignments": [
+          {
+            "color": "#FF8C00",
+            "roleId": "role-a"
+          },
+          {
+            "color": "#0057B8",
+            "roleId": "role-b"
+          },
+          {
+            "color": "#FFFFFF",
+            "roleId": "background-a"
+          },
+          {
+            "color": "#0057B8",
+            "roleId": "role-c"
+          },
+          {
+            "color": "#252525",
+            "roleId": "background-b"
+          }
+        ],
+        "mood": "cool-blues"
+      },
+      "composition": {
+        "camera": "eye-level",
+        "cameraElevation": "eye level",
+        "cameraOrientation": "level",
+        "cropExtent": "contained at framing boundary",
+        "edgeTreatment": "contained",
+        "expression": "neutral",
+        "eyeDirection": "right",
+        "family": "conventional",
+        "focalRegion": "upper center",
+        "framing": "head-and-shoulders",
+        "headOrientation": "left",
+        "negativeSpace": {
+          "amount": 0.35,
+          "direction": "right"
+        },
+        "pose": "neutral",
+        "subjectPlacement": {
+          "x": 0.45,
+          "y": 0.5
+        },
+        "technique": "head-and-shoulders",
+        "torsoOrientation": "three-quarter"
+      },
+      "lightingRendering": {
+        "backgroundLighting": {
+          "additionalInstructions": "Keep background readable.",
+          "colorBehavior": "neutral",
+          "direction": "front",
+          "intensity": 4,
+          "style": "high-key"
+        },
+        "ink": "clean-bold-lines",
+        "rendering": "classic-pop-art",
+        "subjectLighting": {
+          "additionalInstructions": "Keep the rim narrow.\nLeave the face region readable.",
+          "color": "#B8DFFF",
+          "colorBehavior": "cool accent",
+          "direction": "behind",
+          "intensity": 8,
+          "style": "rim-light"
+        }
+      },
+      "panelId": "panel-2",
+      "sliders": {
+        "backgroundAbstraction": 3,
+        "backgroundStyleIntensity": 5,
+        "backgroundTextureIntensity": 3,
+        "subjectAbstraction": 5,
+        "subjectPreservation": 8,
+        "subjectStyleIntensity": 5,
+        "subjectTextureIntensity": 3,
+        "themePreservation": 8
+      },
+      "texture": {
+        "background": {
+          "additionalInstructions": "Keep line angles consistent.",
+          "exclusions": [],
+          "family": "diagonal-hatch",
+          "intensity": 2,
+          "region": "field"
+        },
+        "backgroundField": "hard-two-tone-split",
+        "environment": "geometric-abstraction",
+        "finishes": [
+          {
+            "additionalInstructions": "Subtle finish only.",
+            "family": "screenprint-grain",
+            "intensity": 2,
+            "scope": "subject"
+          },
+          {
+            "additionalInstructions": "Preserve clear boundaries.",
+            "family": "distressed-newsprint",
+            "intensity": 3,
+            "scope": "background"
+          },
+          {
+            "additionalInstructions": "Keep black contours stable.",
+            "family": "misregistration",
+            "intensity": 1,
+            "scope": "global"
+          }
+        ],
+        "subject": {
+          "additionalInstructions": "Keep dot sizes uniform.",
+          "exclusions": [
+            "focal region"
+          ],
+          "family": "ben-day-dots",
+          "intensity": 4,
+          "region": "broad surfaces"
+        }
+      }
+    },
+    {
+      "color": {
+        "assignments": [
+          {
+            "color": "#0057B8",
+            "roleId": "role-a"
+          },
+          {
+            "color": "#FF8C00",
+            "roleId": "role-b"
+          },
+          {
+            "color": "#FFFFFF",
+            "roleId": "background-a"
+          },
+          {
+            "color": "#0057B8",
+            "roleId": "role-c"
+          },
+          {
+            "color": "#252525",
+            "roleId": "background-b"
+          }
+        ],
+        "mood": "cool-blues"
+      },
+      "composition": {
+        "camera": "high-angle",
+        "cameraElevation": "above subject",
+        "cameraOrientation": "level",
+        "cropExtent": "intentional crop",
+        "edgeTreatment": "clipped",
+        "expression": "neutral",
+        "eyeDirection": "left",
+        "family": "unconventional",
+        "focalRegion": "upper center",
+        "framing": "close-up",
+        "headOrientation": "left",
+        "negativeSpace": {
+          "amount": 0.35,
+          "direction": "right"
+        },
+        "pose": "neutral",
+        "subjectPlacement": {
+          "x": 0.55,
+          "y": 0.45
+        },
+        "technique": "diagonal-framing",
+        "torsoOrientation": "three-quarter"
+      },
+      "lightingRendering": {
+        "backgroundLighting": {
+          "additionalInstructions": "Keep background readable.",
+          "colorBehavior": "neutral",
+          "direction": "front",
+          "intensity": 4,
+          "style": "high-key"
+        },
+        "ink": "clean-bold-lines",
+        "rendering": "classic-pop-art",
+        "subjectLighting": {
+          "additionalInstructions": "Emphasize the focal edge.",
+          "color": "#B8DFFF",
+          "colorBehavior": "cool accent",
+          "direction": "upper left",
+          "intensity": 6,
+          "style": "side-light-left"
+        }
+      },
+      "panelId": "panel-3",
+      "sliders": {
+        "backgroundAbstraction": 3,
+        "backgroundStyleIntensity": 5,
+        "backgroundTextureIntensity": 3,
+        "subjectAbstraction": 5,
+        "subjectPreservation": 8,
+        "subjectStyleIntensity": 5,
+        "subjectTextureIntensity": 3,
+        "themePreservation": 8
+      },
+      "texture": {
+        "background": {
+          "additionalInstructions": "Keep line angles consistent.",
+          "exclusions": [],
+          "family": "diagonal-hatch",
+          "intensity": 2,
+          "region": "field"
+        },
+        "backgroundField": "hard-two-tone-split",
+        "environment": "geometric-abstraction",
+        "finishes": [
+          {
+            "additionalInstructions": "Subtle finish only.",
+            "family": "screenprint-grain",
+            "intensity": 2,
+            "scope": "subject"
+          },
+          {
+            "additionalInstructions": "Preserve clear boundaries.",
+            "family": "distressed-newsprint",
+            "intensity": 3,
+            "scope": "background"
+          },
+          {
+            "additionalInstructions": "Keep black contours stable.",
+            "family": "misregistration",
+            "intensity": 1,
+            "scope": "global"
+          }
+        ],
+        "subject": {
+          "additionalInstructions": "Keep dot sizes uniform.",
+          "exclusions": [
+            "focal region"
+          ],
+          "family": "ben-day-dots",
+          "intensity": 4,
+          "region": "broad surfaces"
+        }
+      }
+    },
+    {
+      "color": {
+        "assignments": [
+          {
+            "color": "#FF8C00",
+            "roleId": "role-a"
+          },
+          {
+            "color": "#0057B8",
+            "roleId": "role-b"
+          },
+          {
+            "color": "#FFFFFF",
+            "roleId": "background-a"
+          },
+          {
+            "color": "#0057B8",
+            "roleId": "role-c"
+          },
+          {
+            "color": "#252525",
+            "roleId": "background-b"
+          }
+        ],
+        "mood": "cool-blues"
+      },
+      "composition": {
+        "camera": "high-angle",
+        "cameraElevation": "above subject",
+        "cameraOrientation": "level",
+        "cropExtent": "intentional crop",
+        "edgeTreatment": "clipped",
+        "expression": "neutral",
+        "eyeDirection": "left",
+        "family": "unconventional",
+        "focalRegion": "upper center",
+        "framing": "close-up",
+        "headOrientation": "left",
+        "negativeSpace": {
+          "amount": 0.35,
+          "direction": "right"
+        },
+        "pose": "neutral",
+        "subjectPlacement": {
+          "x": 0.55,
+          "y": 0.45
+        },
+        "technique": "diagonal-framing",
+        "torsoOrientation": "three-quarter"
+      },
+      "lightingRendering": {
+        "backgroundLighting": {
+          "additionalInstructions": "Keep background readable.",
+          "colorBehavior": "neutral",
+          "direction": "front",
+          "intensity": 4,
+          "style": "high-key"
+        },
+        "ink": "clean-bold-lines",
+        "rendering": "classic-pop-art",
+        "subjectLighting": {
+          "additionalInstructions": "Keep the rim narrow.\nLeave the face region readable.",
+          "color": "#B8DFFF",
+          "colorBehavior": "cool accent",
+          "direction": "behind",
+          "intensity": 8,
+          "style": "rim-light"
+        }
+      },
+      "panelId": "panel-4",
+      "sliders": {
+        "backgroundAbstraction": 3,
+        "backgroundStyleIntensity": 7,
+        "backgroundTextureIntensity": 3,
+        "subjectAbstraction": 8,
+        "subjectPreservation": 6,
+        "subjectStyleIntensity": 5,
+        "subjectTextureIntensity": 3,
+        "themePreservation": 8
+      },
+      "texture": {
+        "background": {
+          "additionalInstructions": "Keep line angles consistent.",
+          "exclusions": [],
+          "family": "diagonal-hatch",
+          "intensity": 2,
+          "region": "field"
+        },
+        "backgroundField": "hard-two-tone-split",
+        "environment": "geometric-abstraction",
+        "finishes": [
+          {
+            "additionalInstructions": "Subtle finish only.",
+            "family": "screenprint-grain",
+            "intensity": 2,
+            "scope": "subject"
+          },
+          {
+            "additionalInstructions": "Preserve clear boundaries.",
+            "family": "distressed-newsprint",
+            "intensity": 3,
+            "scope": "background"
+          },
+          {
+            "additionalInstructions": "Keep black contours stable.",
+            "family": "misregistration",
+            "intensity": 1,
+            "scope": "global"
+          }
+        ],
+        "subject": {
+          "additionalInstructions": "Keep dot sizes uniform.",
+          "exclusions": [
+            "focal region"
+          ],
+          "family": "ben-day-dots",
+          "intensity": 4,
+          "region": "broad surfaces"
+        }
+      }
+    }
+  ],
+  "project": {
+    "id": "phase7-generic-review",
+    "name": "Four-panel production brief"
+  },
+  "props": {
+    "additionalInstructions": "Keep prop silhouettes distinct.",
+    "elements": [
+      {
+        "additionalInstructions": "The support point stays visible.",
+        "contactLogic": "visible contact at support point",
+        "description": "signal lantern",
+        "id": "prop-a",
+        "interaction": "held near subject",
+        "layering": "foreground",
+        "orientation": "neutral",
+        "panelScope": {
+          "kind": "all"
+        },
+        "placement": "center",
+        "scale": 1
+      },
+      {
+        "additionalInstructions": "",
+        "contactLogic": "attached to stand",
+        "description": "festival pennant",
+        "id": "prop-b",
+        "interaction": "independent",
+        "layering": "foreground",
+        "orientation": "neutral",
+        "panelScope": {
+          "kind": "all"
+        },
+        "placement": "center",
+        "scale": 1
+      }
+    ]
+  },
+  "schemaVersion": "1.0",
+  "subject": {
+    "contextAssets": [],
+    "displayName": "Mechanical Owl",
+    "packId": "community.mechanical-owl",
+    "provenance": "community"
+  },
+  "theme": {
+    "contextAssets": [],
+    "displayName": "Winter Festival",
+    "packId": "community.winter-festival",
+    "provenance": "community"
+  },
+  "typography": {
+    "additionalInstructions": "Let each text element retain its own placement.",
+    "elements": [
+      {
+        "additionalInstructions": "Keep this exact line break.",
+        "content": "WINTER FESTIVAL\nThe visitor arrives.",
+        "cropBehavior": "contained",
+        "id": "text-a",
+        "layering": "foreground",
+        "orientation": "neutral",
+        "panelScope": {
+          "kind": "all"
+        },
+        "placement": "center",
+        "scale": 1,
+        "style": "bold condensed",
+        "type": "title"
+      },
+      {
+        "additionalInstructions": "",
+        "content": "A mechanical visitor arrives.",
+        "cropBehavior": "may overlap",
+        "id": "text-b",
+        "layering": "foreground",
+        "orientation": "neutral",
+        "panelScope": {
+          "kind": "panels",
+          "panelIds": [
+            "panel-1"
+          ]
+        },
+        "placement": "center",
+        "scale": 1,
+        "style": "plain uppercase",
+        "type": "caption"
+      }
+    ],
+    "enabled": true
+  }
+}

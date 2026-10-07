@@ -1,0 +1,383 @@
+{
+  "schemaVersion": "1.0",
+  "libraryId": "openai.pop-art-art-direction.official.v1",
+  "displayName": "Pop Art Art-Direction System - Official Library v1",
+  "provenance": "official",
+  "status": "Public Official visual registry: 15 user-attested primary sheets; unresolved supporting binaries absent",
+  "ledgerPath": "normalization-ledger.json",
+  "categories": [
+    {
+      "number": 1,
+      "packId": "official.category-01.subject-identity.v1",
+      "displayName": "Subject Identity Exemplars",
+      "packType": "subject_identity",
+      "provenance": "official",
+      "manifestPath": "official/01-subject-identity/manifest.json",
+      "manifestSha256": "8b3f0096210327eab27522b5a35f40f59823e3d56ce3f26ddd778f49ebdc56c2",
+      "optionIds": [
+        "front-view",
+        "three-quarter-view",
+        "profile",
+        "over-shoulder",
+        "confident-expression",
+        "playful-expression",
+        "serious-expression",
+        "laughing-expression"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 2,
+      "packId": "official.category-02.conventional-composition.v1",
+      "displayName": "Conventional Composition Exemplars",
+      "packType": "composition",
+      "provenance": "official",
+      "manifestPath": "official/02-conventional-composition/manifest.json",
+      "manifestSha256": "96574559f9d19e15e190241f1019edd87a6dfc159bd7354b0e688f55a2b53c8c",
+      "optionIds": [
+        "head-and-shoulders",
+        "bust-chest-up",
+        "half-length",
+        "three-quarter-length",
+        "full-length"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 3,
+      "packId": "official.category-03.unconventional-composition.v1",
+      "displayName": "Unconventional Composition Exemplars",
+      "packType": "composition",
+      "provenance": "official",
+      "manifestPath": "official/03-unconventional-composition/manifest.json",
+      "manifestSha256": "403378f651d69cc087a6eb771781a8ffe8fea95a7727b149549d7b11ed2d7bf4",
+      "optionIds": [
+        "extreme-negative-space",
+        "aggressive-crop",
+        "extreme-high-viewpoint",
+        "extreme-low-viewpoint",
+        "dutch-canted-frame",
+        "partial-faceless-portrait"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 4,
+      "packId": "official.category-04.color-triad-contrast.v1",
+      "displayName": "Color Triad + Background Contrast Exemplars",
+      "packType": "color",
+      "provenance": "official",
+      "manifestPath": "official/04-color-triad-contrast/manifest.json",
+      "manifestSha256": "067b76e11fc3ec7f17dcb7b1e70b214b8f5f5b67101a4fa853ec3e35908e781e",
+      "optionIds": [
+        "magenta-yellow-cyan",
+        "red-blue-yellow",
+        "vermilion-chartreuse-blue-violet",
+        "orange-emerald-ultraviolet"
+      ],
+      "presetIds": [
+        "official.color.magenta-yellow-cyan.v1",
+        "official.color.red-blue-yellow.v1",
+        "official.color.vermilion-chartreuse-blue-violet.v1",
+        "official.color.orange-emerald-ultraviolet.v1"
+      ]
+    },
+    {
+      "number": 5,
+      "packId": "official.category-05.background-treatment.v1",
+      "displayName": "Background Treatment Library",
+      "packType": "background",
+      "provenance": "official",
+      "manifestPath": "official/05-background-treatment/manifest.json",
+      "manifestSha256": "cb3b1bade47c7468314ec194f8df84a72f94dea10ff852fec11ca34ef29754e2",
+      "optionIds": [
+        "flat-single-color-field",
+        "hard-two-tone-split",
+        "two-tone-geometric-blocked-field",
+        "linear-pop-gradient",
+        "radial-spotlight-gradient",
+        "color-bands-stripes",
+        "radial-burst-sunburst",
+        "concentric-target-field",
+        "repeating-graphic-motif",
+        "checker-grid-geometric-pattern",
+        "ben-day-dots",
+        "halftone-gradient",
+        "coarse-halftone-raster",
+        "stipple",
+        "diagonal-hatch",
+        "crosshatch",
+        "screenprint-grain",
+        "distressed-newsprint",
+        "misregistration",
+        "flat-field",
+        "none"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 6,
+      "packId": "official.category-06.lighting.v1",
+      "displayName": "Lighting Style Exemplars",
+      "packType": "lighting",
+      "provenance": "official",
+      "manifestPath": "official/06-lighting/manifest.json",
+      "manifestSha256": "5b633ef8fc6cd4b888eeee3d18f857549a61e03352de70a1c8c53729e9f5aa8b",
+      "optionIds": [
+        "front-even",
+        "side-light-left",
+        "side-light-right",
+        "high-key",
+        "low-key",
+        "back-rim",
+        "top-light",
+        "underlight",
+        "colored-light",
+        "spotlight"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 7,
+      "packId": "official.category-07.ink-contour-black-structure.v1",
+      "displayName": "Ink / Contour / Black Structure Exemplars",
+      "packType": "rendering",
+      "provenance": "official",
+      "manifestPath": "official/07-ink-contour-black-structure/manifest.json",
+      "manifestSha256": "ab8a67c315e6593b44c4baad7a79424ebe7729f90f17a99908a3271b2b4cdc04",
+      "optionIds": [
+        "clean-bold-lines",
+        "thin-line-work",
+        "expressive-dynamic",
+        "heavy-blacks",
+        "halftone-shading",
+        "hatched-shading",
+        "stipple-dot-work",
+        "sketch-rough-ink",
+        "minimal-lines",
+        "ink-white-highlights"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 8,
+      "packId": "official.category-08.pose-gesture-body-mechanics.v1",
+      "displayName": "Pose / Gesture / Body Mechanics Exemplars",
+      "packType": "pose",
+      "provenance": "official",
+      "manifestPath": "official/08-pose-gesture-body-mechanics/manifest.json",
+      "manifestSha256": "d667059f1eff9b2604ebadeb360475255ee24d0e2c131916fb699091f9475923",
+      "optionIds": [
+        "eye-level-front-staging",
+        "low-angle-heroic-staging",
+        "high-angle-staging",
+        "three-quarter-pose",
+        "profile-pose",
+        "full-body-pose",
+        "seated-pose",
+        "action-dynamic-pose",
+        "close-up-staging",
+        "partial-crop-staging"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 9,
+      "packId": "official.category-09.color-palette-mood.v1",
+      "displayName": "Color Palette / Mood Exemplars",
+      "packType": "color",
+      "provenance": "official",
+      "manifestPath": "official/09-color-palette-mood/manifest.json",
+      "manifestSha256": "2f43d8827fbc481c2ff55e97f26329bdc829559c5991617666f92f4f7df496d9",
+      "optionIds": [
+        "classic-pop",
+        "cool-blues",
+        "warm-retro",
+        "high-contrast-b-w-accent",
+        "pastel-pop",
+        "neon-electric",
+        "earth-tones",
+        "analogous",
+        "complementary",
+        "monochrome"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 10,
+      "packId": "official.category-10.theme-costume-transformation.v1",
+      "displayName": "Theme / Costume Transformation Exemplars",
+      "packType": "theme",
+      "provenance": "official",
+      "manifestPath": "official/10-theme-costume-transformation/manifest.json",
+      "manifestSha256": "97802e3e31afc5253e9c263247f166174c877659086efb1775c6f0a5eb7acd32",
+      "optionIds": [
+        "classic-witch",
+        "gothic-elegance",
+        "casual-modern",
+        "fantasy-armor",
+        "masquerade",
+        "vampire",
+        "cat-woman",
+        "cowgirl",
+        "santa-holiday",
+        "steampunk"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 11,
+      "packId": "official.category-11.rendering-style-illustration-technique.v1",
+      "displayName": "Rendering Style / Illustration Technique Exemplars",
+      "packType": "rendering",
+      "provenance": "official",
+      "manifestPath": "official/11-rendering-style-illustration-technique/manifest.json",
+      "manifestSha256": "0f66c080be12a59ba42d798f0a97349fdc0148851e16eab8db9ccc2fdeb070ef",
+      "optionIds": [
+        "classic-pop-art",
+        "retro-comic-book",
+        "modern-vector",
+        "screenprint",
+        "risograph",
+        "graphic-novel",
+        "painted-brush",
+        "halftone-realism",
+        "line-art",
+        "stylized-anime"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 12,
+      "packId": "official.category-12.environment-background-abstraction.v1",
+      "displayName": "Environment / Background Abstraction Exemplars",
+      "packType": "environment",
+      "provenance": "official",
+      "manifestPath": "official/12-environment-background-abstraction/manifest.json",
+      "manifestSha256": "5a69a26c7ec2dcb1c038404076b7698566720ca44ca0625f3ed0290b4438825e",
+      "optionIds": [
+        "solid-color-field",
+        "halftone-field",
+        "geometric-abstraction",
+        "simple-symbolic-element",
+        "minimal-architecture",
+        "natural-landscape",
+        "interior-suggestion",
+        "atmospheric-sky",
+        "reflective-surface",
+        "descriptive-environment"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 13,
+      "packId": "official.category-13.expression-micro-mood.v1",
+      "displayName": "Expression / Micro-Mood Exemplars",
+      "packType": "expression",
+      "provenance": "official",
+      "manifestPath": "official/13-expression-micro-mood/manifest.json",
+      "manifestSha256": "2bc583c7ac4dc1edeec534c1f65265cc8640ca5fdfe75e94a528658662dcdac1",
+      "optionIds": [
+        "confident",
+        "playful",
+        "joyful",
+        "seductive",
+        "serious",
+        "angry",
+        "surprised",
+        "thoughtful",
+        "melancholy",
+        "wink-flirt"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 14,
+      "packId": "official.category-14.camera-angle-perspective.v1",
+      "displayName": "Camera Angle / Perspective Exemplars",
+      "packType": "camera",
+      "provenance": "official",
+      "manifestPath": "official/14-camera-angle-perspective/manifest.json",
+      "manifestSha256": "7a3ec43c039b3d0683bef3149ccdc78ffede2347222ba66ed755e8525962763d",
+      "optionIds": [
+        "eye-level",
+        "high-angle",
+        "low-angle",
+        "three-quarter-view",
+        "profile",
+        "over-the-shoulder",
+        "dutch-angle",
+        "bird-s-eye-view",
+        "worm-s-eye-view",
+        "close-up"
+      ],
+      "presetIds": []
+    },
+    {
+      "number": 15,
+      "packId": "official.category-15.props-accessories.v1",
+      "displayName": "Props / Accessories Exemplars",
+      "packType": "props",
+      "provenance": "official",
+      "manifestPath": "official/15-props-accessories/manifest.json",
+      "manifestSha256": "0cbd949f384914c8bab7e121012a79fc85a6e9e3475010c15da443f7dad587dc",
+      "optionIds": [
+        "broom",
+        "black-cat",
+        "jack-o-lantern",
+        "spellbook",
+        "potion",
+        "candle",
+        "skull",
+        "tarot-cards",
+        "hat-variation",
+        "mask"
+      ],
+      "presetIds": []
+    }
+  ],
+  "colorSystem": {
+    "defaultStrategy": "high_contrast_structured",
+    "strategies": [
+      {
+        "id": "high_contrast_structured",
+        "label": "High-Contrast Structured",
+        "exemplarEvidence": []
+      },
+      {
+        "id": "complementary",
+        "label": "Complementary",
+        "exemplarEvidence": []
+      },
+      {
+        "id": "split_complementary",
+        "label": "Split Complementary",
+        "exemplarEvidence": []
+      },
+      {
+        "id": "triadic",
+        "label": "Triadic",
+        "exemplarEvidence": []
+      },
+      {
+        "id": "analogous",
+        "label": "Analogous",
+        "exemplarEvidence": []
+      },
+      {
+        "id": "monochromatic",
+        "label": "Monochromatic",
+        "exemplarEvidence": []
+      },
+      {
+        "id": "custom",
+        "label": "Custom",
+        "exemplarEvidence": []
+      }
+    ],
+    "majorRoleSeparation": "all distinct major roles; relationships increase priority",
+    "backgroundSeparation": "every major subject role",
+    "custom": "unrestricted artist choices preserved",
+    "presetTargets": "provisional named-color hex targets; not source-measured"
+  }
+}

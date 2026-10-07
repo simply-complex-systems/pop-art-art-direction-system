@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "official.category-09.color-palette-mood.v1",
+  "displayName": "Color Palette / Mood Exemplars",
+  "version": "1.0.0",
+  "provenance": "official",
+  "packType": "color",
+  "description": "Approved exemplar pack for Color Palette / Mood Exemplars.",
+  "license": {
+    "identifier": "CC-BY-4.0",
+    "status": "intended",
+    "attribution": "Supplied project metadata; intended license declaration, public-release review unresolved."
+  },
+  "governs": [
+    "palette strategy",
+    "palette mood",
+    "broad color-family treatment"
+  ],
+  "doesNotGovern": [
+    "subject identity",
+    "pose",
+    "composition",
+    "theme topology"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "category-09-sheet",
+      "title": "Color Palette / Mood Exemplars",
+      "asset": {
+        "id": "category-09-sheet.original",
+        "path": "official/09-color-palette-mood/exemplars/category-09-approved-sheet.png",
+        "mediaType": "image/png",
+        "sha256": "6d6d7a954a80c7f82c8c6a185af2b5bf41b0f59c11514c07adecdb366952e1b8"
+      },
+      "governs": [
+        "palette strategy",
+        "palette mood",
+        "broad color-family treatment"
+      ],
+      "doesNotGovern": [
+        "subject identity",
+        "pose",
+        "composition",
+        "theme topology"
+      ],
+      "approvedFeatures": [
+        "User endorsed this sheet for the named category."
+      ],
+      "knownDefects": [],
+      "provenance": "official",
+      "license": {
+        "identifier": "CC-BY-4.0",
+        "status": "intended",
+        "attribution": "Supplied exemplar declaration: project-original / intended CC-BY-4.0. Public redistribution unresolved; no independent rights certification."
+      },
+      "tags": [
+        "color-palette-mood",
+        "approved",
+        "reference-sheet"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "id": "classic-pop",
+      "label": "classic pop",
+      "category": "color",
+      "axis": "palette-mood",
+      "value": {
+        "sourceLabel": "classic pop",
+        "parameterStatus": "label-only; production parameters unresolved",
+        "systemStrategyReference": null
+      }
+    },
+    {
+      "id": "cool-blues",
+      "label": "cool blues",
+      "category": "color",
+      "axis": "palette-mood",
+      "value": {
+        "sourceLabel": "cool blues",
+        "parameterStatus": "label-only; production parameters unresolved",
+        "systemStrategyReference": null
+      }
+    },
+    {
+      "id": "warm-retro",
+      "label": "warm retro",
+      "category": "color",
+      "axis": "palette-mood",
+      "value": {
+        "sourceLabel": "warm retro",
+        "parameterStatus": "label-only; production parameters unresolved",
+        "systemStrategyReference": null
+      }
+    },
+    {
+      "id": "high-contrast-b-w-accent",
+      "label": "high-contrast B&W + accent",
+      "category": "color",
+      "axis": "palette-mood",
+      "value": {
+        "sourceLabel": "high-contrast B&W + accent",
+        "parameterStatus": "label-only; production parameters unresolved",
+        "systemStrategyReference": null
+      }
+    },
+    {
+      "id": "pastel-pop",
+      "label": "pastel pop",
+      "category": "color",
+      "axis": "palette-mood",
+      "value": {
+        "sourceLabel": "pastel pop",
+        "parameterStatus": "label-only; production parameters unresolved",
+        "systemStrategyReference": null
+      }
+    },
+    {
+      "id": "neon-electric",
+      "label": "neon/electric",
+      "category": "color",
+      "axis": "palette-mood",
+      "value": {
+        "sourceLabel": "neon/electric",
+        "parameterStatus": "label-only; production parameters unresolved",
+        "systemStrategyReference": null
+      }
+    },
+    {
+      "id": "earth-tones",
+      "label": "earth tones",
+      "category": "color",
+      "axis": "palette-mood",
+      "value": {
+        "sourceLabel": "earth tones",
+        "parameterStatus": "label-only; production parameters unresolved",
+        "systemStrategyReference": null
+      }
+    },
+    {
+      "id": "analogous",
+      "label": "analogous",
+      "category": "color",
+      "axis": "harmony-evidence",
+      "value": {
+        "sourceLabel": "analogous",
+        "parameterStatus": "label-only; production parameters unresolved",
+        "systemStrategyReference": "analogous"
+      }
+    },
+    {
+      "id": "complementary",
+      "label": "complementary",
+      "category": "color",
+      "axis": "harmony-evidence",
+      "value": {
+        "sourceLabel": "complementary",
+        "parameterStatus": "label-only; production parameters unresolved",
+        "systemStrategyReference": "complementary"
+      }
+    },
+    {
+      "id": "monochrome",
+      "label": "monochrome",
+      "category": "color",
+      "axis": "harmony-evidence",
+      "value": {
+        "sourceLabel": "monochrome",
+        "parameterStatus": "label-only; production parameters unresolved",
+        "systemStrategyReference": "monochromatic"
+      }
+    }
+  ],
+  "presets": [],
+  "colorStrategies": [],
+  "colorRoles": [],
+  "colorRelationships": [],
+  "compatibility": {
+    "categories": [
+      "color"
+    ],
+    "notes": [
+      "Unspecified artistic metadata remains unresolved; source imagery does not broaden governing scope.",
+      "Public redistribution review remains unresolved."
+    ]
+  },
+  "tags": [
+    "color-palette-mood",
+    "approved",
+    "reference-sheet"
+  ]
+}

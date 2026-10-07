@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "1.0",
+  "packId": "community.fixture",
+  "displayName": "Generic fixture pack",
+  "version": "1.0.0",
+  "provenance": "community",
+  "packType": "color",
+  "description": "Contract fixture, not an installed library pack.",
+  "license": {
+    "identifier": "CC0-1.0",
+    "status": "declared",
+    "attribution": ""
+  },
+  "governs": [
+    "Color relationships"
+  ],
+  "doesNotGovern": [
+    "Identity"
+  ],
+  "documents": [],
+  "exemplars": [
+    {
+      "id": "pack-exemplar-1",
+      "title": "Reference",
+      "asset": {
+        "id": "asset-1",
+        "path": "exemplars/reference.png",
+        "mediaType": "image/png",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "governs": [
+        "Separation"
+      ],
+      "doesNotGovern": [
+        "Identity"
+      ],
+      "approvedFeatures": [],
+      "knownDefects": [],
+      "provenance": "community",
+      "license": {
+        "identifier": "CC0-1.0",
+        "status": "declared",
+        "attribution": ""
+      },
+      "tags": []
+    }
+  ],
+  "options": [
+    {
+      "id": "option-1",
+      "label": "Generic field",
+      "category": "color",
+      "axis": "palette",
+      "value": {
+        "assignments": [
+          {
+            "roleId": "role-a",
+            "color": "#0057B8"
+          },
+          {
+            "roleId": "role-b",
+            "color": "#FF8C00"
+          },
+          {
+            "roleId": "background-a",
+            "color": "#FFFFFF"
+          },
+          {
+            "roleId": "accent-a",
+            "color": "#0057B8"
+          }
+        ]
+      }
+    }
+  ],
+  "presets": [
+    {
+      "schemaVersion": "1.0",
+      "id": "community.palette-1",
+      "name": "Distinct masses",
+      "provenance": "community",
+      "category": "color",
+      "value": {
+        "assignments": [
+          {
+            "roleId": "role-a",
+            "color": "#0057B8"
+          },
+          {
+            "roleId": "role-b",
+            "color": "#FF8C00"
+          },
+          {
+            "roleId": "background-a",
+            "color": "#FFFFFF"
+          },
+          {
+            "roleId": "accent-a",
+            "color": "#0057B8"
+          }
+        ]
+      }
+    }
+  ],
+  "colorStrategies": [
+    {
+      "id": "strategy-1",
+      "label": "Custom intervals",
+      "basis": "complementary",
+      "hueOffsets": [
+        0,
+        180
+      ]
+    }
+  ],
+  "colorRoles": [
+    {
+      "id": "role-a",
+      "importance": "major",
+      "domain": "subject",
+      "displayLabel": "Primary mass",
+      "panelScope": {
+        "kind": "all"
+      }
+    },
+    {
+      "id": "role-b",
+      "importance": "major",
+      "domain": "subject",
+      "materialLabel": "Secondary material",
+      "panelScope": {
+        "kind": "all"
+      }
+    },
+    {
+      "id": "background-a",
+      "importance": "major",
+      "domain": "background",
+      "panelScope": {
+        "kind": "all"
+      }
+    },
+    {
+      "id": "accent-a",
+      "importance": "minor",
+      "domain": "accent",
+      "panelScope": {
+        "kind": "all"
+      }
+    }
+  ],
+  "colorRelationships": [
+    {
+      "roleIds": [
+        "role-a",
+        "role-b"
+      ],
+      "type": "touching",
+      "panelScope": {
+        "kind": "all"
+      },
+      "separators": [
+        {
+          "type": "black_contour",
+          "description": "Stable structural outline",
+          "strength": "supporting"
+        }
+      ]
+    }
+  ],
+  "compatibility": {
+    "categories": [
+      "color"
+    ],
+    "notes": []
+  },
+  "tags": [
+    "fixture"
+  ]
+}

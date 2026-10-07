@@ -1,0 +1,8 @@
+import {useEffect,useState} from 'react';
+import type {AssetStore} from './assets.js';
+export function useAssetPreviews(assets:AssetStore):Map<string,string>{const [urls,setUrls]=useState(new Map<string,string>());useEffect(()=>{const next=new Map<string,string>();for(const [id,{blob}] of assets)next.set(id,URL.createObjectURL(blob));setUrls(next);return ()=>{for(const url of next.values())URL.revokeObjectURL(url);};},[assets]);return urls;}
+export function downloadBytes(bytes:Uint8Array,name:string,type:string){const blob=new Blob([new Uint8Array(bytes).buffer],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+/** Dossier-only raster previews; the AssetStore's original File/Blob bytes remain untouched. */
+export async function dossierThumbnails(assets:AssetStore):Promise<Map<string,Uint8Array>>{
+ const result=new Map<string,Uint8Array>();for(const [id,{blob}] of assets){if(!['image/png','image/jpeg','image/webp','image/gif','image/avif'].includes(blob.type))continue;try{const image=await createImageBitmap(blob);const scale=Math.min(1,640/Math.max(image.width,image.height));const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(image.width*scale));canvas.height=Math.max(1,Math.round(image.height*scale));canvas.getContext('2d')!.drawImage(image,0,0,canvas.width,canvas.height);image.close();const thumbnail=await new Promise<Blob|null>(resolve=>canvas.toBlob(resolve,'image/png'));if(thumbnail)result.set(id,new Uint8Array(await thumbnail.arrayBuffer()));}catch{/* Original file and metadata remain available; dossier reports thumbnail availability. */}}return result;
+}
